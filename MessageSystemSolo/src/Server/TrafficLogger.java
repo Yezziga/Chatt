@@ -15,8 +15,15 @@ import Client.Message;
  */
 public class TrafficLogger {
 	private static TrafficLogger instance = null;
+	private String filename = "files/Server_log.txt";
+	private static ObjectOutputStream toFile;
 
 	private TrafficLogger() {
+		try {
+			toFile = new ObjectOutputStream(new FileOutputStream(new File(filename)));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	/**
@@ -38,22 +45,19 @@ public class TrafficLogger {
 	 * @param message
 	 *            a message-object
 	 */
-	public synchronized String saveMessageToLog(Message message) {
+	public synchronized void saveMessageToLog(Message message) {
 		Calendar calendar = Calendar.getInstance();
 		Date date = calendar.getTime();
 		String temp = "[" + date + "]: " + "Date sent: " + message.getDateSend() + ", sender: " + message.getSender()
 				+ ", date received: " + message.getDateReceived() + ", receivers: " + message.getReceivers()
 				+ ", message: " + message.getMessage();
 
-		try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("trafficLog.txt", true)))) {
-			// System.out.println("File successfully created.");
-			out.append(temp);
-			out.println();
+		try {
+			toFile.writeUTF(temp);
+			toFile.flush();
 		} catch (IOException e) {
-			System.out.println("Exception Occurred:");
 			e.printStackTrace();
 		}
-		return temp; // kanske ska returnera "message successfully saved"
 	}
 
 	// borde vara void?
@@ -62,12 +66,10 @@ public class TrafficLogger {
 		Date date = calendar.getTime();
 		String temp = "[" + date + "]: " + s;
 
-		try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("trafficLog.txt", true)))) {
-			// System.out.println("File successfully created.");
-			out.append(temp);
-			out.println();
+		try {
+			toFile.writeUTF(s);
+			toFile.flush();
 		} catch (IOException e) {
-			System.out.println("Exception Occurred:");
 			e.printStackTrace();
 		}
 		return temp;
@@ -79,7 +81,7 @@ public class TrafficLogger {
 	 */
 	public String getLog() {
 		String temp = "";
-		try (BufferedReader br = new BufferedReader(new FileReader("trafficLog.txt"))) {
+		try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
 			String str = br.readLine();
 			while (str != null) {
 				temp += "\n" + str;
@@ -96,12 +98,11 @@ public class TrafficLogger {
 		return temp;
 	}
 
-	// public static void main(String[] args) {
-	// SingletonLogger s = new SingletonLogger();
-	// Message m = new Message("kalle");
-	// Message m1 = new Message("balle");
-	// Message m2 = new Message("nalle");
-	// System.out.print(s.getLog());
-	// }
+	 public static void main(String[] args) {
+	 TrafficLogger logger = getInstance();
+	 logger.saveToLog("hej på dig");
+	 System.out.println(logger.getLog());
+	 
+	 }
 
 }
