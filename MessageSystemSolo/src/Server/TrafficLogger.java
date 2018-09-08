@@ -16,11 +16,13 @@ import Client.Message;
 public class TrafficLogger {
 	private static TrafficLogger instance = null;
 	private String filename = "files/Server_log.txt";
-	private static ObjectOutputStream toFile;
+	private static Writer toFile;
+	private ServerUI ui;
 
 	private TrafficLogger() {
 		try {
-			toFile = new ObjectOutputStream(new FileOutputStream(new File(filename)));
+			toFile = new OutputStreamWriter(new FileOutputStream(filename), "ISO-8859-1");
+			ui = new ServerUI();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -48,31 +50,29 @@ public class TrafficLogger {
 	public synchronized void saveMessageToLog(Message message) {
 		Calendar calendar = Calendar.getInstance();
 		Date date = calendar.getTime();
-		String temp = "[" + date + "]: " + "Date sent: " + message.getDateSend() + ", sender: " + message.getSender()
-				+ ", date received: " + message.getDateReceived() + ", receivers: " + message.getReceivers()
-				+ ", message: " + message.getMessage();
+		String temp = "[" + date + "]: " + "Date sent: " + message.getDateSend() + ", sender: "
+				+ message.getSender().getName() + ", date received: " + message.getDateReceived() + ", receivers: "
+				+ message.getReceivers() + ", message: " + message.getMessage();
 
 		try {
-			toFile.writeUTF(temp);
+			toFile.write(temp + "\n");
 			toFile.flush();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
-	// borde vara void?
-	public synchronized String saveToLog(String s) {
+	public synchronized void saveToLog(String s) {
 		Calendar calendar = Calendar.getInstance();
 		Date date = calendar.getTime();
 		String temp = "[" + date + "]: " + s;
 
 		try {
-			toFile.writeUTF(s);
+			toFile.write(temp + "\n");
 			toFile.flush();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return temp;
 	}
 
 	/**
@@ -98,11 +98,25 @@ public class TrafficLogger {
 		return temp;
 	}
 
-	 public static void main(String[] args) {
-	 TrafficLogger logger = getInstance();
-	 logger.saveToLog("hej pÃ¥ dig");
-	 System.out.println(logger.getLog());
-	 
-	 }
+	public static void main(String[] args) {
+		TrafficLogger logger = getInstance();
+		Message m = new Message(new User("Jessica"), null, "Detta är meddelandet");
+		m.setDateSend(Calendar.getInstance().getTime());
+		logger.saveMessageToLog(m);
+		logger.saveToLog("hej på dig mannen");
+		for(int i=0; i<10; i++) {
+		logger.saveToLog("testing");
+		}
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		logger.saveToLog("detta mannen");
+		System.out.println(logger.getLog());
+		
+
+	}
 
 }
