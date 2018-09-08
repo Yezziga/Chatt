@@ -3,6 +3,7 @@ package Client;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 
 import javax.swing.ImageIcon;
 
@@ -13,8 +14,8 @@ public class Message implements Serializable {
 	private ArrayList<String> receivers;
 	private String message;
 	private ImageIcon image;
-	private Calendar dateSent;
-	private Calendar dateReceived;
+	private Date dateSent;
+	private Date dateReceived;
 
 	public Message(User sender, ArrayList<String> receivers, String message) {
 		this.sender = sender;
@@ -57,19 +58,19 @@ public class Message implements Serializable {
 		return receivers;
 	}
 
-	public void setDateSend(Calendar cal) {
-		this.dateSent = cal;
+	public void setDateSend(Date date) {
+		this.dateSent = date;
 	}
 
-	public void setDateReceived(Calendar cal) {
-		this.dateReceived = cal;
+	public void setDateReceived(Date date) {
+		this.dateReceived = date;
 	}
 
-	public Calendar getDateSend() {
+	public Date getDateSend() {
 		return dateSent;
 	}
 
-	public Calendar getDateReceived() {
+	public Date getDateReceived() {
 		return dateReceived;
 	}
 
