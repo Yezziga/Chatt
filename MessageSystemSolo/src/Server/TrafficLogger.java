@@ -21,7 +21,7 @@ public class TrafficLogger {
 
 	private TrafficLogger() {
 		try {
-			toFile = new OutputStreamWriter(new FileOutputStream(filename), "ISO-8859-1");
+			toFile = new OutputStreamWriter(new FileOutputStream(filename, true), "ISO-8859-1");
 			ui = new ServerUI();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -98,25 +98,5 @@ public class TrafficLogger {
 		return temp;
 	}
 
-	public static void main(String[] args) {
-		TrafficLogger logger = getInstance();
-		Message m = new Message(new User("Jessica"), null, "Detta är meddelandet");
-		m.setDateSend(Calendar.getInstance().getTime());
-		logger.saveMessageToLog(m);
-		logger.saveToLog("hej på dig mannen");
-		for(int i=0; i<10; i++) {
-		logger.saveToLog("testing");
-		}
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		
-		logger.saveToLog("detta mannen");
-		System.out.println(logger.getLog());
-		
-
-	}
 
 }
