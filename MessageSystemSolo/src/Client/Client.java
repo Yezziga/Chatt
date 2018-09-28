@@ -8,19 +8,19 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
+
 import Server.User;
 
 public class Client {
 	private int serverPort;
-	private User user;
 	private ClientController controller;
 	private ObjectInputStream fromServer;
 	private ObjectOutputStream toServer;
 	private Socket socket;
 
-	public Client(String ip, int serverPort, User user) { // (int serverPort, User user)
+	public Client(String ip, int serverPort) {
 		this.serverPort = serverPort;
-		 this.user = user;
 		try {
 			socket = new Socket(ip, serverPort);
 			toServer = new ObjectOutputStream(socket.getOutputStream());
@@ -75,18 +75,18 @@ public class Client {
 			messageReceivers.add("Kalle");
 			messageReceivers.add("Balle");
 			messageReceivers.add("Nalle");
-			Message msg1 = new Message(user, messageReceivers, "meddelandet");
+//			Message msg1 = new Message(user, messageReceivers, "meddelandet");
 
 			
 			/*
 			 * s� fort en klient skapas, skickar den sin User-info till servern s� att
 			 * serven vet vilken user som loggar in. Detta ska bara ske en g�ng.
 			 */
-			try {
-				toServer.writeObject(user);
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
+//			try {
+////				toServer.writeObject(user);
+//			} catch (IOException e1) {
+//				e1.printStackTrace();
+//			}
 			
 
 
@@ -95,7 +95,7 @@ public class Client {
 			 * meddelanden fr�n server
 			 */
 			while (true) {
-				sendMessage(msg1);
+//				sendMessage(msg1);
 				try {
 					Thread.sleep(5000);
 				} catch (Exception e) {
@@ -106,6 +106,25 @@ public class Client {
 			}
 		}
 
+	}
+	
+	public static void main(String[] args) {
+		Client client1 = new Client("127.0.0.1", 4447);
+		
+//		 Client client2 = new Client("127.0.0.1",4447, new User("Nalle"));
+		// Client client3 = new Client("127.0.0.1",4447);
+	}
+
+
+	public void sendNewUser(String tfNewUsername, ImageIcon icon) {
+		try {
+			User user = new User(tfNewUsername, icon);
+			toServer.writeObject(user);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
 	}
 
 }
