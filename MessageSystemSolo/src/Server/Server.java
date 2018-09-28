@@ -3,11 +3,15 @@ package Server;
 import java.io.*;
 import java.net.*;
 import java.util.*;
+
+import javax.swing.ImageIcon;
+
 import Client.Message;
 
 public class Server {
 	private Clients cl = new Clients();
 	private ArrayList<Message> unsentMessages = new ArrayList<>();
+	private TrafficLogger logger;
 
 	/**
 	 * Creates the server in the requested port and instantiates a ServerSocket.
@@ -18,6 +22,11 @@ public class Server {
 	 *            the port to connect to
 	 */
 	public Server(int serverPort) {
+		logger = TrafficLogger.getInstance();
+		logger.saveToLog("Logger started");
+		System.out.println(logger.getLog());
+		
+
 		try {
 			ServerSocket serverSocket = new ServerSocket(serverPort);
 			System.out.println("Waiting for client on port " + serverSocket.getLocalPort() + "...");
@@ -79,6 +88,10 @@ public class Server {
 		cl.get(user).sendMessage(msg);
 
 	}
+	
+	public void registerUser(String name, ImageIcon icon) {
+		
+	}
 
 	/**
 	 * Inner-class which handles the list of online users.
@@ -88,7 +101,7 @@ public class Server {
 	 */
 	private class Clients {
 
-		/* HashMap för att en användare ska associeras till en klient */
+		/* HashMap fï¿½r att en anvï¿½ndare ska associeras till en klient */
 		private HashMap<User, ClientHandler> onlineUsers = new HashMap<User, ClientHandler>();
 
 		/**
@@ -101,7 +114,13 @@ public class Server {
 		 *            value to be associated with the specified key
 		 */
 		public synchronized void put(User user, ClientHandler clientHandler) {
+			if(getUser(user.getName()).equals(null)) { // nullpointer
 			onlineUsers.put(user, clientHandler);
+			} else {
+				Random rand = new Random();
+				String temp = user.getName() + rand.nextInt(99);
+				user.setName(temp);
+			}
 		}
 
 		/**
@@ -198,12 +217,13 @@ public class Server {
 		}
 
 		public void sendMessage(Message msg) {
-			try {
-				System.out.println("skickar vidare till klient..");
-				toClient.writeObject(msg);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			System.out.println("skickar vidare till klient..");
+
+//			try {
+//				toClient.writeObject(msg);
+//			} catch (IOException e) {
+//				e.printStackTrace();
+//			}
 		}
 
 		public void run() {
@@ -211,8 +231,8 @@ public class Server {
 			try {
 
 				/*
-				 * det första som görs är att användaren läggs till i hashmap för att indikera
-				 * att den användare är online
+				 * det fï¿½rsta som gï¿½rs ï¿½r att anvï¿½ndaren lï¿½ggs till i hashmap fï¿½r att indikera
+				 * att den anvï¿½ndare ï¿½r online
 				 */
 				user = (User) fromClient.readObject();
 				cl.put(user, this);
@@ -222,7 +242,7 @@ public class Server {
 					try {
 						if (obj instanceof Message) {
 							readMessage(obj);
-							// anropa metod som läser av & skickar till online receivers
+							// anropa metod som lï¿½ser av & skickar till online receivers
 							// anropa metod som loggar?
 							// anropa metod som sparar meddelande till offline receivers
 						}
@@ -253,11 +273,6 @@ public class Server {
 				e.printStackTrace();
 			}
 		}
-	}
-
-	public static void main(String[] args) {
-		Server srv = new Server(4447);
-		// Server srv = new Server();
 	}
 
 }
