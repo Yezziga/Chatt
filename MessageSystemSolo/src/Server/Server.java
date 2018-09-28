@@ -114,7 +114,7 @@ public class Server {
 		 *            value to be associated with the specified key
 		 */
 		public synchronized void put(User user, ClientHandler clientHandler) {
-			if(getUser(user.getName()).equals(null)) { // nullpointer
+			if(getUser(user.getName()) == null) { 
 			onlineUsers.put(user, clientHandler);
 			} else {
 				Random rand = new Random();
