@@ -114,17 +114,17 @@ public class Client {
 //		 Client client2 = new Client("127.0.0.1",4447, new User("Nalle"));
 		// Client client3 = new Client("127.0.0.1",4447);
 	}
+	
+	
 
-
-	public void sendNewUser(String tfNewUsername, ImageIcon icon) {
-		try {
-			User user = new User(tfNewUsername, icon);
-			toServer.writeObject(user);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		
-	}
+	//may be implemented, but not req.
+//	public void sendNewUser(String tfNewUsername, ImageIcon icon) {
+//		try {
+//			User user = new User(tfNewUsername, icon);
+//			toServer.writeObject(user);
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//	}
 
 }

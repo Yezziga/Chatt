@@ -1,5 +1,7 @@
 package Chatt;
 
+import Client.Client;
+
 /**
  * This class is used for testing the application
  * @author Henrik Olofsson
@@ -11,7 +13,7 @@ public class TestChatt {
 		ConnectedUI cui = new ConnectedUI();
 //		StartScreenUI ssui = new StartScreenUI();
 		UserListLayout ull = new UserListLayout();
-//		window.add(ssui);
+		window.add(cui);
 		window.pack();
 	}
 

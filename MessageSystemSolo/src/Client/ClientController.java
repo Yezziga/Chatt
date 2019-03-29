@@ -31,10 +31,9 @@ public class ClientController {
 		client.disconnect();
 	}
 
-	public void sendNewUser(String tfNewUsername, ImageIcon icon) {
-		client.sendNewUser(tfNewUsername, icon);
-//		System.out.println("bla");
-		
-	}
+	//may be implemented, but not req.
+//	public void sendNewUser(String tfNewUsername, ImageIcon icon) {
+//		client.sendNewUser(tfNewUsername, icon);
+//	}
 
 }

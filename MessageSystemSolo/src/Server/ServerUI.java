@@ -47,4 +47,8 @@ public class ServerUI {
 		frame.setResizable(false); // Prevent user from change size
 		frame.setLocationRelativeTo(null); // Start middle screen
 	}
+	
+	public static void main(String[] args) {
+		new ServerUI();
+	}
 }

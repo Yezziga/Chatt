@@ -22,9 +22,9 @@ public class Server {
 	 *            the port to connect to
 	 */
 	public Server(int serverPort) {
-		logger = TrafficLogger.getInstance();
-		logger.saveToLog("Logger started");
-		System.out.println(logger.getLog());
+//		logger = TrafficLogger.getInstance();
+//		logger.saveToLog("Logger started");
+//		System.out.println(logger.getLog());
 		
 
 		try {
@@ -89,9 +89,9 @@ public class Server {
 
 	}
 	
-	public void registerUser(String name, ImageIcon icon) {
-		
-	}
+	//may be implemented, but not required
+//	public void registerUser(String name, ImageIcon icon) {
+//	}
 
 	/**
 	 * Inner-class which handles the list of online users.

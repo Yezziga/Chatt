@@ -50,6 +50,7 @@ public class StartScreenUI extends JPanel implements ActionListener {
 		btnCreateUser = new JButton("Create User");
 		btnCreateUser.setBounds(35, 221, 139, 25);
 		add(btnCreateUser);
+		
 
 		tfNewUsername = new JTextField();
 		tfNewUsername.setBounds(35, 163, 170, 22);
@@ -129,11 +130,11 @@ public class StartScreenUI extends JPanel implements ActionListener {
 		}
 		
 		// create a user if there is an input
-		if ((e.getSource() == btnCreateUser) && !(getTfNewUsername().isEmpty()) && (image!=null)) {
-			System.out.println("En user skapas");
-			controller.sendNewUser(tfNewUsername.getText(), image);
-			
-		}
+//		if ((e.getSource() == btnCreateUser) && !(getTfNewUsername().isEmpty()) && (image!=null)) {
+//			System.out.println("En user skapas");
+////			controller.sendNewUser(tfNewUsername.getText(), image);
+//			
+//		}
 
 	}
 }
