@@ -117,14 +117,15 @@ public class Client {
 	
 	
 
-	//may be implemented, but not req.
-//	public void sendNewUser(String tfNewUsername, ImageIcon icon) {
-//		try {
-//			User user = new User(tfNewUsername, icon);
-//			toServer.writeObject(user);
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//	}
+	public void connectUser(String username, ImageIcon icon) {
+		try {
+			User user = new User(username, icon);
+			toServer.writeObject(user);
+			toServer.flush();
+		
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
 }

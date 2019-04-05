@@ -22,10 +22,9 @@ public class Server {
 	 *            the port to connect to
 	 */
 	public Server(int serverPort) {
-//		logger = TrafficLogger.getInstance();
-//		logger.saveToLog("Logger started");
-//		System.out.println(logger.getLog());
-		
+		// logger = TrafficLogger.getInstance();
+		// logger.saveToLog("Logger started");
+		// System.out.println(logger.getLog());
 
 		try {
 			ServerSocket serverSocket = new ServerSocket(serverPort);
@@ -56,6 +55,13 @@ public class Server {
 		unsentMessages.add(message);
 	}
 
+	/**
+	 * Forwards the message-object to receivers who are online, and updates the list
+	 * of receivers
+	 * 
+	 * @param message
+	 *            the message to send
+	 */
 	public void checkReceiversAndOnliners(Message message) {
 		ArrayList<String> onlineUsers = cl.getAllOnlineUsers();
 		ArrayList<String> listOfReceivers = message.getReceivers();
@@ -72,13 +78,13 @@ public class Server {
 					break;
 				}
 			}
-			if (!receiverFound) {
+			if (receiverFound == false) {
 				tempList.add(receiverOnList);
 				System.out.println(receiverOnList + " is not online");
 			}
 		}
 		if (!tempList.isEmpty()) {
-			message.setReceiver(tempList);
+			message.setReceiver(tempList); // ersätt med ny lista (de som är offline)
 			unsentMessages.add(message);
 		}
 	}
@@ -88,10 +94,10 @@ public class Server {
 		cl.get(user).sendMessage(msg);
 
 	}
-	
-	//may be implemented, but not required
-//	public void registerUser(String name, ImageIcon icon) {
-//	}
+
+	// may be implemented, but not required
+	// public void registerUser(String name, ImageIcon icon) {
+	// }
 
 	/**
 	 * Inner-class which handles the list of online users.
@@ -114,9 +120,21 @@ public class Server {
 		 *            value to be associated with the specified key
 		 */
 		public synchronized void put(User user, ClientHandler clientHandler) {
-			if(getUser(user.getName()).equals(null)) { // nullpointer
-			onlineUsers.put(user, clientHandler);
+			if (getUser(user.getName()).equals(null)) { // nullpointer
+				onlineUsers.put(user, clientHandler);
+
+				// send messages to user if there are any unsent messages
+				for (Message message : unsentMessages) {
+					for (String receiver : message.getReceivers()) {
+						if(receiver.equals(user.getName())) {
+							clientHandler.sendMessage(message);
+							break;
+						}
+					}
+				}
+
 			} else {
+				// provide a new username if chosen username already exists 
 				Random rand = new Random();
 				String temp = user.getName() + rand.nextInt(99);
 				user.setName(temp);
@@ -124,15 +142,20 @@ public class Server {
 		}
 
 		/**
-		 * 
+		 * Returns the clientHandler mapped with the specified user
 		 * 
 		 * @param user
-		 * @return
+		 * @return the clientHandler mapped with this user
 		 */
 		public synchronized ClientHandler get(User user) {
 			return onlineUsers.get(user);
 		}
 
+		/**
+		 * Returns the user-object which has this name
+		 * @param name 
+		 * @return the user with this name
+		 */
 		public synchronized User getUser(String name) {
 			for (User user : onlineUsers.keySet()) {
 				if (user.getName().matches(name)) {
@@ -203,7 +226,7 @@ public class Server {
 		}
 
 		/**
-		 * Reads a message from a client and adds all receivers in a stored list.
+		 * Reads a message from a client and attempts to forward it to receivers..
 		 * 
 		 * @param obj
 		 *            the message-object
@@ -212,18 +235,19 @@ public class Server {
 		 */
 		public void readMessage(Object obj) throws ClassNotFoundException, IOException {
 			Message msg = (Message) fromClient.readObject();
-	
+
 			checkReceiversAndOnliners(msg);
 		}
 
 		public void sendMessage(Message msg) {
-			System.out.println("skickar vidare till klient..");
 
-//			try {
-//				toClient.writeObject(msg);
-//			} catch (IOException e) {
-//				e.printStackTrace();
-//			}
+			try {
+				toClient.writeObject(msg);
+				toClient.flush();
+				System.out.println("skickat vidare till klient..");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 
 		public void run() {
@@ -232,7 +256,7 @@ public class Server {
 
 				/*
 				 * det f�rsta som g�rs �r att anv�ndaren l�ggs till i hashmap f�r att indikera
-				 * att den anv�ndare �r online
+				 * att den anv�ndare �r online Kollar INTE om namn redan finns
 				 */
 				user = (User) fromClient.readObject();
 				cl.put(user, this);
