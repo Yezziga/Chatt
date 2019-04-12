@@ -15,6 +15,10 @@ public class ClientController {
 	private ConnectedUI cui;
 	private JFrame frame;
 
+	/**
+	 * Constructor which creates the startup window.
+	 * @param client the client which this controller is handling
+	 */
 	public ClientController(Client client) {
 		this.client = client;
 		frame = new JFrame();
@@ -29,10 +33,19 @@ public class ClientController {
 		
 	}
 	
+	/**
+	 * Exits the application.
+	 */
 	public void disconnectClient() {
 		client.disconnect();
+		frame.dispose();
 	}
 
+	/**
+	 * Forwards the user-input to the server and switches to the next panel
+	 * @param tfNewUsername
+	 * @param icon
+	 */
 	public void sendUser(String tfNewUsername, ImageIcon icon) {
 		client.connectUser(tfNewUsername, icon);
 		cui = new ConnectedUI(this);

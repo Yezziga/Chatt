@@ -19,6 +19,11 @@ public class Client {
 	private ObjectOutputStream toServer;
 	private Socket socket;
 
+	/**
+	 * Constructor which creates connections to the server
+	 * @param ip 
+	 * @param serverPort the port to the server
+	 */
 	public Client(String ip, int serverPort) {
 		this.serverPort = serverPort;
 		try {
@@ -26,7 +31,6 @@ public class Client {
 			toServer = new ObjectOutputStream(socket.getOutputStream());
 			fromServer = new ObjectInputStream(socket.getInputStream());
 		} catch (IOException e) {
-
 			System.out.println("FETT FEL");
 			e.printStackTrace();
 		}
@@ -36,6 +40,11 @@ public class Client {
 
 	}
 
+	/**
+	 * Creates a User-object with the given username and image, and forwards it to the server.
+	 * @param username the given user name
+	 * @param icon the given image
+	 */
 	public void connectUser(String username, ImageIcon icon) {
 		try {
 			User user = new User(username, icon);
@@ -47,6 +56,9 @@ public class Client {
 		}
 	}
 
+	/**
+	 * Closes the connection to the server.
+	 */
 	public void disconnect() {
 		try {
 			socket.close();
@@ -75,28 +87,27 @@ public class Client {
 
 	private class Listener extends Thread {
 		public void run() {
-			ArrayList<String> messageReceivers = new ArrayList<>();
+			ArrayList<String> messageReceivers = new ArrayList<>(); // test purpose
 			messageReceivers.add("Kalle");
 			messageReceivers.add("Balle");
 			messageReceivers.add("Nalle");
 			// Message msg1 = new Message(user, messageReceivers, "meddelandet");
 
 			/**
-			 * h�r b�r klienten lyssna efter uppdateringar av listor & inkommande
-			 * meddelanden fr�n server
+			 * Listens for input from the server
 			 */
 			while (true) {
 				// sendMessage(msg1);
 				try {
 					Object obj = fromServer.readObject();
 
-					if (obj instanceof ArrayList<?>) {
+					if (obj instanceof ArrayList<?>) { // still in progress, does not know difference between online-list and contacts-list! also not fully tested
 						@SuppressWarnings("unchecked")
 						ArrayList<String> arr = (ArrayList<String>) obj;
 						controller.updateOnlineList(arr);
 					} else if (obj instanceof Message) {
 						Message msg = (Message) obj;
-						readMessage(msg);
+						readMessage(msg); // does not do anything yet
 					}
 					
 					
@@ -106,10 +117,8 @@ public class Client {
 					e1.printStackTrace();
 				}
 				
-
-				// disconnectClient();
 				try {
-					Thread.sleep(5000);
+					Thread.sleep(5000); // not needed?
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}

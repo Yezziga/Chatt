@@ -9,7 +9,7 @@ import javax.swing.ImageIcon;
 import Client.Message;
 
 public class Server {
-	private Clients cl = new Clients();
+	private Clients cl = new Clients(); // inner class
 	private ArrayList<Message> unsentMessages = new ArrayList<>();
 	private TrafficLogger logger;
 
@@ -47,25 +47,25 @@ public class Server {
 	}
 
 	/**
-	 * Adds a message-object to the list of unsent messages.
+	 * Adds a Message-object to the list of unsent messages.
 	 * 
-	 * @param message
+	 * @param message the Message-object to add to the list
 	 */
 	public void addMessageToUnsentList(Message message) {
 		unsentMessages.add(message);
 	}
 
 	/**
-	 * Forwards the message-object to receivers who are online, and updates the Message-object's list
-	 * of receivers
+	 * Forwards the Message-object to receivers who are online, and updates the Message-object's list
+	 * of receivers. If there are still receivers left, the Message-object will be added to the list of unsent messages.
 	 * 
 	 * @param message
 	 *            the message to send
 	 */
 	public void checkReceiversAndOnliners(Message message) {
-		ArrayList<String> onlineUsers = cl.getAllOnlineUsers();
+		ArrayList<String> onlineUsers = cl.getAllOnlineUsers(); // list with online users
 		ArrayList<String> listOfReceivers = message.getReceivers();
-		ArrayList<String> tempList = new ArrayList<String>();
+		ArrayList<String> tempList = new ArrayList<String>(); // new list with offline receivers
 
 		for (String receiverOnList : listOfReceivers) {
 			boolean receiverFound = false;
@@ -112,8 +112,7 @@ public class Server {
 	 */
 	private class Clients {
 
-		/* HashMap f�r att en anv�ndare ska associeras till en klient */
-		private HashMap<User, ClientHandler> onlineUsers = new HashMap<User, ClientHandler>();
+		private HashMap<User, ClientHandler> onlineUsers = new HashMap<User, ClientHandler>(); // HashMap which contains users and their handlers
 
 		/**
 		 * Associates the specified user with the specified clientHandler-thread in this
@@ -126,11 +125,10 @@ public class Server {
 		 */
 		public synchronized void put(User user, ClientHandler clientHandler) {
 			
-			if (!usernameUsed(user.getName())) { 
 				onlineUsers.put(user, clientHandler);
 				System.out.println(user.getName() + " tillagd");
 
-				// send messages to user if there are any unsent messages
+				// send messages to user if there are any unsent messages. not tested!
 				for (Message message : unsentMessages) {
 					for (String receiver : message.getReceivers()) {
 						if(receiver.equals(user.getName())) {
@@ -139,39 +137,13 @@ public class Server {
 						}
 					}
 				}
-
-			} else {
-				// provide a new username if chosen username already exists 
-				// EJ IMPLEMENTERAD - ANROP!
-				Random rand = new Random();
-				String temp = user.getName() + rand.nextInt(99);
-				user.setName(temp);
-			}
 //			updateOnlineList();
-		}
-
-		/**
-		 * Checks if the username is being used or not.
-		 * 
-		 * @param usrname
-		 *            the username to check
-		 * @return true if the username is unavailable, and false is the username is
-		 *         available for use.
-		 */
-		public synchronized boolean usernameUsed(String usrname) {
-			for (String name : getAllOnlineUsers()) {
-				if (name.equals(usrname)) {
-					return true;
-				}
-			}
-
-			return false;
 		}
 
 		/**
 		 * Returns the clientHandler mapped with the specified user
 		 * 
-		 * @param user
+		 * @param user 
 		 * @return the clientHandler mapped with this user
 		 */
 		public synchronized ClientHandler get(User user) {
@@ -222,7 +194,7 @@ public class Server {
 
 	/**
 	 * Thread which listens for and responds to a client's requests. This
-	 * inner-class updates the connected clients...
+	 * inner-class updates the connected clients.
 	 * 
 	 * @author Jessica
 	 *
@@ -253,19 +225,7 @@ public class Server {
 
 		}
 
-		/**
-		 * Reads a message from a client and attempts to forward it to receivers..
-		 * 
-		 * @param obj
-		 *            the message-object
-		 * @throws ClassNotFoundException
-		 * @throws IOException
-		 */
-		public void readMessage(Object obj) throws ClassNotFoundException, IOException {
-			Message msg = (Message) fromClient.readObject();
 
-			checkReceiversAndOnliners(msg);
-		}
 
 		public void sendMessage(Message msg) {
 
@@ -304,10 +264,8 @@ public class Server {
 					Object obj = fromClient.readObject();
 					try {
 						if (obj instanceof Message) {
-							readMessage(obj);
-							// anropa metod som l�ser av & skickar till online receivers
-							// anropa metod som loggar?
-							// anropa metod som sparar meddelande till offline receivers
+							Message msg = (Message) obj;
+							checkReceiversAndOnliners(msg);
 						}
 					} catch (Exception e) {
 						System.err.println(e);
@@ -326,6 +284,9 @@ public class Server {
 
 		}
 
+		/**
+		 * Disconnects the client from the server and closes all connections to it.
+		 */
 		private void disconnectClient() {
 			try {
 				clientSocket.close();
