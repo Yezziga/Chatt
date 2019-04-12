@@ -12,7 +12,7 @@ import Client.Message;
 //Skriv gärna vad klassen gör och vem som skrivit den
 public class User implements Serializable {
 	private String name;
-	private ImageIcon picture;
+	private ImageIcon picture = null;
 
 	public User(String username) {
 		this.name = username;

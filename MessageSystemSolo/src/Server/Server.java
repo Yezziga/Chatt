@@ -56,7 +56,7 @@ public class Server {
 	}
 
 	/**
-	 * Forwards the message-object to receivers who are online, and updates the list
+	 * Forwards the message-object to receivers who are online, and updates the Message-object's list
 	 * of receivers
 	 * 
 	 * @param message
@@ -89,15 +89,20 @@ public class Server {
 		}
 	}
 
+	/**
+	 * Sends a Message-object to the user with the specified name
+	 * @param msg the message to send
+	 * @param name the name of the user
+	 */
 	public void sendMessageToOnlineUser(Message msg, String name) {
 		User user = cl.getUser(name);
 		cl.get(user).sendMessage(msg);
 
 	}
-
-	// may be implemented, but not required
-	// public void registerUser(String name, ImageIcon icon) {
-	// }
+	
+	public void updateOnlineList() {
+		
+	}
 
 	/**
 	 * Inner-class which handles the list of online users.
@@ -112,7 +117,7 @@ public class Server {
 
 		/**
 		 * Associates the specified user with the specified clientHandler-thread in this
-		 * map.
+		 * map. Sends pending messages to this user if there are any.
 		 * 
 		 * @param user
 		 *            key with which the specified value is to be associated
@@ -120,8 +125,10 @@ public class Server {
 		 *            value to be associated with the specified key
 		 */
 		public synchronized void put(User user, ClientHandler clientHandler) {
-			if (getUser(user.getName()).equals(null)) { // nullpointer
+			
+			if (!usernameUsed(user.getName())) { 
 				onlineUsers.put(user, clientHandler);
+				System.out.println(user.getName() + " tillagd");
 
 				// send messages to user if there are any unsent messages
 				for (Message message : unsentMessages) {
@@ -135,10 +142,30 @@ public class Server {
 
 			} else {
 				// provide a new username if chosen username already exists 
+				// EJ IMPLEMENTERAD - ANROP!
 				Random rand = new Random();
 				String temp = user.getName() + rand.nextInt(99);
 				user.setName(temp);
 			}
+//			updateOnlineList();
+		}
+
+		/**
+		 * Checks if the username is being used or not.
+		 * 
+		 * @param usrname
+		 *            the username to check
+		 * @return true if the username is unavailable, and false is the username is
+		 *         available for use.
+		 */
+		public synchronized boolean usernameUsed(String usrname) {
+			for (String name : getAllOnlineUsers()) {
+				if (name.equals(usrname)) {
+					return true;
+				}
+			}
+
+			return false;
 		}
 
 		/**
@@ -153,7 +180,8 @@ public class Server {
 
 		/**
 		 * Returns the user-object which has this name
-		 * @param name 
+		 * 
+		 * @param name
 		 * @return the user with this name
 		 */
 		public synchronized User getUser(String name) {
@@ -249,6 +277,15 @@ public class Server {
 				e.printStackTrace();
 			}
 		}
+		
+		public void sendOnlineList() {
+			try {
+				toClient.writeObject(cl.getAllOnlineUsers());
+				toClient.flush();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 
 		public void run() {
 
@@ -260,6 +297,8 @@ public class Server {
 				 */
 				user = (User) fromClient.readObject();
 				cl.put(user, this);
+				sendOnlineList();
+				
 
 				while (true) {
 					Object obj = fromClient.readObject();

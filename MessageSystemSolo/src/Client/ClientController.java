@@ -1,16 +1,18 @@
 package Client;
 
 import java.awt.Dimension;
+import java.util.ArrayList;
 
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
+import Chatt.ConnectedUI;
 import Chatt.StartScreenUI;
 
 public class ClientController {
 	private Client client;
-	private static StartScreenUI ssui;
+	private StartScreenUI ssui;
+	private ConnectedUI cui;
 	private JFrame frame;
 
 	public ClientController(Client client) {
@@ -33,6 +35,15 @@ public class ClientController {
 
 	public void sendUser(String tfNewUsername, ImageIcon icon) {
 		client.connectUser(tfNewUsername, icon);
+		cui = new ConnectedUI(this);
+		cui.setLblUser(tfNewUsername); // kanske får nytt namn av server
+		frame.remove(ssui);
+		frame.add(cui);
+		frame.pack();	
+	}
+	
+	public void updateOnlineList(ArrayList<String> onlineUsers) {
+//		cui.setOnlineList(onlineUsers);
 	}
 
 }

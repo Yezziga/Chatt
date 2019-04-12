@@ -10,10 +10,10 @@ import Client.Client;
 public class TestChatt {
 	public static void main(String[] args) {
 		ChattWindow window = new ChattWindow("Chatt");
-		ConnectedUI cui = new ConnectedUI();
+//		ConnectedUI cui = new ConnectedUI();
 //		StartScreenUI ssui = new StartScreenUI();
 		UserListLayout ull = new UserListLayout();
-		window.add(cui);
+//		window.add(cui);
 		window.pack();
 	}
 

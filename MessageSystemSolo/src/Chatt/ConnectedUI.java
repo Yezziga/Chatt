@@ -2,6 +2,9 @@ package Chatt;
 
 import java.awt.Font;
 import java.awt.SystemColor;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import javax.swing.JLabel;
 import javax.swing.JList;
@@ -16,6 +19,9 @@ import java.awt.ScrollPane;
 import javax.swing.JScrollBar;
 import javax.swing.JTextField;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
+import Client.ClientController;
 
 import java.awt.Color;
 import javax.swing.JButton;
@@ -28,7 +34,7 @@ import javax.swing.JFileChooser;
  * @author Henrik Olofsson
  *
  */
-public class ConnectedUI extends JPanel {
+public class ConnectedUI extends JPanel implements ActionListener {
 	private JTextField textField;
 	private JMenuBar menuBar;
 	private JMenu mnUsers;
@@ -37,10 +43,14 @@ public class ConnectedUI extends JPanel {
 	private JLabel lblYouAreSigned;
 	private JScrollPane spLeft;
 	private JScrollPane spRight;
+	private JTextArea leftDisplay, rightDisplay;
 	private JLabel lblYouAreChatting;
 	private JButton btnSend;
+	private ClientController controller;
+	private ArrayList<String> onlineUsers, contacts;
 
-	public ConnectedUI() {
+	public ConnectedUI(ClientController controller) {
+		this.controller = controller;
 		setBackground(SystemColor.textHighlight);
 		setLayout(null);
 
@@ -64,17 +74,17 @@ public class ConnectedUI extends JPanel {
 		lblYouAreSigned.setBounds(10, 39, 253, 16);
 		add(lblYouAreSigned);
 
-		spLeft = new JScrollPane();
-		spLeft.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-		spLeft.setBounds(10, 80, 250, 570);
-		add(spLeft);
+		leftDisplay = new JTextArea();
+		rightDisplay = new JTextArea();
+		leftDisplay.setEditable(false);
+		leftDisplay.setText("blalala");
 
 		// userList = new UserList(); //Ändra sen!!!
 		// scrollPane.setViewportView(userList.getUserLayout()); //!! ska iterera genom
 		// lista och hämta userlistlayout
 
-		JList list = new JList();
-		spLeft.setViewportView(list);
+//		JList list = new JList();
+//		spLeft.setViewportView(list);
 
 		lblYouAreChatting = new JLabel("You are chatting with: ");
 		lblYouAreChatting.setForeground(SystemColor.textHighlightText);
@@ -92,10 +102,65 @@ public class ConnectedUI extends JPanel {
 		add(textField);
 		textField.setColumns(10);
 
-		spRight = new JScrollPane();
+		spLeft = new JScrollPane(leftDisplay);
+		spLeft.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		spLeft.setBounds(10, 80, 250, 570);
+		add(spLeft);
+
+		spRight = new JScrollPane(rightDisplay);
 		spRight.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		spRight.setBounds(289, 120, 456, 510);
 		add(spRight);
 
+		mntmOnlineUsers.addActionListener(this);
+		mntmContacts.addActionListener(this);
+		btnSend.addActionListener(this);
+
 	}
+
+	/**
+	 * Sets the username to the label.
+	 * 
+	 * @param str
+	 *            the username
+	 */
+	public void setLblUser(String str) {
+		String temp = "You are signed in as: " + str;
+		lblYouAreSigned.setText(temp);
+	}
+	
+	public void setLblChattingWith(String str) {
+		String temp = "You are chatting with: " + str;
+		lblYouAreChatting.setText(temp);
+	}
+
+	public void setOnlineList(ArrayList<String> onlineUsers) {
+		this.onlineUsers = onlineUsers;
+
+	}
+
+	public void setContactsList(ArrayList<String> contacts) {
+		this.contacts = contacts;
+	}
+
+	private void changeLeftDisplay(ArrayList<String> arr) {
+		String str = "";
+		for (String string : arr) {
+			str += string + "\n";
+		}
+//		leftDisplay.setText(str);
+		leftDisplay.setText("lista lalalla");
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() ==  mntmOnlineUsers) {
+			changeLeftDisplay(onlineUsers);
+		}
+		if (e.getSource() == mntmContacts) {
+			changeLeftDisplay(contacts);
+		}
+	}
+
 }
