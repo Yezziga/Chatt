@@ -100,22 +100,20 @@ public class Server {
 
 	}
 	
-	public void updateOnlineList() {
-		
-	}
-	
 	public void updateAllClients() {
+		ArrayList<User> tempList = null;
 		  Iterator it = cl.onlineUsers.entrySet().iterator();
 		    while (it.hasNext()) {
 		        Map.Entry pair = (Map.Entry)it.next();
 		        ClientHandler ch = (ClientHandler) pair.getValue();
 		        try {
-					ch.toClient.writeObject(cl.getAllOnlineUsers());
+		        	tempList = cl.getAllOnlineUsers();
+		        	tempList.remove(pair.getKey());
+					ch.toClient.writeObject(tempList);
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-//		        it.remove(); // avoids a ConcurrentModificationException
+
 		    }
 		
 	}
@@ -146,14 +144,14 @@ public class Server {
 				allUsers.put(user, clientHandler);
 				updateAllClients();
 				// send messages to user if there are any unsent messages. not tested!
-				for (Message message : unsentMessages) {
-					for (String receiver : message.getReceivers()) {
-						if(receiver.equals(user.getName())) {
-							clientHandler.sendMessage(message);
-							break;
-						}
-					}
-				}
+//				for (Message message : unsentMessages) {
+//					for (String receiver : message.getReceivers()) {
+//						if(receiver.equals(user.getName())) {
+//							clientHandler.sendMessage(message);
+//							break;
+//						}
+//					}
+//				}
 
 		}
 
@@ -191,6 +189,7 @@ public class Server {
 		 */
 		public synchronized void remove(User user) {
 			onlineUsers.remove(user);
+			updateAllClients();
 		}
 
 		/**
@@ -203,7 +202,7 @@ public class Server {
 
 			for (User user : onlineUsers.keySet()) {
 				listOnliners.add(user);
-				System.out.println(user.getName());
+				System.out.print(user.getName() + " ");
 			}
 
 			return listOnliners;
@@ -294,10 +293,7 @@ public class Server {
 				 */
 				user = (User) fromClient.readObject();
 				cl.put(user, this);
-				toClient.writeObject(cl.getAllUsers());
-				
-				
-
+								
 				while (true) {
 					Object obj = fromClient.readObject();
 					try {
@@ -313,7 +309,7 @@ public class Server {
 			} catch (Exception e1) {
 				if (e1 instanceof SocketException) {
 					disconnectClient();
-					System.out.println("controllern stoppad");
+					System.out.println("client-controller stoppad");
 				} else {
 					System.err.println(e1);
 				}
@@ -327,10 +323,10 @@ public class Server {
 		 */
 		private void disconnectClient() {
 			try {
+				cl.remove(user);
 				clientSocket.close();
 				toClient.close();
 				fromClient.close();
-				cl.remove(user);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

@@ -116,6 +116,8 @@ public class Client {
 								controller.updateAllUsers(arr);
 								System.out.println(obj);
 							}
+						} else if (((ArrayList<?>) obj).isEmpty()) {
+							controller.clear();
 						}
 					}
 

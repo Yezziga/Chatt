@@ -47,18 +47,18 @@ public class ClientController {
 
 	/**
 	 * Forwards the user-input to the server and switches to the next panel
-	 * @param tfNewUsername
+	 * @param tfUsername
 	 * @param icon
 	 */
-	public void sendUser(String tfNewUsername, ImageIcon icon) {
+	public void sendUser(String tfUsername, ImageIcon icon) {
 		/*client.connectUser(tfNewUsername, icon);
 		cui = new ConnectedUI(this);
 		cui.setLblUser(tfNewUsername); // kanske får nytt namn av server
 		frame.remove(ssui);
 		frame.add(cui);
 		frame.pack();	*/
-		client.connectUser(tfNewUsername, icon);
-
+		client.connectUser(tfUsername, icon);
+		tcui.setLblUser(tfUsername);
 		frame.remove(ssui);
 		frame.add(tcui);
 		frame.pack();
@@ -73,6 +73,11 @@ public class ClientController {
 		tcui.clearList();
 		tcui.setAllUsers(arr); 
 		System.out.println("USERS IN CLIENT CONTROLLER SET");
+	}
+
+	public void clear() {
+		tcui.clearList();
+		
 	}
 
 

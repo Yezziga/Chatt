@@ -46,7 +46,6 @@ public class TestConnectedUI extends JPanel {
 	private void updateList() {
 		pnlScrollPaneAll.removeAll();
 		for(User u : listOfAllUsers) {
-			System.out.println(u + " user finns");
 			userListLayout = new UserListLayout(u.getName(), u.getPicture());
 			userListLayout.setMaximumSize(new Dimension(300, 100));
 			layoutList.add(userListLayout);
@@ -113,5 +112,16 @@ public class TestConnectedUI extends JPanel {
 		if(listOfAllUsers != null) {
 			listOfAllUsers.clear();
 		}
+	}
+	
+	/**
+	 * Sets the username to the label.
+	 * 
+	 * @param str
+	 *            the username
+	 */
+	public void setLblUser(String str) {
+		String temp = "You are signed in as: " + str;
+		lblSignedAs.setText(temp);
 	}
 }
