@@ -66,12 +66,12 @@ public class ClientController {
 	
 	public void updateOnlineList(ArrayList<String> onlineUsers) {
 //		cui.setOnlineList(onlineUsers);
-	}
+	} 
 
 	public void updateAllUsers(ArrayList<User> arr) {
 		this.allUsers = arr;
 		tcui.clearList();
-		tcui.setAllUsers(arr);
+		tcui.setAllUsers(arr); 
 		System.out.println("USERS IN CLIENT CONTROLLER SET");
 	}
 

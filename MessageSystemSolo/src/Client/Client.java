@@ -110,29 +110,29 @@ public class Client {
 					if (obj instanceof ArrayList<?>) { // still in progress, does not know difference between
 														// online-list and contacts-list! also not fully tested
 						System.out.println(obj);
-						if(!((ArrayList<?>) obj).isEmpty()) {
-							if(((ArrayList<?>) obj).get(0) instanceof User) {
+						if (!((ArrayList<?>) obj).isEmpty()) {
+							if (((ArrayList<?>) obj).get(0) instanceof User) {
 								ArrayList<User> arr = (ArrayList<User>) obj;
 								controller.updateAllUsers(arr);
 								System.out.println(obj);
 							}
-						} 
 						}
-						
-//						@SuppressWarnings("unchecked")
-//						ArrayList<String> arr = (ArrayList<String>) obj;
-//						if (arr.get(arr.size()-1).equals("*")) {
-//							arr.remove(arr.size()-1);
-//							for (String string : arr) {
-//								System.out.println(string);
-//							}
-//							
-////							controller.updateOnlineList(arr);
-//						} 
-//					} else if (obj instanceof Message) {
-//						Message msg = (Message) obj;
-//						readMessage(msg); // does not do anything yet
-//					} 
+					}
+
+					// @SuppressWarnings("unchecked")
+					// ArrayList<String> arr = (ArrayList<String>) obj;
+					// if (arr.get(arr.size()-1).equals("*")) {
+					// arr.remove(arr.size()-1);
+					// for (String string : arr) {
+					// System.out.println(string);
+					// }
+					//
+					//// controller.updateOnlineList(arr);
+					// }
+					// } else if (obj instanceof Message) {
+					// Message msg = (Message) obj;
+					// readMessage(msg); // does not do anything yet
+					// }
 
 				} catch (ClassNotFoundException e1) {
 					e1.printStackTrace();

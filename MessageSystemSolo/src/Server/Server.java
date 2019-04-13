@@ -209,6 +209,10 @@ public class Server {
 			return listOnliners;
 		}
 		
+		/**
+		 * Returns a list of all users of the application
+		 * @return
+		 */
 		public ArrayList<User> getAllUsers() {
 			ArrayList<User> arr = new ArrayList<>();
 			for (User user : allUsers.keySet()) {

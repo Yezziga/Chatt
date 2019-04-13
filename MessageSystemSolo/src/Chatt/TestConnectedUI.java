@@ -23,11 +23,8 @@ public class TestConnectedUI extends JPanel {
     private UserListLayout userListLayout;
 
 
-    private JFrame window;
-
     public TestConnectedUI(ClientController controller) {
         this.controller = controller;
-        this.window = window;
         layoutList = new ArrayList<UserListLayout>();
         setBackground(SystemColor.textHighlight);
         setLayout(null);
