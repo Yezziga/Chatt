@@ -185,6 +185,7 @@ public class Server {
 
 			for (User user : onlineUsers.keySet()) {
 				listOnliners.add(user.getName());
+				System.out.println(user.getName());
 			}
 
 			return listOnliners;
@@ -245,6 +246,11 @@ public class Server {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+		}
+		
+		public void sendContactList() {
+			
+
 		}
 
 		public void run() {

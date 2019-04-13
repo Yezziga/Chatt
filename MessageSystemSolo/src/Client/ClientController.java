@@ -56,7 +56,7 @@ public class ClientController {
 	}
 	
 	public void updateOnlineList(ArrayList<String> onlineUsers) {
-//		cui.setOnlineList(onlineUsers);
+		cui.setOnlineList(onlineUsers);
 	}
 
 }
