@@ -7,12 +7,9 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JLabel;
 
-import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
 
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JTextField;
@@ -23,19 +20,23 @@ import Client.ClientController;
 import javax.swing.JFileChooser;
 
 /**
- * This class will be the start panel when starting the application.
+ * This is the starting UI for the application.
  * 
  * @author Henrik Olofsson
  *
  */
 public class StartScreenUI extends JPanel implements ActionListener {
-	private JTextField tfNewUsername, tfUsername;
-	private JButton btnCreateUser, btnConnect, btnFileButton;
-	private JLabel lblNewUsername, lblHeader,lblStatus, lblUsername, lblIcon;
+	private JTextField tfUsername;
+	private JButton btnConnect, btnFileButton;
+	private JLabel lblUsername, lblHeader, lblStatus, lblIcon;
 	private JFileChooser fileChooser;
-	private ImageIcon image;
+	private ImageIcon image = null;
 	private ClientController controller;
 
+	/**
+	 * Constructor which builds the components in the panel.
+	 * @param controller the ClientController for this panel.
+	 */
 	public StartScreenUI(ClientController controller) {
 		this.controller = controller;
 		setBackground(SystemColor.textHighlight);
@@ -47,40 +48,26 @@ public class StartScreenUI extends JPanel implements ActionListener {
 		lblHeader.setBounds(346, 43, 110, 16);
 		add(lblHeader);
 
-		btnCreateUser = new JButton("Create User");
-		btnCreateUser.setBounds(35, 221, 139, 25);
-		add(btnCreateUser);
+		
+		lblUsername = new JLabel("Enter your username");
+		lblUsername.setForeground(SystemColor.textHighlightText);
+		lblUsername.setFont(new Font("Arial", Font.PLAIN, 14));
+		lblUsername.setBounds(35, 120, 193, 16);
+		add(lblUsername);
 
-		tfNewUsername = new JTextField();
-		tfNewUsername.setBounds(35, 163, 170, 22);
-		add(tfNewUsername);
-		tfNewUsername.setColumns(10);
-
-		lblNewUsername = new JLabel("Write your desired user name");
-		lblNewUsername.setForeground(SystemColor.textHighlightText);
-		lblNewUsername.setFont(new Font("Arial", Font.PLAIN, 14));
-		lblNewUsername.setBounds(35, 120, 193, 16);
-		add(lblNewUsername);
-
-		lblStatus = new JLabel("Status:");
+		lblStatus = new JLabel("Status: ");
 		lblStatus.setFont(new Font("Arial", Font.PLAIN, 14));
 		lblStatus.setForeground(SystemColor.textHighlightText);
 		lblStatus.setBounds(35, 293, 193, 31);
 		add(lblStatus);
 
-		lblUsername = new JLabel("Write in the user name you want to connect with");
-		lblUsername.setFont(new Font("Arial", Font.PLAIN, 14));
-		lblUsername.setForeground(SystemColor.textHighlightText);
-		lblUsername.setBounds(35, 430, 301, 16);
-		add(lblUsername);
-
 		tfUsername = new JTextField();
-		tfUsername.setBounds(35, 474, 146, 22);
+		tfUsername.setBounds(35, 163, 170, 22);
+//		tfUsername.setColumns(10);
 		add(tfUsername);
-		tfUsername.setColumns(10);
 
 		btnConnect = new JButton("Connect");
-		btnConnect.setBounds(35, 525, 97, 25);
+		btnConnect.setBounds(35, 221, 139, 25);
 		add(btnConnect);
 
 		lblIcon = new JLabel();
@@ -94,12 +81,8 @@ public class StartScreenUI extends JPanel implements ActionListener {
 
 		fileChooser = new JFileChooser();
 		btnFileButton.addActionListener(this);
-		btnCreateUser.addActionListener(this);
+		btnConnect.addActionListener(this);
 
-	}
-
-	public String getTfNewUsername() {
-		return tfNewUsername.getText();
 	}
 
 	public String getTfUsername() {
@@ -112,6 +95,10 @@ public class StartScreenUI extends JPanel implements ActionListener {
 
 	public void setIcon(ImageIcon icon) {
 		lblIcon.setIcon(image);
+	}
+	
+	public void updateStatus(String str) {
+		lblStatus.setText("Status: " + str);
 	}
 
 	public void actionPerformed(ActionEvent e) {
@@ -128,12 +115,10 @@ public class StartScreenUI extends JPanel implements ActionListener {
 			}
 		}
 		
-		// create a user if there is an input
-		if ((e.getSource() == btnCreateUser) && !(getTfNewUsername().isEmpty()) && (image!=null)) {
-			System.out.println("En user skapas");
-			controller.sendNewUser(tfNewUsername.getText(), image);
-			
+		if (e.getSource() == btnConnect) {
+			controller.sendUser(getTfUsername(), getImage());
 		}
+		
 
 	}
 }

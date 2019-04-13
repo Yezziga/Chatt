@@ -1,18 +1,29 @@
 package Client;
 
-import java.awt.Dimension;
+import Chatt.ConnectedUI;
+import Chatt.StartScreenUI;
+import Chatt.TestConnectedUI;
+import Server.User;
 
-import javax.swing.Icon;
+import java.awt.Dimension;
+import java.util.ArrayList;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
-import Chatt.StartScreenUI;
 
 public class ClientController {
 	private Client client;
-	private static StartScreenUI ssui;
+	private StartScreenUI ssui = new StartScreenUI(this);
+	private ConnectedUI cui;
 	private JFrame frame;
+	private TestConnectedUI tcui = new TestConnectedUI(this);
+	private ArrayList<User> allUsers;
 
+	/**
+	 * Constructor which creates the startup window.
+	 * @param client the client which this controller is handling
+	 */
 	public ClientController(Client client) {
 		this.client = client;
 		frame = new JFrame();
@@ -21,20 +32,48 @@ public class ClientController {
 		frame.setPreferredSize(new Dimension(800,700));
 		frame.setVisible(true);
 		frame.setResizable(false);
-		ssui = new StartScreenUI(this);
 		frame.add(ssui);
 		frame.pack();
 		
 	}
 	
+	/**
+	 * Exits the application.
+	 */
 	public void disconnectClient() {
 		client.disconnect();
+		frame.dispose();
 	}
 
-	public void sendNewUser(String tfNewUsername, ImageIcon icon) {
-		client.sendNewUser(tfNewUsername, icon);
-//		System.out.println("bla");
-		
+	/**
+	 * Forwards the user-input to the server and switches to the next panel
+	 * @param tfNewUsername
+	 * @param icon
+	 */
+	public void sendUser(String tfNewUsername, ImageIcon icon) {
+		/*client.connectUser(tfNewUsername, icon);
+		cui = new ConnectedUI(this);
+		cui.setLblUser(tfNewUsername); // kanske får nytt namn av server
+		frame.remove(ssui);
+		frame.add(cui);
+		frame.pack();	*/
+		client.connectUser(tfNewUsername, icon);
+
+		frame.remove(ssui);
+		frame.add(tcui);
+		frame.pack();
 	}
+	
+	public void updateOnlineList(ArrayList<String> onlineUsers) {
+//		cui.setOnlineList(onlineUsers);
+	}
+
+	public void updateAllUsers(ArrayList<User> arr) {
+		this.allUsers = arr;
+		tcui.clearList();
+		tcui.setAllUsers(arr);
+		System.out.println("USERS IN CLIENT CONTROLLER SET");
+	}
+
 
 }
