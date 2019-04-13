@@ -22,6 +22,7 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.text.StyledEditorKit.ForegroundAction;
 
 import Client.ClientController;
+import Server.User;
 
 import java.awt.Color;
 import javax.swing.JButton;
@@ -136,6 +137,7 @@ public class ConnectedUI extends JPanel implements ActionListener {
 
 	public void setOnlineList(ArrayList<String> onlineUsers) {
 		this.onlineUsers = onlineUsers;
+		changeLeftDisplay(onlineUsers);
 
 	}
 
@@ -161,6 +163,11 @@ public class ConnectedUI extends JPanel implements ActionListener {
 		if (e.getSource() == mntmContacts) {
 			changeLeftDisplay(contacts);
 		}
+	}
+
+	public void setAllUser(ArrayList<User> arr) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

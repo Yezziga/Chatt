@@ -21,8 +21,10 @@ public class Client {
 
 	/**
 	 * Constructor which creates connections to the server
-	 * @param ip 
-	 * @param serverPort the port to the server
+	 * 
+	 * @param ip
+	 * @param serverPort
+	 *            the port to the server
 	 */
 	public Client(String ip, int serverPort) {
 		this.serverPort = serverPort;
@@ -41,9 +43,13 @@ public class Client {
 	}
 
 	/**
-	 * Creates a User-object with the given username and image, and forwards it to the server.
-	 * @param username the given user name
-	 * @param icon the given image
+	 * Creates a User-object with the given username and image, and forwards it to
+	 * the server.
+	 * 
+	 * @param username
+	 *            the given user name
+	 * @param icon
+	 *            the given image
 	 */
 	public void connectUser(String username, ImageIcon icon) {
 		try {
@@ -101,22 +107,39 @@ public class Client {
 				try {
 					Object obj = fromServer.readObject();
 
-					if (obj instanceof ArrayList<?>) { // still in progress, does not know difference between online-list and contacts-list! also not fully tested
-						@SuppressWarnings("unchecked")
-						ArrayList<String> arr = (ArrayList<String>) obj;
-						controller.updateOnlineList(arr);
-					} else if (obj instanceof Message) {
-						Message msg = (Message) obj;
-						readMessage(msg); // does not do anything yet
-					}
-					
-					
+					if (obj instanceof ArrayList<?>) { // still in progress, does not know difference between
+														// online-list and contacts-list! also not fully tested
+						System.out.println(obj);
+						if(!((ArrayList<?>) obj).isEmpty()) {
+							if(((ArrayList<?>) obj).get(0) instanceof User) {
+								ArrayList<User> arr = (ArrayList<User>) obj;
+								controller.updateAllUsers(arr);
+								System.out.println(obj);
+							}
+						} 
+						}
+						
+//						@SuppressWarnings("unchecked")
+//						ArrayList<String> arr = (ArrayList<String>) obj;
+//						if (arr.get(arr.size()-1).equals("*")) {
+//							arr.remove(arr.size()-1);
+//							for (String string : arr) {
+//								System.out.println(string);
+//							}
+//							
+////							controller.updateOnlineList(arr);
+//						} 
+//					} else if (obj instanceof Message) {
+//						Message msg = (Message) obj;
+//						readMessage(msg); // does not do anything yet
+//					} 
+
 				} catch (ClassNotFoundException e1) {
 					e1.printStackTrace();
 				} catch (IOException e1) {
 					e1.printStackTrace();
 				}
-				
+
 				try {
 					Thread.sleep(5000); // not needed?
 				} catch (InterruptedException e) {

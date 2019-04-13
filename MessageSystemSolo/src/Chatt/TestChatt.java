@@ -12,7 +12,7 @@ public class TestChatt {
 		ChattWindow window = new ChattWindow("Chatt");
 //		ConnectedUI cui = new ConnectedUI();
 //		StartScreenUI ssui = new StartScreenUI();
-		UserListLayout ull = new UserListLayout();
+//		UserListLayout ull = new UserListLayout();
 //		window.add(cui);
 		window.pack();
 	}

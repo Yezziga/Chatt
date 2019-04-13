@@ -11,6 +11,11 @@ import Client.Message;
 
 //Skriv gärna vad klassen gör och vem som skrivit den
 public class User implements Serializable {
+	@Override
+	public String toString() {
+		return "User [name=" + name + ", picture=" + picture + "]";
+	}
+
 	private String name;
 	private ImageIcon picture = null;
 

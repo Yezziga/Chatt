@@ -63,15 +63,15 @@ public class Server {
 	 *            the message to send
 	 */
 	public void checkReceiversAndOnliners(Message message) {
-		ArrayList<String> onlineUsers = cl.getAllOnlineUsers(); // list with online users
+		ArrayList<User> onlineUsers = cl.getAllOnlineUsers(); // list with online users
 		ArrayList<String> listOfReceivers = message.getReceivers();
 		ArrayList<String> tempList = new ArrayList<String>(); // new list with offline receivers
 
 		for (String receiverOnList : listOfReceivers) {
 			boolean receiverFound = false;
-			for (String onlineUser : onlineUsers) {
+			for (User onlineUser : onlineUsers) {
 
-				if (receiverOnList.equals(onlineUser)) {
+				if (receiverOnList.equals(onlineUser.getName())) {
 					receiverFound = true;
 					System.out.println(receiverOnList + " is online");
 					sendMessageToOnlineUser(message, receiverOnList);
@@ -103,6 +103,22 @@ public class Server {
 	public void updateOnlineList() {
 		
 	}
+	
+	public void updateAllClients() {
+		  Iterator it = cl.onlineUsers.entrySet().iterator();
+		    while (it.hasNext()) {
+		        Map.Entry pair = (Map.Entry)it.next();
+		        ClientHandler ch = (ClientHandler) pair.getValue();
+		        try {
+					ch.toClient.writeObject(cl.getAllOnlineUsers());
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+//		        it.remove(); // avoids a ConcurrentModificationException
+		    }
+		
+	}
 
 	/**
 	 * Inner-class which handles the list of online users.
@@ -112,7 +128,8 @@ public class Server {
 	 */
 	private class Clients {
 
-		private HashMap<User, ClientHandler> onlineUsers = new HashMap<User, ClientHandler>(); // HashMap which contains users and their handlers
+		private HashMap<User, ClientHandler> onlineUsers = new HashMap<User, ClientHandler>(); // HashMap which contains online users and their handlers
+		private HashMap<User, ClientHandler> allUsers = new HashMap<User, ClientHandler>(); // HashMap which contains users and their handlers
 
 		/**
 		 * Associates the specified user with the specified clientHandler-thread in this
@@ -126,8 +143,8 @@ public class Server {
 		public synchronized void put(User user, ClientHandler clientHandler) {
 			
 				onlineUsers.put(user, clientHandler);
-				System.out.println(user.getName() + " tillagd");
-
+				allUsers.put(user, clientHandler);
+				updateAllClients();
 				// send messages to user if there are any unsent messages. not tested!
 				for (Message message : unsentMessages) {
 					for (String receiver : message.getReceivers()) {
@@ -137,8 +154,9 @@ public class Server {
 						}
 					}
 				}
-//			updateOnlineList();
+
 		}
+
 
 		/**
 		 * Returns the clientHandler mapped with the specified user
@@ -180,15 +198,23 @@ public class Server {
 		 * 
 		 * @return an ArrayList<String> usersOnline
 		 */
-		public synchronized ArrayList<String> getAllOnlineUsers() {
-			ArrayList<String> listOnliners = new ArrayList<>();
+		public synchronized ArrayList<User> getAllOnlineUsers() {
+			ArrayList<User> listOnliners = new ArrayList<>();
 
 			for (User user : onlineUsers.keySet()) {
-				listOnliners.add(user.getName());
+				listOnliners.add(user);
 				System.out.println(user.getName());
 			}
 
 			return listOnliners;
+		}
+		
+		public ArrayList<User> getAllUsers() {
+			ArrayList<User> arr = new ArrayList<>();
+			for (User user : allUsers.keySet()) {
+				arr.add(user);
+			}
+			return arr;
 		}
 
 	}
@@ -241,7 +267,8 @@ public class Server {
 		
 		public void sendOnlineList() {
 			try {
-				toClient.writeObject(cl.getAllOnlineUsers());
+				ArrayList<User> arr = cl.getAllOnlineUsers();
+				toClient.writeObject(arr);
 				toClient.flush();
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -263,7 +290,8 @@ public class Server {
 				 */
 				user = (User) fromClient.readObject();
 				cl.put(user, this);
-				sendOnlineList();
+				toClient.writeObject(cl.getAllUsers());
+				
 				
 
 				while (true) {
