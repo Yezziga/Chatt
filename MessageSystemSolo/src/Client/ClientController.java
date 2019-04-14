@@ -76,7 +76,7 @@ public class ClientController {
 	}
 
 	public void clear() {
-		tcui.clearList();
+		tcui.clearPanel();
 		
 	}
 

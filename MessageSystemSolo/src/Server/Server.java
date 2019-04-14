@@ -193,7 +193,7 @@ public class Server {
 		}
 
 		/**
-		 * Returns a String-arraylist of all online users.
+		 * Returns 
 		 * 
 		 * @return an ArrayList<String> usersOnline
 		 */
@@ -307,12 +307,12 @@ public class Server {
 				}
 
 			} catch (Exception e1) {
-				if (e1 instanceof SocketException) {
+				
 					disconnectClient();
 					System.out.println("client-controller stoppad");
-				} else {
+				
 					System.err.println(e1);
-				}
+				
 
 			}
 

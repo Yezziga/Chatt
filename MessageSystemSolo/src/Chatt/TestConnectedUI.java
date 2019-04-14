@@ -114,6 +114,11 @@ public class TestConnectedUI extends JPanel {
 		}
 	}
 	
+	public void clearPanel() {
+		pnlScrollPaneAll.removeAll();
+		scrollPaneAll.updateUI();
+	}
+	
 	/**
 	 * Sets the username to the label.
 	 * 
