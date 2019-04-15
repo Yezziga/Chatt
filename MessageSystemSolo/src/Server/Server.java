@@ -151,6 +151,7 @@ public class Server {
 
 			onlineUsers.put(user, clientHandler);
 			allUsers.put(user, clientHandler);
+			logger.saveToLog(user.getName() + " connected");
 			updateAllClients();
 			// send messages to user if there are any unsent messages. not tested!
 			// for (Message message : unsentMessages) {
@@ -313,6 +314,9 @@ public class Server {
 					try {
 						if (obj instanceof Message) {
 							Message msg = (Message) obj;
+							Calendar calendar = Calendar.getInstance();
+							Date date = calendar.getTime();
+							msg.setDateSend(date);
 							checkReceiversAndOnliners(msg);
 						}
 					} catch (Exception e) {
@@ -339,6 +343,7 @@ public class Server {
 				clientSocket.close();
 				toClient.close();
 				fromClient.close();
+				logger.saveToLog("User disconnected");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
