@@ -18,8 +18,6 @@ public class TrafficLogger {
 	private String filename = "files/Server_log.txt";
 	private static Writer toFile;
 	private ServerUI ui;
-	private Calendar calendar = Calendar.getInstance();
-	private Date date = calendar.getTime();
 
 	private TrafficLogger() {
 		try {
@@ -50,7 +48,8 @@ public class TrafficLogger {
 	 *            a message-object
 	 */
 	public synchronized void saveMessageToLog(Message message) {
-		
+		Calendar calendar = Calendar.getInstance();
+		Date date = calendar.getTime();
 		String temp = "[" + date + "]: " + "Date sent: " + message.getDateSend() + ", sender: "
 				+ message.getSender().getName() + ", date received: " + message.getDateReceived() + ", receivers: "
 				+ message.getReceivers() + ", message: " + message.getMessage();
@@ -64,6 +63,8 @@ public class TrafficLogger {
 	}
 
 	public synchronized void saveToLog(String s) {
+		Calendar calendar = Calendar.getInstance();
+		Date date = calendar.getTime();
 		String temp = "[" + date + "]: " + s;
 
 		try {
