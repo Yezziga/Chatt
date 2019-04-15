@@ -3,17 +3,16 @@ package Server;
 import java.io.*;
 import java.util.ArrayList;
 
+
 /**
- * En lista av kontakter för varje användare som skrivs ner av servern
- * 
- * @author henke
+ * The class reads and writes ArrayList<Contact> to users' file. Each user gets a separate .txt file for storing their contacts.
+ * @author Jessica
  *
  */
-
 public class ContactsReader {
 
 	/**
-	 * Creates and/or writes User-objects to a file. The file is the given user's
+	 * Creates and/or writes a list of contacts to a file. The file is the given user's
 	 * contact list.
 	 * 
 	 * @param user
@@ -42,14 +41,11 @@ public class ContactsReader {
 
 	}
 
-	/**
-	 * Reads and extracts the User-objects from the given user's contacts file into
-	 * an Array-List.
-	 * 
-	 * @param user
-	 *            the user whose contact list is being read.
-	 * @return an ArrayList<User> with a user's contact list.
-	 */
+/**
+ * Reads the given user's contact file if it exists and returns a list of contacts. 
+ * @param user the user whose contacts are to be extracted.
+ * @return a list of contacts
+ */
 	@SuppressWarnings("unchecked")
 	public static ArrayList<Contact> readContacts(User user) {
 		ArrayList<Contact> list = null;
