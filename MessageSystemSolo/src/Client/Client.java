@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 import javax.swing.ImageIcon;
 
+import Server.Contact;
 import Server.User;
 
 public class Client {
@@ -18,6 +19,7 @@ public class Client {
 	private ObjectInputStream fromServer;
 	private ObjectOutputStream toServer;
 	private Socket socket;
+	private User user;
 
 	/**
 	 * Constructor which creates connections to the server
@@ -92,6 +94,7 @@ public class Client {
 	}
 
 	private class Listener extends Thread {
+		@SuppressWarnings("unchecked")
 		public void run() {
 			ArrayList<String> messageReceivers = new ArrayList<>(); // test purpose
 			messageReceivers.add("Kalle");
@@ -115,6 +118,9 @@ public class Client {
 								ArrayList<User> arr = (ArrayList<User>) obj;
 								controller.updateAllUsers(arr);
 								System.out.println(obj);
+							} else if (((ArrayList<?>) obj).get(0) instanceof Contact) {
+								ArrayList<Contact> arr = (ArrayList<Contact>) obj;
+								controller.updateContactList(arr);
 							}
 						} else if (((ArrayList<?>) obj).isEmpty()) {
 							controller.clear();

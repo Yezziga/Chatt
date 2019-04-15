@@ -4,6 +4,7 @@ import Chatt.ChattWindow;
 import Chatt.ConnectedUI;
 import Chatt.StartScreenUI;
 import Chatt.TestConnectedUI;
+import Server.Contact;
 import Server.User;
 
 import java.awt.Dimension;
@@ -54,9 +55,14 @@ public class ClientController {
 	 * @param icon
 	 */
 	public void sendUser(String tfUsername, ImageIcon icon) {
+//<<<<<<< HEAD
 		user = new User(tfUsername, icon);
 		client.connectUser(user);
 		tcui.setUser(user);
+//=======
+//		client.connectUser(tfUsername, icon);
+//		tcui.setLblUser(tfUsername);
+//>>>>>>> refs/heads/master
 		frame.remove(ssui);
 		frame.add(tcui);
 		frame.pack();
@@ -85,6 +91,10 @@ public class ClientController {
 	
 	public void openChattWindows(ArrayList<User> receivers) {
 		chattWindow = new ChattWindow(receivers);
+	}
+	public void updateContactList(ArrayList<Contact> arr) {
+		 tcui.updateContactList(arr);
+		
 	}
 
 

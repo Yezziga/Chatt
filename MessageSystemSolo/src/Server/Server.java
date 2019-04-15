@@ -1,5 +1,6 @@
 package Server;
 
+import java.awt.Image;
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -49,15 +50,17 @@ public class Server {
 	/**
 	 * Adds a Message-object to the list of unsent messages.
 	 * 
-	 * @param message the Message-object to add to the list
+	 * @param message
+	 *            the Message-object to add to the list
 	 */
 	public void addMessageToUnsentList(Message message) {
 		unsentMessages.add(message);
 	}
 
 	/**
-	 * Forwards the Message-object to receivers who are online, and updates the Message-object's list
-	 * of receivers. If there are still receivers left, the Message-object will be added to the list of unsent messages.
+	 * Forwards the Message-object to receivers who are online, and updates the
+	 * Message-object's list of receivers. If there are still receivers left, the
+	 * Message-object will be added to the list of unsent messages.
 	 * 
 	 * @param message
 	 *            the message to send
@@ -91,31 +94,34 @@ public class Server {
 
 	/**
 	 * Sends a Message-object to the user with the specified name
-	 * @param msg the message to send
-	 * @param name the name of the user
+	 * 
+	 * @param msg
+	 *            the message to send
+	 * @param name
+	 *            the name of the user
 	 */
 	public void sendMessageToOnlineUser(Message msg, String name) {
 		User user = cl.getUser(name);
 		cl.get(user).sendMessage(msg);
 
 	}
-	
+
 	public void updateAllClients() {
 		ArrayList<User> tempList = null;
-		  Iterator it = cl.onlineUsers.entrySet().iterator();
-		    while (it.hasNext()) {
-		        Map.Entry pair = (Map.Entry)it.next();
-		        ClientHandler ch = (ClientHandler) pair.getValue();
-		        try {
-		        	tempList = cl.getAllOnlineUsers();
-		        	tempList.remove(pair.getKey());
-					ch.toClient.writeObject(tempList);
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
+		Iterator it = cl.onlineUsers.entrySet().iterator();
+		while (it.hasNext()) {
+			Map.Entry pair = (Map.Entry) it.next();
+			ClientHandler ch = (ClientHandler) pair.getValue();
+			try {
+				tempList = cl.getAllOnlineUsers();
+				tempList.remove(pair.getKey());
+				ch.toClient.writeObject(tempList);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 
-		    }
-		
+		}
+
 	}
 
 	/**
@@ -126,8 +132,11 @@ public class Server {
 	 */
 	private class Clients {
 
-		private HashMap<User, ClientHandler> onlineUsers = new HashMap<User, ClientHandler>(); // HashMap which contains online users and their handlers
-		private HashMap<User, ClientHandler> allUsers = new HashMap<User, ClientHandler>(); // HashMap which contains users and their handlers
+		private HashMap<User, ClientHandler> onlineUsers = new HashMap<User, ClientHandler>(); // HashMap which contains
+																								// online users and
+																								// their handlers
+		private HashMap<User, ClientHandler> allUsers = new HashMap<User, ClientHandler>(); // HashMap which contains
+																							// users and their handlers
 
 		/**
 		 * Associates the specified user with the specified clientHandler-thread in this
@@ -139,27 +148,26 @@ public class Server {
 		 *            value to be associated with the specified key
 		 */
 		public synchronized void put(User user, ClientHandler clientHandler) {
-			
-				onlineUsers.put(user, clientHandler);
-				allUsers.put(user, clientHandler);
-				updateAllClients();
-				// send messages to user if there are any unsent messages. not tested!
-//				for (Message message : unsentMessages) {
-//					for (String receiver : message.getReceivers()) {
-//						if(receiver.equals(user.getName())) {
-//							clientHandler.sendMessage(message);
-//							break;
-//						}
-//					}
-//				}
+
+			onlineUsers.put(user, clientHandler);
+			allUsers.put(user, clientHandler);
+			updateAllClients();
+			// send messages to user if there are any unsent messages. not tested!
+			// for (Message message : unsentMessages) {
+			// for (String receiver : message.getReceivers()) {
+			// if(receiver.equals(user.getName())) {
+			// clientHandler.sendMessage(message);
+			// break;
+			// }
+			// }
+			// }
 
 		}
-
 
 		/**
 		 * Returns the clientHandler mapped with the specified user
 		 * 
-		 * @param user 
+		 * @param user
 		 * @return the clientHandler mapped with this user
 		 */
 		public synchronized ClientHandler get(User user) {
@@ -193,7 +201,7 @@ public class Server {
 		}
 
 		/**
-		 * Returns 
+		 * Returns
 		 * 
 		 * @return an ArrayList<String> usersOnline
 		 */
@@ -207,9 +215,10 @@ public class Server {
 
 			return listOnliners;
 		}
-		
+
 		/**
 		 * Returns a list of all users of the application
+		 * 
 		 * @return
 		 */
 		public ArrayList<User> getAllUsers() {
@@ -255,8 +264,6 @@ public class Server {
 
 		}
 
-
-
 		public void sendMessage(Message msg) {
 
 			try {
@@ -267,7 +274,7 @@ public class Server {
 				e.printStackTrace();
 			}
 		}
-		
+
 		public void sendOnlineList() {
 			try {
 				ArrayList<User> arr = cl.getAllOnlineUsers();
@@ -277,9 +284,8 @@ public class Server {
 				e.printStackTrace();
 			}
 		}
-		
+
 		public void sendContactList() {
-			
 
 		}
 
@@ -292,8 +298,16 @@ public class Server {
 				 * att den anv�ndare �r online Kollar INTE om namn redan finns
 				 */
 				user = (User) fromClient.readObject();
+				if (user.getPicture() == null) {
+					Image temp = new ImageIcon("files/MSN-icon.png").getImage().getScaledInstance(100, 100,
+							Image.SCALE_SMOOTH);
+					user.setPicture(new ImageIcon(temp));
+				}
+
 				cl.put(user, this);
-								
+				ContactsReader.addContact(user, new User("Vän", null));
+				toClient.writeObject(ContactsReader.readContacts(user));
+
 				while (true) {
 					Object obj = fromClient.readObject();
 					try {
@@ -307,12 +321,10 @@ public class Server {
 				}
 
 			} catch (Exception e1) {
-				
-					disconnectClient();
-					System.out.println("client-controller stoppad");
-				
-					System.err.println(e1);
-				
+
+				disconnectClient();
+				System.out.println("client-controller stoppad");
+
 
 			}
 

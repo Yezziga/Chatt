@@ -1,6 +1,7 @@
 package Chatt;
 
 import Client.ClientController;
+import Server.Contact;
 import Server.User;
 
 import javax.swing.*;
@@ -10,50 +11,49 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class TestConnectedUI extends JPanel {
-    private ClientController controller;
-    private JMenuBar menuBar;
-    private JMenu mnUsers;
-    private JMenuItem mntmOnlineUsers;
-    private JMenuItem mntmContacts;
-    private JLabel lblSignedAs;
-    private JPanel pnlScrollPaneAll;
-    private JPanel pnlScrollPaneContacts;
-    private JScrollPane scrollPaneAll;
-    private JScrollPane scrollPaneContacts;
-    private ArrayList<User> listOfAllUsers;
-    private ArrayList<UserListLayout> layoutList;
-    private UserListLayout userListLayout;
-    private JTextField txtMessageField;
-    private JButton btnSendMessage;
-    private JButton btnOpenChats;
-    private User user;
-    private JButton btnAddToContacts;
-    private JButton btnClose;
+	private ClientController controller;
+	private JMenuBar menuBar;
+	private JMenu mnUsers;
+	private JMenuItem mntmOnlineUsers;
+	private JMenuItem mntmContacts;
+	private JLabel lblSignedAs;
+	private JPanel pnlScrollPaneAll;
+	private JPanel pnlScrollPaneContacts;
+	private JScrollPane scrollPaneAll;
+	private JScrollPane scrollPaneContacts;
+	private ArrayList<User> listOfAllUsers;
+	private ArrayList<UserListLayout> layoutList;
+	private UserListLayout userListLayout;
+	private JTextField txtMessageField;
+	private JButton btnSendMessage;
+	private JButton btnOpenChats;
+	private User user;
+	private JButton btnAddToContacts;
+	private JButton btnClose;
 
-
-    public TestConnectedUI(ClientController controller) {
-        this.controller = controller;
-        layoutList = new ArrayList<UserListLayout>();
-        setBackground(SystemColor.textHighlight);
-        setLayout(null);
-        initializeMenuBar();
-        initializeSignedInLabel();
-        initializeLeftScrollPane();
-        initializeRightScrollPane();
-        initializeMessageSystem();
-        initializeButtons();
-        registerListeners();
-    }
-    
+	public TestConnectedUI(ClientController controller) {
+		this.controller = controller;
+		layoutList = new ArrayList<UserListLayout>();
+		setBackground(SystemColor.textHighlight);
+		setLayout(null);
+		initializeMenuBar();
+		initializeSignedInLabel();
+		initializeLeftScrollPane();
+		initializeRightScrollPane();
+		initializeMessageSystem();
+		initializeButtons();
+		registerListeners();
+	}
 
 	public void setAllUsers(ArrayList<User> users) {
-        this.listOfAllUsers = users;
-        updateList();
-    }
-	
+		this.listOfAllUsers = users;
+		updateList();
+	}
+
 	private void updateList() {
+		UserListLayout userListLayout;
 		pnlScrollPaneAll.removeAll();
-		for(User user : listOfAllUsers) {
+		for (User user : listOfAllUsers) {
 			userListLayout = new UserListLayout(user);
 			userListLayout.setMaximumSize(new Dimension(300, 100));
 			layoutList.add(userListLayout);
@@ -62,112 +62,129 @@ public class TestConnectedUI extends JPanel {
 		scrollPaneAll.updateUI();
 	}
 
-    private void initializeMenuBar(){
-        menuBar = new JMenuBar();
-        menuBar.setBounds(0, 0, 800, 26);
-        add(menuBar);
+	private void initializeMenuBar() {
+		menuBar = new JMenuBar();
+		menuBar.setBounds(0, 0, 800, 26);
+		add(menuBar);
 
-        mnUsers = new JMenu("Users");
-        menuBar.add(mnUsers);
+		mnUsers = new JMenu("Users");
+		menuBar.add(mnUsers);
 
-        mntmOnlineUsers = new JMenuItem("Online Users");
-        mnUsers.add(mntmOnlineUsers);
+		mntmOnlineUsers = new JMenuItem("Online Users");
+		mnUsers.add(mntmOnlineUsers);
 
-        mntmContacts = new JMenuItem("Contacts");
-        mnUsers.add(mntmContacts);
-    }
+		mntmContacts = new JMenuItem("Contacts");
+		mnUsers.add(mntmContacts);
+	}
 
-    private void initializeSignedInLabel(){
-        lblSignedAs = new JLabel("You are signed in as: ");
-        lblSignedAs.setForeground(SystemColor.textHighlightText);
-        lblSignedAs.setBackground(SystemColor.textHighlightText);
-        lblSignedAs.setFont(new Font("Arial", Font.PLAIN, 14));
-        lblSignedAs.setBounds(10, 39, 253, 16);
-        add(lblSignedAs);
-    }
+	private void initializeSignedInLabel() {
+		lblSignedAs = new JLabel("You are signed in as: ");
+		lblSignedAs.setForeground(SystemColor.textHighlightText);
+		lblSignedAs.setBackground(SystemColor.textHighlightText);
+		lblSignedAs.setFont(new Font("Arial", Font.PLAIN, 14));
+		lblSignedAs.setBounds(10, 39, 253, 16);
+		add(lblSignedAs);
+	}
 
-    private void initializeLeftScrollPane(){
-        pnlScrollPaneAll = new JPanel();
-        pnlScrollPaneAll.setLayout(new BoxLayout(pnlScrollPaneAll, BoxLayout.PAGE_AXIS));
+	private void initializeLeftScrollPane() {
+		pnlScrollPaneAll = new JPanel();
+		pnlScrollPaneAll.setLayout(new BoxLayout(pnlScrollPaneAll, BoxLayout.PAGE_AXIS));
 
-        scrollPaneAll = new JScrollPane(pnlScrollPaneAll);
-        scrollPaneAll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-        scrollPaneAll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollPaneAll.setBounds(10, 80, 250, 570);
-        add(scrollPaneAll);
-        System.out.println("UserListLayoutWidth: " + pnlScrollPaneAll.getWidth() + " UserListLayoutHeight: " + pnlScrollPaneAll.getHeight());
-        System.out.println("ScrollPaneWidth: " + scrollPaneAll.getWidth() + " ScrollPaneHeight: " + scrollPaneAll.getHeight());
-    }
+		scrollPaneAll = new JScrollPane(pnlScrollPaneAll);
+		scrollPaneAll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		scrollPaneAll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		scrollPaneAll.setBounds(10, 80, 250, 570);
+		add(scrollPaneAll);
+		System.out.println("UserListLayoutWidth: " + pnlScrollPaneAll.getWidth() + " UserListLayoutHeight: "
+				+ pnlScrollPaneAll.getHeight());
+		System.out.println(
+				"ScrollPaneWidth: " + scrollPaneAll.getWidth() + " ScrollPaneHeight: " + scrollPaneAll.getHeight());
+	}
 
-    private void initializeRightScrollPane() {
-        scrollPaneContacts = new JScrollPane();
-        scrollPaneContacts.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-        scrollPaneContacts.setBounds(290, 80, 250, 570);
-        add(scrollPaneContacts);
-    }
-    
-    private void initializeMessageSystem() {
-    	txtMessageField = new JTextField();
-    	txtMessageField.setBounds(550, 500, 200, 30);
-    	btnSendMessage = new JButton("Send");
-    	btnSendMessage.setBounds(550, 550, 200, 30);
-    	btnOpenChats = new JButton("Open chats");
-    	btnOpenChats.setBounds(550, 600, 200, 30);
-    	add(txtMessageField);
-    	add(btnSendMessage);
-    	add(btnOpenChats);
-    }
-    
-    private void initializeButtons() {
-    	btnClose = new JButton("Close");
-    	btnClose.setBounds(550, 80, 200, 30 );
+	private void initializeRightScrollPane() {
+		pnlScrollPaneContacts = new JPanel();
+		pnlScrollPaneContacts.setLayout(new BoxLayout(pnlScrollPaneContacts, BoxLayout.PAGE_AXIS));
+		scrollPaneContacts = new JScrollPane(pnlScrollPaneContacts);
+		scrollPaneContacts.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		scrollPaneContacts.setBounds(290, 80, 250, 570);
+		add(scrollPaneContacts);
+	}
 
-    	btnAddToContacts = new JButton("Add To Contacts");
-    	btnAddToContacts.setBounds(550, 130, 200, 30);
-    	
-    	add(btnClose);
-    	add(btnAddToContacts);
-    	
-    }
+	private void initializeMessageSystem() {
+		txtMessageField = new JTextField();
+		txtMessageField.setBounds(550, 500, 200, 30);
+		btnSendMessage = new JButton("Send");
+		btnSendMessage.setBounds(550, 550, 200, 30);
+		btnOpenChats = new JButton("Open chats");
+		btnOpenChats.setBounds(550, 600, 200, 30);
+		add(txtMessageField);
+		add(btnSendMessage);
+		add(btnOpenChats);
+	}
 
-    private void fillLeftScrollPaneWithBullShit() {
-        scrollPaneAll.updateUI();
-    }
+	private void initializeButtons() {
+		btnClose = new JButton("Close");
+		btnClose.setBounds(550, 80, 200, 30);
 
+		btnAddToContacts = new JButton("Add To Contacts");
+		btnAddToContacts.setBounds(550, 130, 200, 30);
+
+		add(btnClose);
+		add(btnAddToContacts);
+
+	}
+
+	private void fillLeftScrollPaneWithBullShit() {
+		scrollPaneAll.updateUI();
+	}
 
 	public void clearList() {
 		layoutList.clear();
-		if(listOfAllUsers != null) {
+		if (listOfAllUsers != null) {
 			listOfAllUsers.clear();
 		}
 	}
-	
+
 	public void clearPanel() {
 		pnlScrollPaneAll.removeAll();
 		scrollPaneAll.updateUI();
 	}
-	
+
 	public void setUser(User user) {
 		this.user = user;
 		lblSignedAs.setText("You are signed in as: " + user.getName());
 	}
-	
+
 	private void registerListeners() {
 		btnSendMessage.addActionListener(new ButtonSendListener());
 	}
-	
+
 	private class ButtonSendListener implements ActionListener {
 		ArrayList<User> markedUsers = new ArrayList<>();
+
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
-			for(UserListLayout ull : layoutList) {
-				if(ull.getCheckBoxMarked()) {
+			for (UserListLayout ull : layoutList) {
+				if (ull.getCheckBoxMarked()) {
 					markedUsers.add(ull.getUser());
 				}
 				System.out.println(markedUsers);
 			}
 			controller.sendMessageToUsers(user, markedUsers, txtMessageField.getText());
 			controller.openChattWindows(markedUsers);
-		}	
 		}
 	}
+
+	public void updateContactList(ArrayList<Contact> arr) { // FIXA DENNA
+		pnlScrollPaneContacts.removeAll();
+		scrollPaneContacts.updateUI();
+		UserListLayout userListLayout;
+		for (Contact u : arr) {
+			userListLayout = new UserListLayout(u);
+			userListLayout.setMaximumSize(new Dimension(300, 100));
+			pnlScrollPaneContacts.add(userListLayout);
+		}
+		scrollPaneAll.updateUI();
+
+	}
+}
