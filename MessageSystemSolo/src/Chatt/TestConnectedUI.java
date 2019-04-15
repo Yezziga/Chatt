@@ -62,6 +62,19 @@ public class TestConnectedUI extends JPanel {
 		scrollPaneAll.updateUI();
 	}
 
+	public void updateContactList(ArrayList<Contact> arr) { // FIXA DENNA
+		pnlScrollPaneContacts.removeAll();
+		UserListLayout userListLayout;
+		for (Contact u : arr) {
+			userListLayout = new UserListLayout(u);
+			userListLayout.setMaximumSize(new Dimension(300, 100));
+			pnlScrollPaneContacts.add(userListLayout);
+			System.out.println(u.getName());
+		}
+		scrollPaneContacts.updateUI();
+
+	}
+
 	private void initializeMenuBar() {
 		menuBar = new JMenuBar();
 		menuBar.setBounds(0, 0, 800, 26);
@@ -141,9 +154,14 @@ public class TestConnectedUI extends JPanel {
 		}
 	}
 
-	public void clearPanel() {
+	public void clearLeftPanel() {
 		pnlScrollPaneAll.removeAll();
 		scrollPaneAll.updateUI();
+	}
+
+	public void clearRightPanel() {
+		pnlScrollPaneContacts.removeAll();
+		scrollPaneContacts.updateUI();
 	}
 
 	public void setUser(User user) {
@@ -168,19 +186,7 @@ public class TestConnectedUI extends JPanel {
 			}
 			controller.sendMessageToUsers(user, markedUsers, txtMessageField.getText());
 			controller.openChattWindows(user, markedUsers);
-		}	
 		}
-
-	public void updateContactList(ArrayList<Contact> arr) { // FIXA DENNA
-		pnlScrollPaneContacts.removeAll();
-		scrollPaneContacts.updateUI();
-		UserListLayout userListLayout;
-		for (Contact u : arr) {
-			userListLayout = new UserListLayout(u);
-			userListLayout.setMaximumSize(new Dimension(300, 100));
-			pnlScrollPaneContacts.add(userListLayout);
-		}
-		scrollPaneAll.updateUI();
-
 	}
+
 }

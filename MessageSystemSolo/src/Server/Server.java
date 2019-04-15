@@ -151,7 +151,7 @@ public class Server {
 
 			onlineUsers.put(user, clientHandler);
 			allUsers.put(user, clientHandler);
-			logger.saveToLog(user.getName() + " connected");
+//			logger.saveToLog(user.getName() + " connected");
 			updateAllClients();
 			// send messages to user if there are any unsent messages. not tested!
 			// for (Message message : unsentMessages) {
@@ -306,7 +306,10 @@ public class Server {
 				}
 
 				cl.put(user, this);
-				ContactsReader.addContact(user, new User("Vän", null));
+				ContactsReader.addContact(user, new User("Contact", null));
+				ContactsReader.addContact(user, new User("Unicorn", null));
+				ContactsReader.addContact(user, new User("Lolo", null));
+				ContactsReader.addContact(user, new User("Max", null));
 				toClient.writeObject(ContactsReader.readContacts(user));
 
 				while (true) {
@@ -343,7 +346,7 @@ public class Server {
 				clientSocket.close();
 				toClient.close();
 				fromClient.close();
-				logger.saveToLog("User disconnected");
+//				logger.saveToLog("User disconnected");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

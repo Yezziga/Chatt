@@ -116,13 +116,13 @@ public class Client {
 					if (obj instanceof ArrayList<?>) {
 						System.out.println(obj);
 						if (!((ArrayList<?>) obj).isEmpty()) {
-							if (((ArrayList<?>) obj).get(0) instanceof User) {
+							if (((ArrayList<?>) obj).get(0) instanceof Contact) {
+								ArrayList<Contact> arr = (ArrayList<Contact>) obj;
+								controller.updateContactList(arr);
+							} else if (((ArrayList<?>) obj).get(0) instanceof User) {
 								ArrayList<User> arr = (ArrayList<User>) obj;
 								controller.updateOnlineUsers(arr);
 								System.out.println(obj);
-							} else if (((ArrayList<?>) obj).get(0) instanceof Contact) {
-								ArrayList<Contact> arr = (ArrayList<Contact>) obj;
-								controller.updateContactList(arr);
 							}
 						} else if (((ArrayList<?>) obj).isEmpty()) {
 							controller.clear();
