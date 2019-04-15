@@ -83,8 +83,8 @@ public class ClientController {
 		client.sendMessage(message);
 	}
 	
-	public void openChattWindows(ArrayList<User> receivers) {
-		chattWindow = new ChattWindow(receivers);
+	public void openChattWindows(User sender, ArrayList<User> receivers) {
+		chattWindow = new ChattWindow(sender, receivers);
 	}
 
 

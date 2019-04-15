@@ -41,8 +41,8 @@ public class UserListLayout extends JPanel {
 		lblUserImage.setPreferredSize(new Dimension(100,100));
 		checkBox.setPreferredSize(new Dimension(30, 100));
 
-		lblUserName.setText(userName);
-		lblUserImage.setIcon(imgUser);
+		lblUserName.setText(user.getName());
+		lblUserImage.setIcon(user.getPicture());
 
 		lblUserName.setHorizontalAlignment(JLabel.CENTER);
 		lblUserImage.setHorizontalAlignment(JLabel.LEFT);

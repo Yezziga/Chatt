@@ -130,11 +130,6 @@ public class TestConnectedUI extends JPanel {
     	
     }
 
-    private void fillLeftScrollPaneWithBullShit() {
-        scrollPaneAll.updateUI();
-    }
-
-
 	public void clearList() {
 		layoutList.clear();
 		if(listOfAllUsers != null) {
@@ -167,7 +162,7 @@ public class TestConnectedUI extends JPanel {
 				System.out.println(markedUsers);
 			}
 			controller.sendMessageToUsers(user, markedUsers, txtMessageField.getText());
-			controller.openChattWindows(markedUsers);
+			controller.openChattWindows(user, markedUsers);
 		}	
 		}
 	}
