@@ -17,24 +17,12 @@ public class UserListLayout extends JPanel {
 	private JPanel pnlGrid;
 	private JCheckBox checkBox;
 	private User user;
-	private Contact c;
 	
 	//test
 	private ImageIcon imgUser2 = new ImageIcon("files/elefant.png");
 	
 	public UserListLayout(User user) {	
 		this.user = user;
-		setLayout(new GridLayout(1, 3));
-		initializeComponents();
-
-		add(lblUserImage);
-		add(lblUserName);
-		add(checkBox);
-		setBorder(BorderFactory.createLineBorder(Color.BLACK));
-
-	}
-	public UserListLayout(Contact c) {	
-		this.c = c;
 		setLayout(new GridLayout(1, 3));
 		initializeComponents();
 
@@ -80,13 +68,6 @@ public class UserListLayout extends JPanel {
 	}
 	
 
-	public String getContactName() {
-		return c.getName();
-	}
-	
-	public Contact getContact() {
-		return c;
-	}
 	
 //	public static void main(String[] args) {
 //		UserListLayout ull = new UserListLayout();

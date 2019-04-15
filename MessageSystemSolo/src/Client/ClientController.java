@@ -80,8 +80,7 @@ public class ClientController {
 	}
 
 	public void clear() {
-		tcui.clearPanel();
-		
+		tcui.clearLeftPanel();
 	}
 
 	/**
