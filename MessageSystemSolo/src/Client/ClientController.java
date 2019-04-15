@@ -3,6 +3,7 @@ package Client;
 import Chatt.ConnectedUI;
 import Chatt.StartScreenUI;
 import Chatt.TestConnectedUI;
+import Server.Contact;
 import Server.User;
 
 import java.awt.Dimension;
@@ -51,12 +52,6 @@ public class ClientController {
 	 * @param icon
 	 */
 	public void sendUser(String tfUsername, ImageIcon icon) {
-		/*client.connectUser(tfNewUsername, icon);
-		cui = new ConnectedUI(this);
-		cui.setLblUser(tfNewUsername); // kanske får nytt namn av server
-		frame.remove(ssui);
-		frame.add(cui);
-		frame.pack();	*/
 		client.connectUser(tfUsername, icon);
 		tcui.setLblUser(tfUsername);
 		frame.remove(ssui);
@@ -77,6 +72,11 @@ public class ClientController {
 
 	public void clear() {
 		tcui.clearPanel();
+		
+	}
+
+	public void updateContactList(ArrayList<Contact> arr) {
+		 tcui.updateContactList(arr);
 		
 	}
 

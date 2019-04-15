@@ -1,6 +1,7 @@
 package Chatt;
 
 import Client.ClientController;
+import Server.Contact;
 import Server.User;
 
 import javax.swing.*;
@@ -20,7 +21,6 @@ public class TestConnectedUI extends JPanel {
     private JScrollPane scrollPaneContacts;
     private ArrayList<User> listOfAllUsers;
     private ArrayList<UserListLayout> layoutList;
-    private UserListLayout userListLayout;
 
 
     public TestConnectedUI(ClientController controller) {
@@ -44,6 +44,7 @@ public class TestConnectedUI extends JPanel {
     }
 	
 	private void updateList() {
+		UserListLayout userListLayout;
 		pnlScrollPaneAll.removeAll();
 		for(User u : listOfAllUsers) {
 			userListLayout = new UserListLayout(u.getName(), u.getPicture());
@@ -96,7 +97,9 @@ public class TestConnectedUI extends JPanel {
     }
 
     private void initializeRightScrollPane() {
-        scrollPaneContacts = new JScrollPane();
+    	pnlScrollPaneContacts = new JPanel();
+    	pnlScrollPaneContacts.setLayout(new BoxLayout(pnlScrollPaneContacts, BoxLayout.PAGE_AXIS));
+        scrollPaneContacts = new JScrollPane(pnlScrollPaneContacts);
         scrollPaneContacts.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         scrollPaneContacts.setBounds(290, 80, 250, 570);
         add(scrollPaneContacts);
@@ -128,5 +131,19 @@ public class TestConnectedUI extends JPanel {
 	public void setLblUser(String str) {
 		String temp = "You are signed in as: " + str;
 		lblSignedAs.setText(temp);
+	}
+
+
+	public void updateContactList(ArrayList<Contact> arr) { // FIXA DENNA
+		pnlScrollPaneContacts.removeAll();
+		scrollPaneContacts.updateUI();
+		UserListLayout userListLayout;
+		for(Contact u : arr) {
+			userListLayout = new UserListLayout(u.getName(), u.getPicture());
+			userListLayout.setMaximumSize(new Dimension(300, 100));
+			pnlScrollPaneContacts.add(userListLayout);
+		}
+		scrollPaneAll.updateUI();
+		
 	}
 }
