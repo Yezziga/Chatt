@@ -4,6 +4,7 @@ import Chatt.ChattWindow;
 import Chatt.ConnectedUI;
 import Chatt.StartScreenUI;
 import Chatt.TestConnectedUI;
+import Server.Contact;
 import Server.User;
 
 import java.awt.Dimension;
@@ -54,19 +55,24 @@ public class ClientController {
 	 * @param icon
 	 */
 	public void sendUser(String tfUsername, ImageIcon icon) {
+//<<<<<<< HEAD
 		user = new User(tfUsername, icon);
 		client.connectUser(user);
 		tcui.setUser(user);
+//=======
+//		client.connectUser(tfUsername, icon);
+//		tcui.setLblUser(tfUsername);
+//>>>>>>> refs/heads/master
 		frame.remove(ssui);
 		frame.add(tcui);
 		frame.pack();
 	}
 	
-	public void updateOnlineList(ArrayList<String> onlineUsers) {
-//		cui.setOnlineList(onlineUsers);
-	} 
-
-	public void updateAllUsers(ArrayList<User> arr) {
+	/**
+	 * Forwards the list of online-users.
+	 * @param arr the list of online users
+	 */
+	public void updateOnlineUsers(ArrayList<User> arr) {
 		this.allUsers = arr;
 		tcui.clearList();
 		tcui.setAllUsers(arr); 
@@ -78,6 +84,12 @@ public class ClientController {
 		
 	}
 
+	/**
+	 * Creates a Message-object from the user's input and calls for the client to send it to the server.
+	 * @param sender the user sending the message
+	 * @param receivers a list of receivers
+	 * @param textMessage the actual text to send
+	 */
 	public void sendMessageToUsers(User sender, ArrayList<User> receivers, String textMessage) {
 		Message message = new Message(sender, receivers, textMessage);
 		client.sendMessage(message);
@@ -85,6 +97,15 @@ public class ClientController {
 	
 	public void openChattWindows(User sender, ArrayList<User> receivers) {
 		chattWindow = new ChattWindow(sender, receivers);
+	}
+	
+	/**
+	 * Forwards an ArrayList of Contact-objects.
+	 * @param arr the list of contacts
+	 */
+	public void updateContactList(ArrayList<Contact> arr) {
+		 tcui.updateContactList(arr);
+		
 	}
 
 

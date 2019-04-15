@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 import javax.swing.ImageIcon;
 
+import Server.Contact;
 import Server.User;
 
 public class Client {
@@ -18,6 +19,7 @@ public class Client {
 	private ObjectInputStream fromServer;
 	private ObjectOutputStream toServer;
 	private Socket socket;
+	private User user;
 
 	/**
 	 * Constructor which creates connections to the server
@@ -43,13 +45,10 @@ public class Client {
 	}
 
 	/**
-	 * Creates a User-object with the given username and image, and forwards it to
-	 * the server.
+	 * Writes the User-object to the server for connection.
 	 * 
-	 * @param username
-	 *            the given user name
-	 * @param icon
-	 *            the given image
+	 * @param user
+	 *            the user to connect to the server.
 	 */
 	public void connectUser(User user) {
 		try {
@@ -66,6 +65,8 @@ public class Client {
 	 */
 	public void disconnect() {
 		try {
+			toServer.close();
+			fromServer.close();
 			socket.close();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -76,7 +77,7 @@ public class Client {
 	 * Sends a Message-object to the server.
 	 * 
 	 * @param msg
-	 *            the message
+	 *            the message to send.
 	 */
 	public void sendMessage(Message msg) {
 		try {
@@ -92,6 +93,7 @@ public class Client {
 	}
 
 	private class Listener extends Thread {
+		@SuppressWarnings("unchecked")
 		public void run() {
 			ArrayList<String> messageReceivers = new ArrayList<>(); // test purpose
 			messageReceivers.add("Kalle");
@@ -107,14 +109,20 @@ public class Client {
 				try {
 					Object obj = fromServer.readObject();
 
-					if (obj instanceof ArrayList<?>) { // still in progress, does not know difference between
-														// online-list and contacts-list! also not fully tested
+					/*
+					 * Checks if the data is an ArrayList. Determines if the incoming list is a list
+					 * of online users or contact list.
+					 */
+					if (obj instanceof ArrayList<?>) {
 						System.out.println(obj);
 						if (!((ArrayList<?>) obj).isEmpty()) {
 							if (((ArrayList<?>) obj).get(0) instanceof User) {
 								ArrayList<User> arr = (ArrayList<User>) obj;
-								controller.updateAllUsers(arr);
+								controller.updateOnlineUsers(arr);
 								System.out.println(obj);
+							} else if (((ArrayList<?>) obj).get(0) instanceof Contact) {
+								ArrayList<Contact> arr = (ArrayList<Contact>) obj;
+								controller.updateContactList(arr);
 							}
 						} else if (((ArrayList<?>) obj).isEmpty()) {
 							controller.clear();

@@ -1,31 +1,87 @@
 package Server;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
+import java.io.*;
+import java.util.ArrayList;
+
 
 /**
- * En lista av kontakter för varje användare som skrivs ner av servern
- * 
- * @author henke
+ * The class reads and writes ArrayList<Contact> to users' file. Each user gets a separate .txt file for storing their contacts.
+ * @author Jessica
  *
  */
-
 public class ContactsReader {
-	private static Writer toFile;
 
-	public static void addContact(String username, String userToAdd) throws IOException {
-	
-			toFile = new OutputStreamWriter(new FileOutputStream("files/" + username + "_contacts.txt", true), "ISO-8859-1");
-			toFile.write(userToAdd);
+	/**
+	 * Creates and/or writes a list of contacts to a file. The file is the given user's
+	 * contact list.
+	 * 
+	 * @param user
+	 *            the user who wishes to add another user to his/her contact list.
+	 * @param userToAdd
+	 *            the user to add as a contact.
+	 * @throws IOException
+	 */
+	public static void addContact(User user, User userToAdd) {
+		Contact c = new Contact(userToAdd.getName(), userToAdd.getPicture());
+		ArrayList<Contact> list = new ArrayList<>();
+		if (readContacts(user) != null) {
+			list = readContacts(user);
+		}
+		list.add(c);
+
+		try (ObjectOutputStream toFile = new ObjectOutputStream(
+				new BufferedOutputStream(new FileOutputStream("files/" + user.getName() + "_contacts.txt")))) {
+			toFile.writeObject(list);
+			toFile.flush();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 	}
 
-	public static void readContacts() {
-		// TODO Auto-generated method stub
+/**
+ * Reads the given user's contact file if it exists and returns a list of contacts. 
+ * @param user the user whose contacts are to be extracted.
+ * @return a list of contacts
+ */
+	@SuppressWarnings("unchecked")
+	public static ArrayList<Contact> readContacts(User user) {
+		ArrayList<Contact> list = null;
+		String filePath = "files/" + user.getName() + "_contacts.txt";
+		File f = new File(filePath);
+		if (f.isFile() && !f.isDirectory()) {
+			try (ObjectInputStream fromFile = new ObjectInputStream(
+					new BufferedInputStream(new FileInputStream(filePath)))) {
+				list = (ArrayList<Contact>) fromFile.readObject();
+			} catch (FileNotFoundException e) {
+				System.err.println("Filen finns inte");
+			} catch (IOException e) {
+				e.printStackTrace();
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+		}
+
+		return list;
+	}
+
+	public static void main(String[] args) {
+		User u1 = new User("Kalle", null);
+		User u2 = new User("Sven", null);
+		User u3 = new User("Jessi", null);
+		User u6 = new User("OK", null);
+		User u4 = new User("Nes", null);
+		User u5 = new User("Wuh", null);
+		 addContact(u5, u1);
+		 addContact(u5, u2);
+		 addContact(u5, u3);
+		 addContact(u5, u6);
+		ArrayList<Contact> arr = readContacts(u5);
+		for (Contact c : arr) {
+			System.out.println(c.getName());
+		}
 
 	}
 
