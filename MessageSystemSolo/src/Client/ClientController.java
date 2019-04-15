@@ -1,5 +1,6 @@
 package Client;
 
+import Chatt.ChattWindow;
 import Chatt.ConnectedUI;
 import Chatt.StartScreenUI;
 import Chatt.TestConnectedUI;
@@ -19,6 +20,8 @@ public class ClientController {
 	private JFrame frame;
 	private TestConnectedUI tcui = new TestConnectedUI(this);
 	private ArrayList<User> allUsers;
+	private User user;
+	private ChattWindow chattWindow;
 
 	/**
 	 * Constructor which creates the startup window.
@@ -51,14 +54,9 @@ public class ClientController {
 	 * @param icon
 	 */
 	public void sendUser(String tfUsername, ImageIcon icon) {
-		/*client.connectUser(tfNewUsername, icon);
-		cui = new ConnectedUI(this);
-		cui.setLblUser(tfNewUsername); // kanske får nytt namn av server
-		frame.remove(ssui);
-		frame.add(cui);
-		frame.pack();	*/
-		client.connectUser(tfUsername, icon);
-		tcui.setLblUser(tfUsername);
+		user = new User(tfUsername, icon);
+		client.connectUser(user);
+		tcui.setUser(user);
 		frame.remove(ssui);
 		frame.add(tcui);
 		frame.pack();
@@ -78,6 +76,15 @@ public class ClientController {
 	public void clear() {
 		tcui.clearPanel();
 		
+	}
+
+	public void sendMessageToUsers(User sender, ArrayList<User> receivers, String textMessage) {
+		Message message = new Message(sender, receivers, textMessage);
+		client.sendMessage(message);
+	}
+	
+	public void openChattWindows(ArrayList<User> receivers) {
+		chattWindow = new ChattWindow(receivers);
 	}
 
 

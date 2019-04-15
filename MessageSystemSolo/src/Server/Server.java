@@ -64,17 +64,17 @@ public class Server {
 	 */
 	public void checkReceiversAndOnliners(Message message) {
 		ArrayList<User> onlineUsers = cl.getAllOnlineUsers(); // list with online users
-		ArrayList<String> listOfReceivers = message.getReceivers();
-		ArrayList<String> tempList = new ArrayList<String>(); // new list with offline receivers
+		ArrayList<User> listOfReceivers = message.getReceivers();
+		ArrayList<User> tempList = new ArrayList<>(); // new list with offline receivers
 
-		for (String receiverOnList : listOfReceivers) {
+		for (User receiverOnList : listOfReceivers) {
 			boolean receiverFound = false;
 			for (User onlineUser : onlineUsers) {
 
-				if (receiverOnList.equals(onlineUser.getName())) {
+				if (receiverOnList.getName().equals(onlineUser.getName())) {
 					receiverFound = true;
 					System.out.println(receiverOnList + " is online");
-					sendMessageToOnlineUser(message, receiverOnList);
+					sendMessageToOnlineUser(message, receiverOnList.getName());
 					break;
 				}
 			}

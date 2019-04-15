@@ -5,6 +5,8 @@ import java.awt.*;
 
 import javax.swing.*;
 
+import Server.User;
+
 
 public class UserListLayout extends JPanel {
 	private JLabel lblUserName;
@@ -13,13 +15,13 @@ public class UserListLayout extends JPanel {
 	private String userName;
 	private JPanel pnlGrid;
 	private JCheckBox checkBox;
+	private User user;
 	
 	//test
 	private ImageIcon imgUser2 = new ImageIcon("files/elefant.png");
 	
-	public UserListLayout(String userName, ImageIcon imgUser) {		//Param user user
-		this.userName = userName;
-		this.imgUser = imgUser;
+	public UserListLayout(User user) {		//Param user user
+		this.user = user;
 		setLayout(new GridLayout(1, 3));
 		initializeComponents();
 
@@ -48,6 +50,18 @@ public class UserListLayout extends JPanel {
 		setMaximumSize(new Dimension(220, 100));
 		setPreferredSize(new Dimension(220, 100));
 
+	}
+	
+	public boolean getCheckBoxMarked() {
+		return checkBox.isSelected();
+	}
+	
+	public String getUserName() {
+		return user.getName();
+	}
+	
+	public User getUser() {
+		return this.user;
 	}
 	
 //	public static void main(String[] args) {

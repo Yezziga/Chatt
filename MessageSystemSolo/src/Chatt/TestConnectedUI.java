@@ -5,6 +5,8 @@ import Server.User;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class TestConnectedUI extends JPanel {
@@ -21,6 +23,12 @@ public class TestConnectedUI extends JPanel {
     private ArrayList<User> listOfAllUsers;
     private ArrayList<UserListLayout> layoutList;
     private UserListLayout userListLayout;
+    private JTextField txtMessageField;
+    private JButton btnSendMessage;
+    private JButton btnOpenChats;
+    private User user;
+    private JButton btnAddToContacts;
+    private JButton btnClose;
 
 
     public TestConnectedUI(ClientController controller) {
@@ -32,9 +40,9 @@ public class TestConnectedUI extends JPanel {
         initializeSignedInLabel();
         initializeLeftScrollPane();
         initializeRightScrollPane();
-
-        fillLeftScrollPaneWithBullShit();
-        System.out.println("TEST CONNECTED UI SET");
+        initializeMessageSystem();
+        initializeButtons();
+        registerListeners();
     }
     
 
@@ -45,8 +53,8 @@ public class TestConnectedUI extends JPanel {
 	
 	private void updateList() {
 		pnlScrollPaneAll.removeAll();
-		for(User u : listOfAllUsers) {
-			userListLayout = new UserListLayout(u.getName(), u.getPicture());
+		for(User user : listOfAllUsers) {
+			userListLayout = new UserListLayout(user);
 			userListLayout.setMaximumSize(new Dimension(300, 100));
 			layoutList.add(userListLayout);
 			pnlScrollPaneAll.add(userListLayout);
@@ -81,10 +89,6 @@ public class TestConnectedUI extends JPanel {
     private void initializeLeftScrollPane(){
         pnlScrollPaneAll = new JPanel();
         pnlScrollPaneAll.setLayout(new BoxLayout(pnlScrollPaneAll, BoxLayout.PAGE_AXIS));
-//        userListLayout1.setMaximumSize(new Dimension(300, 100));
-//        userListLayout2.setMaximumSize(new Dimension(300, 100));
-//        pnlScrollPaneAll.add(userListLayout1);
-//        pnlScrollPaneAll.add(userListLayout2);
 
         scrollPaneAll = new JScrollPane(pnlScrollPaneAll);
         scrollPaneAll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
@@ -100,6 +104,30 @@ public class TestConnectedUI extends JPanel {
         scrollPaneContacts.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         scrollPaneContacts.setBounds(290, 80, 250, 570);
         add(scrollPaneContacts);
+    }
+    
+    private void initializeMessageSystem() {
+    	txtMessageField = new JTextField();
+    	txtMessageField.setBounds(550, 500, 200, 30);
+    	btnSendMessage = new JButton("Send");
+    	btnSendMessage.setBounds(550, 550, 200, 30);
+    	btnOpenChats = new JButton("Open chats");
+    	btnOpenChats.setBounds(550, 600, 200, 30);
+    	add(txtMessageField);
+    	add(btnSendMessage);
+    	add(btnOpenChats);
+    }
+    
+    private void initializeButtons() {
+    	btnClose = new JButton("Close");
+    	btnClose.setBounds(550, 80, 200, 30 );
+
+    	btnAddToContacts = new JButton("Add To Contacts");
+    	btnAddToContacts.setBounds(550, 130, 200, 30);
+    	
+    	add(btnClose);
+    	add(btnAddToContacts);
+    	
     }
 
     private void fillLeftScrollPaneWithBullShit() {
@@ -119,14 +147,27 @@ public class TestConnectedUI extends JPanel {
 		scrollPaneAll.updateUI();
 	}
 	
-	/**
-	 * Sets the username to the label.
-	 * 
-	 * @param str
-	 *            the username
-	 */
-	public void setLblUser(String str) {
-		String temp = "You are signed in as: " + str;
-		lblSignedAs.setText(temp);
+	public void setUser(User user) {
+		this.user = user;
+		lblSignedAs.setText("You are signed in as: " + user.getName());
 	}
-}
+	
+	private void registerListeners() {
+		btnSendMessage.addActionListener(new ButtonSendListener());
+	}
+	
+	private class ButtonSendListener implements ActionListener {
+		ArrayList<User> markedUsers = new ArrayList<>();
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			for(UserListLayout ull : layoutList) {
+				if(ull.getCheckBoxMarked()) {
+					markedUsers.add(ull.getUser());
+				}
+				System.out.println(markedUsers);
+			}
+			controller.sendMessageToUsers(user, markedUsers, txtMessageField.getText());
+			controller.openChattWindows(markedUsers);
+		}	
+		}
+	}

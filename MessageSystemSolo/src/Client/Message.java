@@ -11,19 +11,19 @@ import Server.User;
 
 public class Message implements Serializable {
 	private User sender;
-	private ArrayList<String> receivers;
+	private ArrayList<User> receivers;
 	private String message;
 	private ImageIcon image;
 	private Date dateSent;
 	private Date dateReceived;
 
-	public Message(User sender, ArrayList<String> receivers, String message) {
+	public Message(User sender, ArrayList<User> receivers, String message) {
 		this.sender = sender;
 		this.receivers = receivers;
 		this.message = message;
 	}
 
-	public Message(User sender, ArrayList<String> receivers, String message, ImageIcon image) {
+	public Message(User sender, ArrayList<User> receivers, String message, ImageIcon image) {
 		this.sender = sender;
 		this.receivers = receivers;
 		this.message = message;
@@ -34,7 +34,7 @@ public class Message implements Serializable {
 		this.sender = user;
 	}
 
-	public void setReceiver(ArrayList<String> receivers) {
+	public void setReceiver(ArrayList<User> receivers) {
 		this.receivers = receivers;
 	}
 
@@ -54,7 +54,7 @@ public class Message implements Serializable {
 		this.image = image;
 	}
 
-	public ArrayList<String> getReceivers() {
+	public ArrayList<User> getReceivers() {
 		return receivers;
 	}
 

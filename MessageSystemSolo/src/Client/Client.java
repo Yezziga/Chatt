@@ -51,9 +51,8 @@ public class Client {
 	 * @param icon
 	 *            the given image
 	 */
-	public void connectUser(String username, ImageIcon icon) {
+	public void connectUser(User user) {
 		try {
-			User user = new User(username, icon);
 			toServer.writeObject(user);
 			toServer.flush();
 
@@ -82,6 +81,7 @@ public class Client {
 	public void sendMessage(Message msg) {
 		try {
 			toServer.writeObject(msg);
+			toServer.flush();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
