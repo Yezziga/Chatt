@@ -96,7 +96,7 @@ public class ClientController {
 	}
 	
 	public void openChattWindows(User sender, ArrayList<User> receivers) {
-		chattWindow = new ChattWindow(sender, receivers);
+		chattWindow = new ChattWindow(this, sender, receivers);
 	}
 	
 	/**
@@ -106,6 +106,10 @@ public class ClientController {
 	public void updateContactList(ArrayList<Contact> arr) {
 		 tcui.updateContactList(arr);
 		
+	}
+
+	public void addMessage(Message msg) {
+		chattWindow.handleMessage(msg);
 	}
 
 

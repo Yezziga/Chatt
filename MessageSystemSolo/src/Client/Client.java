@@ -89,7 +89,8 @@ public class Client {
 	}
 
 	public void readMessage(Message msg) {
-		// read & display message
+		System.out.println(msg.getMessage());
+		controller.addMessage(msg);
 	}
 
 	private class Listener extends Thread {
@@ -127,6 +128,9 @@ public class Client {
 						} else if (((ArrayList<?>) obj).isEmpty()) {
 							controller.clear();
 						}
+					} if(obj instanceof Message) {
+						System.out.println("Object instance of message");
+						readMessage((Message)obj);
 					}
 
 					// @SuppressWarnings("unchecked")

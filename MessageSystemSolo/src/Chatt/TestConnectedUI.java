@@ -153,6 +153,7 @@ public class TestConnectedUI extends JPanel {
 
 	private void registerListeners() {
 		btnSendMessage.addActionListener(new ButtonSendListener());
+		btnOpenChats.addActionListener(new ButtonOpenChatsListener());
 	}
 
 	private class ButtonSendListener implements ActionListener {
@@ -169,7 +170,22 @@ public class TestConnectedUI extends JPanel {
 			controller.sendMessageToUsers(user, markedUsers, txtMessageField.getText());
 			controller.openChattWindows(user, markedUsers);
 		}	
-		}
+	}
+	
+	private class ButtonOpenChatsListener implements ActionListener {
+		ArrayList<User> markedUsers = new ArrayList<>();
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			for (UserListLayout ull : layoutList) {
+				if (ull.getCheckBoxMarked()) {
+					markedUsers.add(ull.getUser());
+				}
+				System.out.println(markedUsers);
+			}
+			controller.openChattWindows(user, markedUsers);
+		}	
+	}
+		
 
 	public void updateContactList(ArrayList<Contact> arr) { // FIXA DENNA
 		pnlScrollPaneContacts.removeAll();

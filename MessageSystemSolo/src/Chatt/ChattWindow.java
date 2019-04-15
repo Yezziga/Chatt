@@ -10,6 +10,8 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
 
+import Client.ClientController;
+import Client.Message;
 import Server.User;
 
 /**
@@ -25,13 +27,15 @@ public class ChattWindow extends JFrame {
 	private ChattPanel chattPanel;
 	private User clientsUser;
 	private ArrayList<JComponent> listOfChats;
+	private ClientController controller;
 	
-	public ChattWindow(User clientsUser, ArrayList<User> receivers) {
+	public ChattWindow(ClientController controller, User clientsUser, ArrayList<User> receivers) {
 		this.setTitle("Test");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setPreferredSize(new Dimension(700,700));
 		this.setVisible(true);
 		this.setResizable(false);
+		this.controller = controller;
 		this.receivers = receivers;
 		this.clientsUser = clientsUser;
 		
@@ -61,7 +65,7 @@ public class ChattWindow extends JFrame {
 	}
 	
 	private ChattPanel createPanel(User receiver) {
-		chattPanel = new ChattPanel(clientsUser, receiver);
+		chattPanel = new ChattPanel(controller, clientsUser, receiver);
 		return chattPanel;
 	}
 	
@@ -70,6 +74,23 @@ public class ChattWindow extends JFrame {
 		pack();
 		tabbedPane.setVisible(true);
 		repaint();
+	}
+
+	public void handleMessage(Message msg) {
+		System.out.println("Handle Message: ChattWindow: ");
+		ArrayList<User> tempReceivers = msg.getReceivers();
+		for(int i = 0; i < listOfChats.size(); i++) {
+			System.out.println("Receiver in temp receivers: " + tempReceivers.get(i).getName());
+			System.out.println("Receiver in"
+					+ "list of chats: " + ((ChattPanel)listOfChats.get(i)).getSender());
+			
+			if(((ChattPanel)listOfChats.get(i)).getSender().equals(tempReceivers.get(i).getName())) {
+				System.out.println("XXReceiver in temp receivers: " + tempReceivers.get(i).getName() + "\nReceiver in"
+						+ "list of chats: " + ((ChattPanel)listOfChats.get(i)).getReceiver());
+				((ChattPanel)listOfChats.get(i)).addMessageToChat(msg);
+			}
+		}
+		
 	}
 	
 	
