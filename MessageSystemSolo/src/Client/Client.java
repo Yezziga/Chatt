@@ -167,4 +167,15 @@ public class Client {
 		// Client client3 = new Client("127.0.0.1",4447);
 	}
 
+	public void addContact(User user) {
+		try {
+			toServer.writeObject(user);
+			toServer.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
 }

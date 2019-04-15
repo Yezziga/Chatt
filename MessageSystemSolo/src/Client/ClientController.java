@@ -107,5 +107,10 @@ public class ClientController {
 		
 	}
 
+	public void addContact(User user) {
+		client.addContact(user);
+		
+	}
+
 
 }

@@ -311,6 +311,7 @@ public class Server {
 				ContactsReader.addContact(user, new User("Lolo", null));
 				ContactsReader.addContact(user, new User("Max", null));
 				toClient.writeObject(ContactsReader.readContacts(user));
+				toClient.flush();
 
 				while (true) {
 					Object obj = fromClient.readObject();
@@ -321,6 +322,12 @@ public class Server {
 							Date date = calendar.getTime();
 							msg.setDateSend(date);
 							checkReceiversAndOnliners(msg);
+						} else if(obj instanceof User) {
+							User contactToAdd = (User) obj;
+							ContactsReader.addContact(user, contactToAdd);
+							toClient.writeObject(ContactsReader.readContacts(user));
+							toClient.flush();
+
 						}
 					} catch (Exception e) {
 						System.err.println(e);

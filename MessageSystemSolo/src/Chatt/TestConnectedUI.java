@@ -23,7 +23,6 @@ public class TestConnectedUI extends JPanel {
 	private JScrollPane scrollPaneContacts;
 	private ArrayList<User> listOfAllUsers;
 	private ArrayList<UserListLayout> layoutList;
-	private UserListLayout userListLayout;
 	private JTextField txtMessageField;
 	private JButton btnSendMessage;
 	private JButton btnOpenChats;
@@ -171,6 +170,18 @@ public class TestConnectedUI extends JPanel {
 
 	private void registerListeners() {
 		btnSendMessage.addActionListener(new ButtonSendListener());
+		btnAddToContacts.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				for (UserListLayout u : layoutList) {
+					if(u.getCheckBoxMarked() && e.getSource() == btnAddToContacts) {
+						controller.addContact(u.getUser());
+					}
+				}
+				
+			}
+		});
 	}
 
 	private class ButtonSendListener implements ActionListener {
