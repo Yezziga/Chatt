@@ -78,4 +78,12 @@ public class Message implements Serializable {
 		receivers.remove(name);
 	}
 
+	@Override
+	public String toString() {
+		return "Message [sender=" + sender + ", receivers=" + receivers + ", message=" + message + ", image=" + image
+				+ ", dateSent=" + dateSent + ", dateReceived=" + dateReceived + "]";
+	}
+	
+	
+
 }

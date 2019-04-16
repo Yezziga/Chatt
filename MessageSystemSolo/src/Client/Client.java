@@ -89,7 +89,7 @@ public class Client {
 	}
 
 	public void readMessage(Message msg) {
-		System.out.println(msg.getMessage());
+		System.out.println("Message is " + msg);
 		controller.addMessage(msg);
 	}
 

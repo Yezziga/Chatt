@@ -15,6 +15,10 @@ import Client.Message;
 import Server.User;
 
 public class ChattPanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1344968108806433304L;
 	private User sender;
 	private User receiver;
 	private JTextArea textArea;
@@ -72,9 +76,10 @@ public class ChattPanel extends JPanel {
 		@Override 
 		public void actionPerformed(ActionEvent arg0) {
 			ArrayList<User> receivers = new ArrayList<User>();
+			receivers.add(receiver);
 			Message msg = new Message(sender, receivers, txtField.getText());
 			addMessageToChat(msg);
-			receivers.add(receiver);
+		//	receivers.add(receiver);
 			controller.sendMessageToUsers(sender, receivers, txtField.getText());
 		}
 		
