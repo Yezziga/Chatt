@@ -58,7 +58,7 @@ public class Message implements Serializable {
 		return receivers;
 	}
 
-	public void setDateSend(Date date) {
+	public void setDateSent(Date date) {
 		this.dateSent = date;
 	}
 
