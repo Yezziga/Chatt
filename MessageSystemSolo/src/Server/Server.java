@@ -66,15 +66,19 @@ public class Server {
 	 *            the message to send
 	 */
 	public void checkReceiversAndOnliners(Message message) {
+		System.out.println("1");
 		ArrayList<User> onlineUsers = cl.getAllOnlineUsers(); // list with online users
 		ArrayList<User> listOfReceivers = message.getReceivers();
 		ArrayList<User> tempList = new ArrayList<>(); // new list with offline receivers
 
 		for (User receiverOnList : listOfReceivers) {
+			System.out.println("2");
 			boolean receiverFound = false;
 			for (User onlineUser : onlineUsers) {
+				System.out.println("3");
 
 				if (receiverOnList.getName().equals(onlineUser.getName())) {
+					System.out.println("4");
 					receiverFound = true;
 					System.out.println(receiverOnList + " is online");
 					sendMessageToOnlineUser(message, receiverOnList.getName());
@@ -101,6 +105,8 @@ public class Server {
 	 *            the name of the user
 	 */
 	public void sendMessageToOnlineUser(Message msg, String name) {
+		System.out.println("5");
+		System.out.println("In server, sendMessageToOnlineUser: Message is " + msg.getMessage());
 		User user = cl.getUser(name);
 		cl.get(user).sendMessage(msg);
 
@@ -317,7 +323,9 @@ public class Server {
 					Object obj = fromClient.readObject();
 					try {
 						if (obj instanceof Message) {
+							System.out.println("In Server: Object instance of message");
 							Message msg = (Message) obj;
+							System.out.println(msg.getMessage());
 							Calendar calendar = Calendar.getInstance();
 							Date date = calendar.getTime();
 							msg.setDateSend(date);

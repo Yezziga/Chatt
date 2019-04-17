@@ -1,0 +1,6 @@
+Tue Apr 16 14:45:09 CEST 2019 | Logger started
+Tue Apr 16 14:45:09 CEST 2019 | Logger started
+Tue Apr 16 14:45:39 CEST 2019 | jessi connected
+Tue Apr 16 14:45:09 CEST 2019 | Logger started
+Tue Apr 16 14:45:39 CEST 2019 | jessi connected
+Tue Apr 16 14:46:11 CEST 2019 | jessica connected
