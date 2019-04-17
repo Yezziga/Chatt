@@ -23,9 +23,9 @@ public class Server {
 	 *            the port to connect to
 	 */
 	public Server(int serverPort) {
-		// logger = TrafficLogger.getInstance();
-		// logger.saveToLog("Logger started");
-		// System.out.println(logger.getLog());
+		 logger = TrafficLogger.getInstance();
+		 logger.log("Logger started"); 
+		 System.out.println(logger.getLog());
 
 		try {
 			ServerSocket serverSocket = new ServerSocket(serverPort);
@@ -80,13 +80,16 @@ public class Server {
 				if (receiverOnList.getName().equals(onlineUser.getName())) {
 					System.out.println("4");
 					receiverFound = true;
+					logger.log(receiverOnList + " is online. Attempting to send message");
 					System.out.println(receiverOnList + " is online");
+					
 					sendMessageToOnlineUser(message, receiverOnList.getName());
 					break;
 				}
 			}
 			if (receiverFound == false) {
 				tempList.add(receiverOnList);
+				logger.log(receiverOnList + " is not online. Storing message to send when online");
 				System.out.println(receiverOnList + " is not online");
 			}
 		}
@@ -157,7 +160,7 @@ public class Server {
 
 			onlineUsers.put(user, clientHandler);
 			allUsers.put(user, clientHandler);
-//			logger.saveToLog(user.getName() + " connected");
+			logger.log(user.getName() + " connected to the server");
 			updateAllClients();
 			// send messages to user if there are any unsent messages. not tested!
 			// for (Message message : unsentMessages) {
@@ -228,7 +231,7 @@ public class Server {
 		 * 
 		 * @return
 		 */
-		public ArrayList<User> getAllUsers() {
+		public ArrayList<User> getAllUsers() { // 	ANVÄNDS EJ?
 			ArrayList<User> arr = new ArrayList<>();
 			for (User user : allUsers.keySet()) {
 				arr.add(user);
@@ -276,6 +279,7 @@ public class Server {
 			try {
 				toClient.writeObject(msg);
 				toClient.flush();
+				logger.log("message sent to " + user.getName());
 				System.out.println("skickat vidare till klient..");
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -292,9 +296,6 @@ public class Server {
 			}
 		}
 
-		public void sendContactList() {
-
-		}
 
 		public void run() {
 
@@ -312,10 +313,6 @@ public class Server {
 				}
 
 				cl.put(user, this);
-				ContactsReader.addContact(user, new User("Contact", null));
-				ContactsReader.addContact(user, new User("Unicorn", null));
-				ContactsReader.addContact(user, new User("Lolo", null));
-				ContactsReader.addContact(user, new User("Max", null));
 				toClient.writeObject(ContactsReader.readContacts(user));
 				toClient.flush();
 
@@ -328,7 +325,8 @@ public class Server {
 							System.out.println(msg.getMessage());
 							Calendar calendar = Calendar.getInstance();
 							Date date = calendar.getTime();
-							msg.setDateSend(date);
+							msg.setDateSent(date);
+							logger.log("Server received message from client");
 							checkReceiversAndOnliners(msg);
 						} else if(obj instanceof User) {
 							User contactToAdd = (User) obj;
@@ -361,7 +359,7 @@ public class Server {
 				clientSocket.close();
 				toClient.close();
 				fromClient.close();
-//				logger.saveToLog("User disconnected");
+				logger.log(user.getName() + " disconnected from the server.");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
