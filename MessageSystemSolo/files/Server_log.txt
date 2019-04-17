@@ -1,6 +1,465 @@
-Tue Apr 16 14:45:09 CEST 2019 | Logger started
-Tue Apr 16 14:45:09 CEST 2019 | Logger started
-Tue Apr 16 14:45:39 CEST 2019 | jessi connected
-Tue Apr 16 14:45:09 CEST 2019 | Logger started
-Tue Apr 16 14:45:39 CEST 2019 | jessi connected
-Tue Apr 16 14:46:11 CEST 2019 | jessica connected
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 12:08:41 CEST 2019 | Server received message from client
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 12:08:41 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:41 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 12:08:41 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:41 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:08:41 CEST 2019 | message sent to henke
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 12:08:41 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:41 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:08:41 CEST 2019 | message sent to henke
+Wed Apr 17 12:08:59 CEST 2019 | Server received message from client
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 12:08:41 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:41 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:08:41 CEST 2019 | message sent to henke
+Wed Apr 17 12:08:59 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:59 CEST 2019 | jessica is online. Attempting to send message
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 12:08:41 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:41 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:08:41 CEST 2019 | message sent to henke
+Wed Apr 17 12:08:59 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:59 CEST 2019 | jessica is online. Attempting to send message
+Wed Apr 17 12:08:59 CEST 2019 | message sent to jessica
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 12:08:41 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:41 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:08:41 CEST 2019 | message sent to henke
+Wed Apr 17 12:08:59 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:59 CEST 2019 | jessica is online. Attempting to send message
+Wed Apr 17 12:08:59 CEST 2019 | message sent to jessica
+Wed Apr 17 12:09:08 CEST 2019 | Server received message from client
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 12:08:41 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:41 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:08:41 CEST 2019 | message sent to henke
+Wed Apr 17 12:08:59 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:59 CEST 2019 | jessica is online. Attempting to send message
+Wed Apr 17 12:08:59 CEST 2019 | message sent to jessica
+Wed Apr 17 12:09:08 CEST 2019 | Server received message from client
+Wed Apr 17 12:09:08 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 12:08:41 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:41 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:08:41 CEST 2019 | message sent to henke
+Wed Apr 17 12:08:59 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:59 CEST 2019 | jessica is online. Attempting to send message
+Wed Apr 17 12:08:59 CEST 2019 | message sent to jessica
+Wed Apr 17 12:09:08 CEST 2019 | Server received message from client
+Wed Apr 17 12:09:08 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:09:08 CEST 2019 | message sent to henke
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 12:08:41 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:41 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:08:41 CEST 2019 | message sent to henke
+Wed Apr 17 12:08:59 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:59 CEST 2019 | jessica is online. Attempting to send message
+Wed Apr 17 12:08:59 CEST 2019 | message sent to jessica
+Wed Apr 17 12:09:08 CEST 2019 | Server received message from client
+Wed Apr 17 12:09:08 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:09:08 CEST 2019 | message sent to henke
+Wed Apr 17 12:09:15 CEST 2019 | jessica disconnected from the server.
+Wed Apr 17 11:52:51 CEST 2019 | Logger started
+Wed Apr 17 11:53:06 CEST 2019 | jessi connected to the server
+Wed Apr 17 11:53:17 CEST 2019 | henke connected to the server
+Wed Apr 17 11:53:23 CEST 2019 | Server received message from client
+Wed Apr 17 11:53:23 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 11:53:23 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:19 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:19 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:19 CEST 2019 | message sent to jessi
+Wed Apr 17 12:07:23 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:23 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:07:23 CEST 2019 | message sent to henke
+Wed Apr 17 12:07:29 CEST 2019 | Server received message from client
+Wed Apr 17 12:07:29 CEST 2019 | jessi is online. Attempting to send message
+Wed Apr 17 12:07:29 CEST 2019 | message sent to jessi
+Wed Apr 17 12:08:02 CEST 2019 | henke disconnected from the server.
+Wed Apr 17 12:08:05 CEST 2019 | jessi disconnected from the server.
+Wed Apr 17 12:08:22 CEST 2019 | jessica connected to the server
+Wed Apr 17 12:08:26 CEST 2019 | henke connected to the server
+Wed Apr 17 12:08:41 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:41 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:08:41 CEST 2019 | message sent to henke
+Wed Apr 17 12:08:59 CEST 2019 | Server received message from client
+Wed Apr 17 12:08:59 CEST 2019 | jessica is online. Attempting to send message
+Wed Apr 17 12:08:59 CEST 2019 | message sent to jessica
+Wed Apr 17 12:09:08 CEST 2019 | Server received message from client
+Wed Apr 17 12:09:08 CEST 2019 | henke is online. Attempting to send message
+Wed Apr 17 12:09:08 CEST 2019 | message sent to henke
+Wed Apr 17 12:09:15 CEST 2019 | jessica disconnected from the server.
+Wed Apr 17 12:09:17 CEST 2019 | henke disconnected from the server.

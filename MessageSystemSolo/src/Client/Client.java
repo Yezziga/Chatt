@@ -7,6 +7,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.Date;
 
 import javax.swing.ImageIcon;
 
@@ -90,6 +91,7 @@ public class Client {
 
 	public void readMessage(Message msg) {
 		System.out.println("Message is " + msg);
+		msg.setDateReceived(new Date());
 		controller.addMessage(msg);
 	}
 
@@ -132,21 +134,6 @@ public class Client {
 						System.out.println("Object instance of message");
 						readMessage((Message)obj);
 					}
-
-					// @SuppressWarnings("unchecked")
-					// ArrayList<String> arr = (ArrayList<String>) obj;
-					// if (arr.get(arr.size()-1).equals("*")) {
-					// arr.remove(arr.size()-1);
-					// for (String string : arr) {
-					// System.out.println(string);
-					// }
-					//
-					//// controller.updateOnlineList(arr);
-					// }
-					// } else if (obj instanceof Message) {
-					// Message msg = (Message) obj;
-					// readMessage(msg); // does not do anything yet
-					// }
 
 				} catch (ClassNotFoundException e1) {
 					e1.printStackTrace();

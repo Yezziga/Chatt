@@ -171,6 +171,27 @@ public class TestConnectedUI extends JPanel {
 	private void registerListeners() {
 		btnSendMessage.addActionListener(new ButtonSendListener());
 		btnOpenChats.addActionListener(new ButtonOpenChatsListener());
+		btnClose.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				controller.disconnectClient();
+				System.exit(0);
+				
+			}
+		});
+		btnAddToContacts.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				for (UserListLayout u : layoutList) {
+					if (u.getCheckBoxMarked() && e.getSource() == btnAddToContacts) {
+						controller.addContact(u.getUser());
+					}
+				}
+
+			}
+		});
 	}
 
 	private class ButtonSendListener implements ActionListener {

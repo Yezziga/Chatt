@@ -80,8 +80,8 @@ public class Server {
 				if (receiverOnList.getName().equals(onlineUser.getName())) {
 					System.out.println("4");
 					receiverFound = true;
-					logger.log(receiverOnList + " is online. Attempting to send message");
-					System.out.println(receiverOnList + " is online");
+					logger.log(receiverOnList.getName() + " is online. Attempting to send message");
+					System.out.println(receiverOnList.getName() + " is online");
 					
 					sendMessageToOnlineUser(message, receiverOnList.getName());
 					break;
@@ -89,8 +89,8 @@ public class Server {
 			}
 			if (receiverFound == false) {
 				tempList.add(receiverOnList);
-				logger.log(receiverOnList + " is not online. Storing message to send when online");
-				System.out.println(receiverOnList + " is not online");
+				logger.log(receiverOnList.getName() + " is not online. Storing message to send when online");
+				System.out.println(receiverOnList.getName() + " is not online");
 			}
 		}
 		if (!tempList.isEmpty()) {
