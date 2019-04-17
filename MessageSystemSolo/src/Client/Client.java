@@ -141,11 +141,7 @@ public class Client {
 					e1.printStackTrace();
 				}
 
-				try {
-					Thread.sleep(5000); // not needed?
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
+				
 			}
 		}
 
