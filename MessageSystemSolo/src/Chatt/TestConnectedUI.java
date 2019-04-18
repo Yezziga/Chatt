@@ -23,7 +23,6 @@ public class TestConnectedUI extends JPanel {
 	private JScrollPane scrollPaneContacts;
 	private ArrayList<User> listOfAllUsers;
 	private ArrayList<UserListLayout> layoutList;
-	private UserListLayout userListLayout;
 	private JTextField txtMessageField;
 	private JButton btnSendMessage;
 	private JButton btnOpenChats;
@@ -172,6 +171,27 @@ public class TestConnectedUI extends JPanel {
 	private void registerListeners() {
 		btnSendMessage.addActionListener(new ButtonSendListener());
 		btnOpenChats.addActionListener(new ButtonOpenChatsListener());
+		btnClose.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				controller.disconnectClient();
+				System.exit(0);
+				
+			}
+		});
+		btnAddToContacts.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				for (UserListLayout u : layoutList) {
+					if (u.getCheckBoxMarked() && e.getSource() == btnAddToContacts) {
+						controller.addContact(u.getUser());
+					}
+				}
+
+			}
+		});
 	}
 
 	private class ButtonSendListener implements ActionListener {
@@ -187,11 +207,12 @@ public class TestConnectedUI extends JPanel {
 			}
 			controller.sendMessageToUsers(user, markedUsers, txtMessageField.getText());
 			controller.openChattWindows(user, markedUsers);
-		}	
+		}
 	}
-	
+
 	private class ButtonOpenChatsListener implements ActionListener {
 		ArrayList<User> markedUsers = new ArrayList<>();
+
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			for (UserListLayout ull : layoutList) {
@@ -201,8 +222,7 @@ public class TestConnectedUI extends JPanel {
 				System.out.println(markedUsers);
 			}
 			controller.openChattWindows(user, markedUsers);
-		}	
+		}
 	}
-		
 
 }

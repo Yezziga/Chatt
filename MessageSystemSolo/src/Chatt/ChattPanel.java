@@ -4,6 +4,7 @@ import java.awt.SystemColor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Date;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -40,6 +41,7 @@ public class ChattPanel extends JPanel {
 	private void initializeComponents() {
 		textArea = new JTextArea();
 		textArea.setBounds(20, 100, 650, 420);
+		textArea.setEditable(false);
 		add(textArea);
 		
 		txtField = new JTextField();
@@ -69,7 +71,9 @@ public class ChattPanel extends JPanel {
 	
 	public void addMessageToChat(Message message) {
 		System.out.println("In AddMessageToChat - ChattPanel: ");
-		textArea.append(message.getSender().getName() + ": " + message.getMessage() + "\n");
+//		textArea.append(message.getSender().getName() + ": " + message.getMessage() + "\n");
+		textArea.append("[" + message.getDateReceived() +"] "+ message.getSender().getName() + ": " + message.getMessage() + "\n");
+		
 	}
 	
 	private class SendMessageListener implements ActionListener {
@@ -78,9 +82,11 @@ public class ChattPanel extends JPanel {
 			ArrayList<User> receivers = new ArrayList<User>();
 			receivers.add(receiver);
 			Message msg = new Message(sender, receivers, txtField.getText());
+			msg.setDateReceived(new Date());
 			addMessageToChat(msg);
 		//	receivers.add(receiver);
 			controller.sendMessageToUsers(sender, receivers, txtField.getText());
+			txtField.setText("");
 		}
 		
 	}
