@@ -317,6 +317,7 @@ public class Server {
 				ContactsReader.addContact(user, new User("Lolo", null));
 				ContactsReader.addContact(user, new User("Max", null));
 				toClient.writeObject(ContactsReader.readContacts(user));
+				toClient.flush();
 
 				while (true) {
 					Object obj = fromClient.readObject();

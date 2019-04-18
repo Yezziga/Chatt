@@ -92,10 +92,16 @@ public class ChattWindow extends JFrame {
 		for(int i = 0; i < receivers.size(); i++) {
 			//chattPanel = createPanel(receivers.get(i));
 			listOfChats.add(createPanel(receivers.get(i)));
-			System.out.println("INITIALIZE PANELS: " + listOfChats.get(i));
 		}
 		for(int i = 0; i < receivers.size(); i++) {
 			tabbedPane.add(receivers.get(i).getName(), listOfChats.get(i));
+		}
+		for(int i = 0; i < listOfChats.size()-1; i++) {
+			for(int j = 1; j < listOfChats.size(); j++) {
+				if(listOfChats.get(i) == listOfChats.get(j)) {
+					System.out.println("SAME OBJEEEEEEEECT");
+				}
+			}
 		}
 		addTabbedPane();
 	}
