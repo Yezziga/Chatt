@@ -19,14 +19,16 @@ public class ConnectedUI extends JPanel {
 	private JPanel pnlScrollPaneAll, pnlScrollPaneContacts;
 	private JScrollPane scrollPaneAll, scrollPaneContacts;
 	private ArrayList<User> listOfAllUsers;
-	private ArrayList<UserListLayout> layoutList;
+	private ArrayList<Contact> listOfAllContacts;
+	private ArrayList<UserListLayout> layoutListAll, layoutListContacts;
 	private JTextField txtMessageField;
 	private JButton btnSendMessage, btnOpenChats, btnAddToContacts,btnClose;
 	private User user;
 
 	public ConnectedUI(ClientController controller) {
 		this.controller = controller;
-		layoutList = new ArrayList<UserListLayout>();
+		layoutListAll = new ArrayList<UserListLayout>();
+		layoutListContacts = new ArrayList<UserListLayout>();
 		setBackground(SystemColor.textHighlight);
 		setLayout(null);
 		initializeMenuBar();
@@ -49,18 +51,20 @@ public class ConnectedUI extends JPanel {
 		for (User user : listOfAllUsers) {
 			userListLayout = new UserListLayout(user);
 			userListLayout.setMaximumSize(new Dimension(300, 100));
-			layoutList.add(userListLayout);
+			layoutListAll.add(userListLayout);
 			pnlScrollPaneAll.add(userListLayout);
 		}
 		scrollPaneAll.updateUI();
 	}
 
 	public void updateContactList(ArrayList<Contact> arr) { // FIXA DENNA
+		listOfAllContacts = arr;
 		pnlScrollPaneContacts.removeAll();
 		UserListLayout userListLayout;
 		for (Contact u : arr) {
 			userListLayout = new UserListLayout(u);
 			userListLayout.setMaximumSize(new Dimension(300, 100));
+			layoutListContacts.add(userListLayout);
 			pnlScrollPaneContacts.add(userListLayout);
 			System.out.println(u.getName());
 		}
@@ -141,7 +145,7 @@ public class ConnectedUI extends JPanel {
 	}
 
 	public void clearList() {
-		layoutList.clear();
+		layoutListAll.clear();
 		if (listOfAllUsers != null) {
 			listOfAllUsers.clear();
 		}
@@ -178,7 +182,7 @@ public class ConnectedUI extends JPanel {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				for (UserListLayout u : layoutList) {
+				for (UserListLayout u : layoutListAll) {
 					if (u.getCheckBoxMarked() && e.getSource() == btnAddToContacts) {
 						controller.addContact(u.getUser());
 					}
@@ -193,12 +197,20 @@ public class ConnectedUI extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
-			for (UserListLayout ull : layoutList) {
+			for (UserListLayout ull : layoutListAll) {
 				if (ull.getCheckBoxMarked()) {
 					markedUsers.add(ull.getUser());
 				}
 				System.out.println(markedUsers);
 			}
+			
+			for (UserListLayout ull : layoutListContacts) {
+				if (ull.getCheckBoxMarked()) {
+					markedUsers.add(ull.getUser());
+				}
+				System.out.println(markedUsers);
+			}
+			
 			controller.sendMessageToUsers(user, markedUsers, txtMessageField.getText());
 			controller.openChattWindows(user, markedUsers);
 		}
@@ -209,7 +221,14 @@ public class ConnectedUI extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			for (UserListLayout ull : layoutList) {
+			for (UserListLayout ull : layoutListAll) {
+				if (ull.getCheckBoxMarked()) {
+					markedUsers.add(ull.getUser());
+				}
+				System.out.println(markedUsers);
+			}
+			
+			for (UserListLayout ull : layoutListContacts) {
 				if (ull.getCheckBoxMarked()) {
 					markedUsers.add(ull.getUser());
 				}

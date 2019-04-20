@@ -1,15 +1,378 @@
-Wed Apr 17 13:47:09 CEST 2019 | Logger started
-Wed Apr 17 13:47:09 CEST 2019 | Logger started
-Wed Apr 17 13:47:34 CEST 2019 | jessi connected to the server
-Wed Apr 17 13:47:09 CEST 2019 | Logger started
-Wed Apr 17 13:47:34 CEST 2019 | jessi connected to the server
-Wed Apr 17 13:47:53 CEST 2019 | henke connected to the server
-Wed Apr 17 13:47:09 CEST 2019 | Logger started
-Wed Apr 17 13:47:34 CEST 2019 | jessi connected to the server
-Wed Apr 17 13:47:53 CEST 2019 | henke connected to the server
-Wed Apr 17 13:48:21 CEST 2019 | jessi disconnected from the server.
-Wed Apr 17 13:47:09 CEST 2019 | Logger started
-Wed Apr 17 13:47:34 CEST 2019 | jessi connected to the server
-Wed Apr 17 13:47:53 CEST 2019 | henke connected to the server
-Wed Apr 17 13:48:21 CEST 2019 | jessi disconnected from the server.
-Wed Apr 17 13:48:26 CEST 2019 | henke disconnected from the server.
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:12 CEST 2019 | message sent to jessi
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:12 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:48 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:12 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:48 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:48 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:12 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:48 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:48 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:48 CEST 2019 | message sent to jessi
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:12 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:48 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:48 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:48 CEST 2019 | message sent to jessi
+Fri Apr 19 18:01:41 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:12 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:48 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:48 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:48 CEST 2019 | message sent to jessi
+Fri Apr 19 18:01:41 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:01:41 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:12 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:48 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:48 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:48 CEST 2019 | message sent to jessi
+Fri Apr 19 18:01:41 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:01:41 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:01:41 CEST 2019 | message sent to jessi
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:12 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:48 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:48 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:48 CEST 2019 | message sent to jessi
+Fri Apr 19 18:01:41 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:01:41 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:01:41 CEST 2019 | message sent to jessi
+Fri Apr 19 18:04:16 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:12 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:48 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:48 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:48 CEST 2019 | message sent to jessi
+Fri Apr 19 18:01:41 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:01:41 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:01:41 CEST 2019 | message sent to jessi
+Fri Apr 19 18:04:16 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 18:05:06 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:12 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:48 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:48 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:48 CEST 2019 | message sent to jessi
+Fri Apr 19 18:01:41 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:01:41 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:01:41 CEST 2019 | message sent to jessi
+Fri Apr 19 18:04:16 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 18:05:06 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:05:06 CEST 2019 | jessi is not online. Storing message to send when online
+Fri Apr 19 17:46:08 CEST 2019 | Logger started
+Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
+Fri Apr 19 17:46:45 CEST 2019 | jessica disconnected from the server.
+Fri Apr 19 17:47:10 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:47:21 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:48:28 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:48:35 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:53:37 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:55:22 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 17:58:40 CEST 2019 | jessi connected to the server
+Fri Apr 19 17:59:04 CEST 2019 | judy connected to the server
+Fri Apr 19 17:59:54 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 17:59:54 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 17:59:54 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:12 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:12 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:12 CEST 2019 | message sent to jessi
+Fri Apr 19 18:00:48 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:00:48 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:00:48 CEST 2019 | message sent to jessi
+Fri Apr 19 18:01:41 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:01:41 CEST 2019 | jessi is online. Attempting to send message
+Fri Apr 19 18:01:41 CEST 2019 | message sent to jessi
+Fri Apr 19 18:04:16 CEST 2019 | jessi disconnected from the server.
+Fri Apr 19 18:05:06 CEST 2019 | Server received Message-object from judy
+Fri Apr 19 18:05:06 CEST 2019 | jessi is not online. Storing message to send when online
+Fri Apr 19 18:05:16 CEST 2019 | judy disconnected from the server.
