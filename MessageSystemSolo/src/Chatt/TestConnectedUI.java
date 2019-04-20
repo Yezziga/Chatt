@@ -206,7 +206,8 @@ public class TestConnectedUI extends JPanel {
 				System.out.println(markedUsers);
 			}
 			controller.sendMessageToUsers(user, markedUsers, txtMessageField.getText());
-			controller.openChattWindows(user, markedUsers);
+			controller.openNewChattWindow();
+
 		}
 	}
 

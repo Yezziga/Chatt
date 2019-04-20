@@ -111,6 +111,10 @@ public class ClientController {
 		chattWindow = new ChattWindow(this, sender, receiver);
 	}
 
+	public void openNewChattWindow(){
+		chattWindow = new ChattWindow(this);
+	}
+
 	/**
 	 * Forwards an ArrayList of Contact-objects.
 	 * 
@@ -124,15 +128,17 @@ public class ClientController {
 
 	public void addMessage(Message msg) {
 		if (chattWindow != null) {
-			System.out.println("ChattWindow is not null on client side");
-			chattWindow.handleMessage(msg);
+			if(chattWindow.checkIfChatWindowOpen(msg.getSender())) {
+				chattWindow.testHandleMessage(msg);
+			} else {
+				chattWindow.openNewChattTab(msg);
+				chattWindow.testHandleMessage(msg);
+			}
+
 		} else {
-			System.out.println("Message sender: " + msg.getSender().getName());
-			System.out.println("Message receivers: " + msg.getReceivers());
-			System.out.println("ChattWindow is null on client side");
-			System.out.println("User: " + user.getName());
-			openChattWindow(user, msg.getSender());
-			chattWindow.handleMessage(msg);
+			openNewChattWindow();
+			chattWindow.openNewChattTab(msg);
+			chattWindow.testHandleMessage(msg);
 		}
 	}
 

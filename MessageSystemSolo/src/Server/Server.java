@@ -66,24 +66,20 @@ public class Server {
 	 *            the message to send
 	 */
 	public void checkReceiversAndOnliners(Message message) {
-		System.out.println("1");
 		ArrayList<User> onlineUsers = cl.getAllOnlineUsers(); // list with online users
 		ArrayList<User> listOfReceivers = message.getReceivers();
 		ArrayList<User> tempList = new ArrayList<>(); // new list with offline receivers
 
 		for (User receiverOnList : listOfReceivers) {
-			System.out.println("2");
 			boolean receiverFound = false;
 			for (User onlineUser : onlineUsers) {
-				System.out.println("3");
 
 				if (receiverOnList.getName().equals(onlineUser.getName())) {
-					System.out.println("4");
 					receiverFound = true;
 					logger.log(receiverOnList.getName() + " is online. Attempting to send message");
 					System.out.println(receiverOnList.getName() + " is online");
 					
-					sendMessageToOnlineUser(message, receiverOnList.getName());
+					sendMessageToOnlineUser(message, receiverOnList);
 					break;
 				}
 			}
@@ -104,14 +100,15 @@ public class Server {
 	 * 
 	 * @param msg
 	 *            the message to send
-	 * @param name
-	 *            the name of the user
+	 * @param receiver
+	 *            the user who is receiving
 	 */
-	public void sendMessageToOnlineUser(Message msg, String name) {
-		System.out.println("5");
+	public void sendMessageToOnlineUser(Message msg, User receiver) {
 		System.out.println("In server, sendMessageToOnlineUser: Message is " + msg.getMessage());
-		User user = cl.getUser(name);
-		cl.get(user).sendMessage(msg);
+		Message message = new Message(msg.getSender(), receiver, msg.getMessage());
+
+		User user = cl.getUser(receiver.getName());
+		cl.get(user).sendMessage(message);
 
 	}
 
