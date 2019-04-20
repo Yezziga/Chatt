@@ -25,7 +25,6 @@ import Server.User;
  */
 
 public class ChattWindow extends JFrame {
-	private JPanel panel;
 	private JTabbedPane tabbedPane;
 	private ArrayList<User> receivers;
 	private ChattPanel chattPanel;
@@ -35,7 +34,19 @@ public class ChattWindow extends JFrame {
 	private User receiver;
 
 	public ChattWindow(ClientController controller) {
-		this.setTitle("Test");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setPreferredSize(new Dimension(700,700));
+		this.setVisible(true);
+		this.setResizable(false);
+		this.controller = controller;
+
+		initializeTabbedPane();
+		addTabbedPane();
+
+	}
+
+	public ChattWindow(ClientController controller, String username) {
+		this.setTitle(username);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setPreferredSize(new Dimension(700,700));
 		this.setVisible(true);
@@ -60,7 +71,6 @@ public class ChattWindow extends JFrame {
 		//initializeWindowPanel();
 		initializeTabbedPane();
 		initializePanel();
-		addTabbedListener();
 	}
 	
 	public ChattWindow(ClientController controller, User clientsUser, User receiver) {
@@ -77,16 +87,8 @@ public class ChattWindow extends JFrame {
 		initializeTabbedPane();
 		addSingleReceiverToArrayList();
 		initializePanel();
-		addTabbedListener();
 		
 		System.out.println("Receiver IN CHATWINDOW: " + receiver.getName());
-	}
-	
-	private void initializeWindowPanel() {
-		JTextArea txtarea = new JTextArea();
-		txtarea.setBounds(10, 10, 500, 500);
-		panel = new JPanel();
-		panel.add(txtarea);
 	}
 	
 	private void initializeTabbedPane() {
@@ -157,11 +159,11 @@ public class ChattWindow extends JFrame {
 			for(int i = 0; i < listOfChats.size(); i++) {
 				for(int j = 0; j < msg.getReceivers().size(); j++) {
 					if(receiver != null) {
-						if(((ChattPanel)listOfChats.get(i)).getReceiver() == receiver.getName()) {
+						if(((ChattPanel)listOfChats.get(i)).getReceiver().equals(receiver.getName())) {
 							return true;
 						}
 					} else {
-						if(((ChattPanel)listOfChats.get(i)).getReceiver() == receivers.get(j).getName()) {
+						if(((ChattPanel)listOfChats.get(i)).getReceiver().equals(receivers.get(j).getName())) {
 							return true;
 						}
 					}
@@ -169,33 +171,6 @@ public class ChattWindow extends JFrame {
 			}
 		}
 		return false;
-	}
-
-	public void handleMessage(Message msg) {
-	
-		if(checkIfChatWindowOpen(msg)) {
-			ArrayList<User> tempReceivers = msg.getReceivers();
-			for(int i = 0; i < listOfChats.size(); i++) {
-				for(int j = 0; j < tempReceivers.size(); j++) {
-				if(((ChattPanel)listOfChats.get(i)).getSender().equals(tempReceivers.get(j).getName())) {
-						((ChattPanel)listOfChats.get(i)).addMessageToChat(msg);
-					}
-				}
-			}
-			
-		} else {
-			for(int i = 0; i < listOfChats.size(); i++) {
-				for(int j = 0; j < msg.getReceivers().size(); j++) {
-				if(((ChattPanel)listOfChats.get(i)).getSender().equals(msg.getReceivers().get(j))) {
-					User receiver = msg.getReceivers().get(i);
-					chattPanel = createPanel(msg, receiver);
-					listOfChats.add(chattPanel);
-					tabbedPane.addTab(receiver.getName(), null, chattPanel);
-					chattPanel.addMessageToChat(msg);
-				}
-				}
-			}
-		}	
 	}
 
 	public void testHandleMessage(Message msg) {
@@ -240,16 +215,5 @@ public class ChattWindow extends JFrame {
 			System.out.println(listOfChats.get(i));
 		}
 	}
-	
-	private void addTabbedListener() {
-		tabbedPane.addChangeListener(new ChangeListener() {
 
-			@Override
-			public void stateChanged(ChangeEvent e) {
-				System.out.println(tabbedPane.getComponentAt(tabbedPane.getSelectedIndex()));
-				
-			}
-			
-		});
-	}
 }

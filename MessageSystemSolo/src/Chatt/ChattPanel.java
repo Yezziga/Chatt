@@ -1,15 +1,12 @@
 package Chatt;
 
-import java.awt.SystemColor;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Date;
 
-import javax.swing.JButton;
-import javax.swing.JPanel;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
+import javax.swing.*;
 
 import Client.ClientController;
 import Client.Message;
@@ -27,6 +24,9 @@ public class ChattPanel extends JPanel {
 	private JButton btnChoosePicture;
 	private JButton btnSendMessage;
 	private ClientController controller;
+	private JLabel lblYouAreChattingWith;
+	private JLabel lblReceiversUserName;
+	private JLabel lblReceiversUserImage;
 	
 	public ChattPanel(ClientController controller, User sender, User receiver) {
 		this.controller = controller;
@@ -39,21 +39,37 @@ public class ChattPanel extends JPanel {
 	}
 	
 	private void initializeComponents() {
+		lblYouAreChattingWith = new JLabel("You are chatting with user: ");
+		lblYouAreChattingWith.setForeground(Color.WHITE);
+		lblReceiversUserName = new JLabel(receiver.getName());
+		lblReceiversUserName.setForeground(Color.WHITE);
+		lblReceiversUserImage = new JLabel(receiver.getPicture());
+
+		lblYouAreChattingWith.setBounds(20, 10, 200, 100);
+		add(lblYouAreChattingWith);
+
+		lblReceiversUserName.setBounds(240, 10, 150, 100);
+		add(lblReceiversUserName);
+
+		lblReceiversUserImage.setBounds(400, 10, 100, 110);
+		add(lblReceiversUserImage);
+
+
 		textArea = new JTextArea();
-		textArea.setBounds(20, 100, 650, 420);
+		textArea.setBounds(20, 130, 650, 420);
 		textArea.setEditable(false);
 		add(textArea);
 		
 		txtField = new JTextField();
-		txtField.setBounds(20, 550, 500, 60);
+		txtField.setBounds(20, 560, 500, 60);
 		add(txtField);
 		
 		btnChoosePicture = new JButton("Choose Picture");
-		btnChoosePicture.setBounds(540, 550, 130, 20);
+		btnChoosePicture.setBounds(540, 560, 130, 20);
 		add(btnChoosePicture);
 		
 		btnSendMessage = new JButton("Send");
-		btnSendMessage.setBounds(540, 580, 130, 30);
+		btnSendMessage.setBounds(540, 590, 130, 30);
 		add(btnSendMessage);
 	}
 	
@@ -71,7 +87,6 @@ public class ChattPanel extends JPanel {
 	
 	public void addMessageToChat(Message message) {
 		System.out.println("In AddMessageToChat - ChattPanel: ");
-//		textArea.append(message.getSender().getName() + ": " + message.getMessage() + "\n");
 		textArea.append("[" + message.getDateReceived() +"] "+ message.getSender().getName() + ": " + message.getMessage() + "\n");
 		
 	}

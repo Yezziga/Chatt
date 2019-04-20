@@ -111,7 +111,7 @@ public class ClientController {
 	}
 
 	public void openNewChattWindow(){
-		chattWindow = new ChattWindow(this);
+		chattWindow = new ChattWindow(this, user.getName());
 	}
 
 	/**

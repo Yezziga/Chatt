@@ -215,11 +215,11 @@ public class TestConnectedUI extends JPanel {
 			message = new Message(user, markedUsers, txtMessageField.getText());
 			message.setDateSent(date);
 			message.setDateReceived(date);
+
 			controller.sendMessageToUsers(message);
 			controller.openNewChattWindow();
-			System.out.println(message);
+
 			controller.openChatTabs(message);
-			//controller.addMessage(message);
 			controller.addMessageSender(message);
 
 		}
