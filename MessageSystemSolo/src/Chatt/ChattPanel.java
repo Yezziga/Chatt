@@ -75,7 +75,20 @@ public class ChattPanel extends JPanel {
 		textArea.append("[" + message.getDateReceived() +"] "+ message.getSender().getName() + ": " + message.getMessage() + "\n");
 		
 	}
-	
+
+	@Override
+	public String toString() {
+		return "ChattPanel{" +
+				"sender=" + sender +
+				", receiver=" + receiver +
+				", textArea=" + textArea +
+				", txtField=" + txtField +
+				", btnChoosePicture=" + btnChoosePicture +
+				", btnSendMessage=" + btnSendMessage +
+				", controller=" + controller +
+				'}';
+	}
+
 	private class SendMessageListener implements ActionListener {
 		@Override 
 		public void actionPerformed(ActionEvent arg0) {
@@ -85,7 +98,7 @@ public class ChattPanel extends JPanel {
 			msg.setDateReceived(new Date());
 			addMessageToChat(msg);
 		//	receivers.add(receiver);
-			controller.sendMessageToUsers(sender, receivers, txtField.getText());
+			controller.sendMessageToUsers(msg);
 			txtField.setText("");
 		}
 		

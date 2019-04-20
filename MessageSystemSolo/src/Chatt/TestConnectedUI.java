@@ -1,6 +1,7 @@
 package Chatt;
 
 import Client.ClientController;
+import Client.Message;
 import Server.Contact;
 import Server.User;
 
@@ -9,6 +10,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 public class TestConnectedUI extends JPanel {
 	private ClientController controller;
@@ -196,6 +199,7 @@ public class TestConnectedUI extends JPanel {
 
 	private class ButtonSendListener implements ActionListener {
 		ArrayList<User> markedUsers = new ArrayList<>();
+		Message message;
 
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
@@ -205,8 +209,18 @@ public class TestConnectedUI extends JPanel {
 				}
 				System.out.println(markedUsers);
 			}
-			controller.sendMessageToUsers(user, markedUsers, txtMessageField.getText());
+			Calendar calendar = Calendar.getInstance();
+			Date date = calendar.getTime();
+
+			message = new Message(user, markedUsers, txtMessageField.getText());
+			message.setDateSent(date);
+			message.setDateReceived(date);
+			controller.sendMessageToUsers(message);
 			controller.openNewChattWindow();
+			System.out.println(message);
+			controller.openChatTabs(message);
+			//controller.addMessage(message);
+			controller.addMessageSender(message);
 
 		}
 	}

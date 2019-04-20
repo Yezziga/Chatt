@@ -98,8 +98,7 @@ public class ClientController {
 	 * @param textMessage
 	 *            the actual text to send
 	 */
-	public void sendMessageToUsers(User sender, ArrayList<User> receivers, String textMessage) {
-		Message message = new Message(sender, receivers, textMessage);
+	public void sendMessageToUsers(Message message) {
 		client.sendMessage(message);
 	}
 
@@ -127,10 +126,15 @@ public class ClientController {
 	}
 
 	public void addMessage(Message msg) {
+		System.out.println("1");
 		if (chattWindow != null) {
+			System.out.println("2");
 			if(chattWindow.checkIfChatWindowOpen(msg.getSender())) {
+				System.out.println("3");
+				System.out.println("in add message: message sender " + msg.getSender());
 				chattWindow.testHandleMessage(msg);
 			} else {
+				System.out.println("4");
 				chattWindow.openNewChattTab(msg);
 				chattWindow.testHandleMessage(msg);
 			}
@@ -142,9 +146,17 @@ public class ClientController {
 		}
 	}
 
+	public void addMessageSender(Message msg) {
+		chattWindow.testHandleMessageSender(msg);
+	}
+
 	public void addContact(User user) {
 		client.addContact(user);
 
+	}
+
+	public void openChatTabs(Message msg) {
+			chattWindow.openChatTabs(msg);
 	}
 
 }
