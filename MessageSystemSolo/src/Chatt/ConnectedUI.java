@@ -1,6 +1,7 @@
 package Chatt;
 
 import Client.ClientController;
+import Client.Message;
 import Server.Contact;
 import Server.User;
 
@@ -9,6 +10,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 public class ConnectedUI extends JPanel {
 	private ClientController controller;
@@ -190,19 +193,22 @@ public class ConnectedUI extends JPanel {
 
 			}
 		});
-	}
-
+	}	
 	private class ButtonSendListener implements ActionListener {
-		ArrayList<User> markedUsers = new ArrayList<>();
+		
 
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
+			ArrayList<User> markedUsers = new ArrayList<>();
+			Message message;
+			
 			for (UserListLayout ull : layoutListAll) {
 				if (ull.getCheckBoxMarked()) {
 					markedUsers.add(ull.getUser());
 				}
 				System.out.println(markedUsers);
 			}
+			System.out.println("Ibockade: ");
 			
 			for (UserListLayout ull : layoutListContacts) {
 				if (ull.getCheckBoxMarked()) {
@@ -210,9 +216,24 @@ public class ConnectedUI extends JPanel {
 				}
 				System.out.println(markedUsers);
 			}
+//			for(int i = 0; i < markedUsers.size(); i++) {
+//				System.out.println("ANVÄNDARE i LIStAN " + markedUsers.get(i));
+//			}
 			
-//			controller.sendMessageToUsers(user, markedUsers, txtMessageField.getText());
-			controller.openChattWindows(user, markedUsers);
+			Calendar calendar = Calendar.getInstance();
+			Date date = calendar.getTime();
+
+			message = new Message(user, markedUsers, txtMessageField.getText());
+			message.setDateSent(date);
+			message.setDateReceived(date);
+
+			controller.sendMessageToUsers(message);
+			controller.openNewChattWindow();
+
+			controller.openChatTabs(message);
+			controller.addMessageSender(message);
+			markedUsers.clear();
+			
 		}
 	}
 

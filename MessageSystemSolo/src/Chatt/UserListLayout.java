@@ -66,6 +66,15 @@ public class UserListLayout extends JPanel {
 	public User getUser() {
 		return this.user;
 	}
+
+	@Override
+	public String toString() {
+		return "UserListLayout [lblUserName=" + lblUserName + ", lblUserImage=" + lblUserImage + ", imgUser=" + imgUser
+				+ ", userName=" + userName + ", pnlGrid=" + pnlGrid + ", checkBox=" + checkBox + ", user=" + user
+				+ ", imgUser2=" + imgUser2 + "]";
+	}
+	
+	
 	
 
 	
