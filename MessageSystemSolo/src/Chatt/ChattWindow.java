@@ -33,17 +33,11 @@ public class ChattWindow extends JFrame {
 	private ClientController controller;
 	private User receiver;
 
-	public ChattWindow(ClientController controller) {
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setPreferredSize(new Dimension(700,700));
-		this.setVisible(true);
-		this.setResizable(false);
-		this.controller = controller;
-
-		initializeTabbedPane();
-		addTabbedPane();
-
-	}
+	/**
+	 *	Creates a chat window with a reference to the ClientController with the users name.
+	 * @param controller
+	 * @param username
+	 */
 
 	public ChattWindow(ClientController controller, String username) {
 		this.setTitle(username);
@@ -57,6 +51,13 @@ public class ChattWindow extends JFrame {
 		addTabbedPane();
 
 	}
+
+	/**
+	 * Creates a chat window with a reference to the ClientController with the clients user, and all the receivers.
+	 * @param controller
+	 * @param clientsUser
+	 * @param receivers
+	 */
 	
 	public ChattWindow(ClientController controller, User clientsUser, ArrayList<User> receivers) {
 		this.setTitle("Test");
@@ -67,11 +68,17 @@ public class ChattWindow extends JFrame {
 		this.controller = controller;
 		this.receivers = receivers;
 		this.clientsUser = clientsUser;
-		
-		//initializeWindowPanel();
+
 		initializeTabbedPane();
 		initializePanel();
 	}
+
+	/**
+	 * Creates a chat window with a reference to the ClientController with the clients user, and a single receiver.
+	 * @param controller
+	 * @param clientsUser
+	 * @param receiver
+	 */
 	
 	public ChattWindow(ClientController controller, User clientsUser, User receiver) {
 		this.setTitle(clientsUser.getName());
@@ -82,52 +89,49 @@ public class ChattWindow extends JFrame {
 		this.controller = controller;
 		this.receiver = receiver;
 		this.clientsUser = clientsUser;
-		
-		//initializeWindowPanel();
+
 		initializeTabbedPane();
 		addSingleReceiverToArrayList();
 		initializePanel();
 		
-		System.out.println("Receiver IN CHATWINDOW: " + receiver.getName());
+		/*System.out.println("Receiver IN CHATWINDOW: " + receiver.getName());*/
 	}
 	
 	private void initializeTabbedPane() {
 		tabbedPane = new JTabbedPane();
 		listOfChats = new ArrayList<>();
 	}
-	
+
 	private void addSingleReceiverToArrayList() {
 		if(receiver != null) {
 			receivers = new ArrayList<>();
 			receivers.add(receiver);
 		}
 	}
-	
+
+	/**
+	 * This method initializes all the chat panels if the
+	 * constructor took in an array list of receivers.
+	 */
 	private void initializePanel() {
 		for(int i = 0; i < receivers.size(); i++) {
-			//chattPanel = createPanel(receivers.get(i));
 			listOfChats.add(createPanel(receivers.get(i)));
 		}
 		for(int i = 0; i < receivers.size(); i++) {
 			tabbedPane.add(receivers.get(i).getName(), listOfChats.get(i));
 		}
-		for(int i = 0; i < listOfChats.size()-1; i++) {
+		/*for(int i = 0; i < listOfChats.size()-1; i++) {
 			for(int j = 1; j < listOfChats.size(); j++) {
 				if(listOfChats.get(i) == listOfChats.get(j)) {
 					System.out.println("SAME OBJEEEEEEEECT");
 				}
 			}
-		}
+		}*/
 		addTabbedPane();
 	}
 	
 	private ChattPanel createPanel(User receiver) {
 		ChattPanel chattPanelToAdd = new ChattPanel(controller, clientsUser, receiver);
-		return chattPanelToAdd;
-	}
-	
-	private ChattPanel createPanel(Message msg, User receiver) {
-		ChattPanel chattPanelToAdd = new ChattPanel(controller, clientsUser, receiver); //Fixa
 		return chattPanelToAdd;
 	}
 	
@@ -138,42 +142,30 @@ public class ChattWindow extends JFrame {
 		repaint();
 	}
 
+	/**
+	 * Checks if a chat panel is already open with a specific user.
+	 * @param receiver
+	 * @return
+	 */
 	public boolean checkIfChatWindowOpen(User receiver) {
 		if(listOfChats.size() > 0) {
 			for(int i = 0; i < listOfChats.size(); i++) {
-				System.out.println("Chatt panels receiver " + ((ChattPanel)listOfChats.get(i)).getReceiver() + " and the receiver of mesage is " + receiver.getName());
+				/*System.out.println("Chatt panels receiver " + ((ChattPanel)listOfChats.get(i)).getReceiver() + " and the receiver of mesage is " + receiver.getName());*/
 				if(((ChattPanel)listOfChats.get(i)).getReceiver().equals(receiver.getName())) {
-					System.out.println("Chatt panels receiver " + ((ChattPanel)listOfChats.get(i)).getReceiver() + " and the receiver of mesage is " + receiver.getName());
-					System.out.println("IT IS TRUE THIS USER IS HERE");
+					/*System.out.println("Chatt panels receiver " + ((ChattPanel)listOfChats.get(i)).getReceiver() + " and the receiver of mesage is " + receiver.getName());
+					System.out.println("IT IS TRUE THIS USER IS HERE");*/
 					return true;
 				}
 			}
 		}
 		return false;
 	}
-	
-	private boolean checkIfChatWindowOpen(Message msg) {
-		System.out.println("CHECKIFCHATWINDOWOPEN: " + msg);
-		
-		if(listOfChats.size() > 0) {
-			for(int i = 0; i < listOfChats.size(); i++) {
-				for(int j = 0; j < msg.getReceivers().size(); j++) {
-					if(receiver != null) {
-						if(((ChattPanel)listOfChats.get(i)).getReceiver().equals(receiver.getName())) {
-							return true;
-						}
-					} else {
-						if(((ChattPanel)listOfChats.get(i)).getReceiver().equals(receivers.get(j).getName())) {
-							return true;
-						}
-					}
-				}
-			}
-		}
-		return false;
-	}
 
-	public void testHandleMessage(Message msg) {
+	/**
+	 * Adds a message in the panel that is used for the specific user.
+	 * @param msg
+	 */
+	public void handleMessage(Message msg) {
 		for(int i = 0; i < listOfChats.size(); i++) {
 			if(((ChattPanel) listOfChats.get(i)).getReceiver().equals(msg.getSender().getName())) {
 				((ChattPanel) listOfChats.get(i)).addMessageToChat(msg);
@@ -181,7 +173,11 @@ public class ChattWindow extends JFrame {
 		}
 	}
 
-	public void testHandleMessageSender(Message msg) {
+	/**
+	 * Adding the message in the panels on the clients side after sending it to receivers.
+	 * @param msg
+	 */
+	public void addMessage(Message msg) {
 		for(int i = 0; i < listOfChats.size(); i++) {
 			for (int j = 0; j < msg.getReceivers().size(); j++) {
 //				System.out.println("ChattPanels sender: " + ((ChattPanel) listOfChats.get(i)).getSender());
@@ -195,14 +191,22 @@ public class ChattWindow extends JFrame {
 		}
 	}
 
-	public void openNewChattTab(Message message) {
-		System.out.println("openNewChattTab");
+	/**
+	 * Opens one specific chat tab for every message.
+	 * @param message
+	 */
+	public void openNewChatTab(Message message) {
+	/*	System.out.println("openNewChattTab");*/
 		chattPanel = new ChattPanel(controller, message.getReceivers().get(0), message.getSender());
 		listOfChats.add(chattPanel);
 		tabbedPane.addTab(message.getSender().getName(), chattPanel);
 		tabbedPane.updateUI();
 	}
 
+	/**
+	 * Opens a list of chat tabs for every receiver in the message.
+	 * @param msg
+	 */
 	public void openChatTabs(Message msg) {
 		for(int i = 0; i < msg.getReceivers().size(); i++) {
 			chattPanel = new ChattPanel(controller, msg.getSender(), msg.getReceivers().get(i));

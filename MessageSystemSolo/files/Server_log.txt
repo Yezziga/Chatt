@@ -1,3 +1,26 @@
+
+Sat Apr 20 16:44:43 CEST 2019 | Logger started
+Sat Apr 20 16:44:43 CEST 2019 | Logger started
+Sat Apr 20 16:44:49 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:44:43 CEST 2019 | Logger started
+Sat Apr 20 16:44:49 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:44:57 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:44:43 CEST 2019 | Logger started
+Sat Apr 20 16:44:49 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:44:57 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:45:03 CEST 2019 | Server received message from client
+Sat Apr 20 16:44:43 CEST 2019 | Logger started
+Sat Apr 20 16:44:49 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:44:57 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:45:03 CEST 2019 | Server received message from client
+Sat Apr 20 16:45:03 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:44:43 CEST 2019 | Logger started
+Sat Apr 20 16:44:49 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:44:57 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:45:03 CEST 2019 | Server received message from client
+Sat Apr 20 16:45:03 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:45:03 CEST 2019 | message sent to 1
+
 Mon Apr 22 14:52:41 CEST 2019 | Logger started
 Mon Apr 22 14:52:41 CEST 2019 | Logger started
 Mon Apr 22 14:52:56 CEST 2019 | jessica connected to the server
@@ -944,3 +967,4 @@ Mon Apr 22 15:04:21 CEST 2019 | Unicorn is not online. Storing message to send w
 Mon Apr 22 15:04:21 CEST 2019 | Lolo is not online. Storing message to send when online
 Mon Apr 22 15:04:26 CEST 2019 | jessi disconnected from the server.
 Mon Apr 22 15:04:29 CEST 2019 | 1 disconnected from the server.
+

@@ -12,6 +12,11 @@ import Client.ClientController;
 import Client.Message;
 import Server.User;
 
+/**
+ * This class is a panel for every tab in the ChattWindow-class.
+ * It is used to set up an individual chat room between two users.
+ */
+
 public class ChattPanel extends JPanel {
 	/**
 	 * 
@@ -27,6 +32,16 @@ public class ChattPanel extends JPanel {
 	private JLabel lblYouAreChattingWith;
 	private JLabel lblReceiversUserName;
 	private JLabel lblReceiversUserImage;
+
+	/**
+	 *
+	 * @param controller
+	 * 					- The controller is used to communicate between the client and server
+	 * @param sender
+	 * 					- The sender symbolizes the clients user
+	 * @param receiver
+	 * 					- The receiver symbolizes the user that sender is communicating with
+	 */
 	
 	public ChattPanel(ClientController controller, User sender, User receiver) {
 		this.controller = controller;
@@ -37,7 +52,10 @@ public class ChattPanel extends JPanel {
 		initializeComponents();	
 		registerListeners();
 	}
-	
+
+	/**
+	 * Sets up all the components in the panel
+	 */
 	private void initializeComponents() {
 		lblYouAreChattingWith = new JLabel("You are chatting with user: ");
 		lblYouAreChattingWith.setForeground(Color.WHITE);
@@ -84,7 +102,11 @@ public class ChattPanel extends JPanel {
 	public String getSender() {
 		return sender.getName();
 	}
-	
+
+	/**
+	 * Adding the message in the text area.
+	 * @param message
+	 */
 	public void addMessageToChat(Message message) {
 		System.out.println("In AddMessageToChat - ChattPanel: ");
 		textArea.append("[" + message.getDateReceived() +"] "+ message.getSender().getName() + ": " + message.getMessage() + "\n");
@@ -104,6 +126,9 @@ public class ChattPanel extends JPanel {
 				'}';
 	}
 
+	/**
+	 * Inner class that acts as a listener for the send button in the chat panel.
+	 */
 	private class SendMessageListener implements ActionListener {
 		@Override 
 		public void actionPerformed(ActionEvent arg0) {
@@ -112,7 +137,6 @@ public class ChattPanel extends JPanel {
 			Message msg = new Message(sender, receivers, txtField.getText());
 			msg.setDateReceived(new Date());
 			addMessageToChat(msg);
-		//	receivers.add(receiver);
 			controller.sendMessageToUsers(msg);
 			txtField.setText("");
 		}
