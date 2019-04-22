@@ -57,14 +57,9 @@ public class ClientController {
 	 * @param icon
 	 */
 	public void sendUser(String tfUsername, ImageIcon icon) {
-		// <<<<<<< HEAD
 		user = new User(tfUsername, icon);
 		client.connectUser(user);
 		tcui.setUser(user);
-		// =======
-		// client.connectUser(tfUsername, icon);
-		// tcui.setLblUser(tfUsername);
-		// >>>>>>> refs/heads/master
 		frame.remove(ssui);
 		frame.add(tcui);
 		frame.pack();
@@ -90,13 +85,8 @@ public class ClientController {
 	/**
 	 * Creates a Message-object from the user's input and calls for the client to
 	 * send it to the server.
-	 * 
-	 * @param sender
-	 *            the user sending the message
-	 * @param receivers
-	 *            a list of receivers
-	 * @param textMessage
-	 *            the actual text to send
+	 * @param message
+	 * 				The message to be sent to the receiver.
 	 */
 	public void sendMessageToUsers(Message message) {
 		client.sendMessage(message);
@@ -104,10 +94,6 @@ public class ClientController {
 
 	public void openChattWindows(User sender, ArrayList<User> receivers) {
 		chattWindow = new ChattWindow(this, sender, receivers);
-	}
-
-	public void openChattWindow(User sender, User receiver) {
-		chattWindow = new ChattWindow(this, sender, receiver);
 	}
 
 	public void openNewChattWindow(){
@@ -132,22 +118,22 @@ public class ClientController {
 			if(chattWindow.checkIfChatWindowOpen(msg.getSender())) {
 				System.out.println("3");
 				System.out.println("in add message: message sender " + msg.getSender());
-				chattWindow.testHandleMessage(msg);
+				chattWindow.handleMessage(msg);
 			} else {
 				System.out.println("4");
-				chattWindow.openNewChattTab(msg);
-				chattWindow.testHandleMessage(msg);
+				chattWindow.openNewChatTab(msg);
+				chattWindow.handleMessage(msg);
 			}
 
 		} else {
 			openNewChattWindow();
-			chattWindow.openNewChattTab(msg);
-			chattWindow.testHandleMessage(msg);
+			chattWindow.openNewChatTab(msg);
+			chattWindow.handleMessage(msg);
 		}
 	}
 
 	public void addMessageSender(Message msg) {
-		chattWindow.testHandleMessageSender(msg);
+		chattWindow.addMessage(msg);
 	}
 
 	public void addContact(User user) {

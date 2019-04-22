@@ -71,7 +71,7 @@ public class TestConnectedUI extends JPanel {
 			userListLayout = new UserListLayout(u);
 			userListLayout.setMaximumSize(new Dimension(300, 100));
 			pnlScrollPaneContacts.add(userListLayout);
-			System.out.println(u.getName());
+			System.out.println("TESTCONNECTEDUI: USER: " + u);
 		}
 		scrollPaneContacts.updateUI();
 
