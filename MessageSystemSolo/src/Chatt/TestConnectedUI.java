@@ -1,6 +1,7 @@
 package Chatt;
 
 import Client.ClientController;
+import Client.Message;
 import Server.Contact;
 import Server.User;
 
@@ -9,26 +10,32 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
-public class ConnectedUI extends JPanel {
+public class TestConnectedUI extends JPanel {
 	private ClientController controller;
 	private JMenuBar menuBar;
 	private JMenu mnUsers;
-	private JMenuItem mntmOnlineUsers, mntmContacts;
+	private JMenuItem mntmOnlineUsers;
+	private JMenuItem mntmContacts;
 	private JLabel lblSignedAs;
-	private JPanel pnlScrollPaneAll, pnlScrollPaneContacts;
-	private JScrollPane scrollPaneAll, scrollPaneContacts;
+	private JPanel pnlScrollPaneAll;
+	private JPanel pnlScrollPaneContacts;
+	private JScrollPane scrollPaneAll;
+	private JScrollPane scrollPaneContacts;
 	private ArrayList<User> listOfAllUsers;
-	private ArrayList<Contact> listOfAllContacts;
-	private ArrayList<UserListLayout> layoutListAll, layoutListContacts;
+	private ArrayList<UserListLayout> layoutList;
 	private JTextField txtMessageField;
-	private JButton btnSendMessage, btnOpenChats, btnAddToContacts,btnClose;
+	private JButton btnSendMessage;
+	private JButton btnOpenChats;
 	private User user;
+	private JButton btnAddToContacts;
+	private JButton btnClose;
 
-	public ConnectedUI(ClientController controller) {
+	public TestConnectedUI(ClientController controller) {
 		this.controller = controller;
-		layoutListAll = new ArrayList<UserListLayout>();
-		layoutListContacts = new ArrayList<UserListLayout>();
+		layoutList = new ArrayList<UserListLayout>();
 		setBackground(SystemColor.textHighlight);
 		setLayout(null);
 		initializeMenuBar();
@@ -51,20 +58,18 @@ public class ConnectedUI extends JPanel {
 		for (User user : listOfAllUsers) {
 			userListLayout = new UserListLayout(user);
 			userListLayout.setMaximumSize(new Dimension(300, 100));
-			layoutListAll.add(userListLayout);
+			layoutList.add(userListLayout);
 			pnlScrollPaneAll.add(userListLayout);
 		}
 		scrollPaneAll.updateUI();
 	}
 
 	public void updateContactList(ArrayList<Contact> arr) { // FIXA DENNA
-		listOfAllContacts = arr;
 		pnlScrollPaneContacts.removeAll();
 		UserListLayout userListLayout;
 		for (Contact u : arr) {
 			userListLayout = new UserListLayout(u);
 			userListLayout.setMaximumSize(new Dimension(300, 100));
-			layoutListContacts.add(userListLayout);
 			pnlScrollPaneContacts.add(userListLayout);
 			System.out.println(u.getName());
 		}
@@ -133,7 +138,7 @@ public class ConnectedUI extends JPanel {
 	}
 
 	private void initializeButtons() {
-		btnClose = new JButton("Exit program");
+		btnClose = new JButton("Close");
 		btnClose.setBounds(550, 80, 200, 30);
 
 		btnAddToContacts = new JButton("Add To Contacts");
@@ -145,7 +150,7 @@ public class ConnectedUI extends JPanel {
 	}
 
 	public void clearList() {
-		layoutListAll.clear();
+		layoutList.clear();
 		if (listOfAllUsers != null) {
 			listOfAllUsers.clear();
 		}
@@ -182,7 +187,7 @@ public class ConnectedUI extends JPanel {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				for (UserListLayout u : layoutListAll) {
+				for (UserListLayout u : layoutList) {
 					if (u.getCheckBoxMarked() && e.getSource() == btnAddToContacts) {
 						controller.addContact(u.getUser());
 					}
@@ -194,25 +199,29 @@ public class ConnectedUI extends JPanel {
 
 	private class ButtonSendListener implements ActionListener {
 		ArrayList<User> markedUsers = new ArrayList<>();
+		Message message;
 
 		@Override
 		public void actionPerformed(ActionEvent arg0) {
-			for (UserListLayout ull : layoutListAll) {
+			for (UserListLayout ull : layoutList) {
 				if (ull.getCheckBoxMarked()) {
 					markedUsers.add(ull.getUser());
 				}
 				System.out.println(markedUsers);
 			}
-			
-			for (UserListLayout ull : layoutListContacts) {
-				if (ull.getCheckBoxMarked()) {
-					markedUsers.add(ull.getUser());
-				}
-				System.out.println(markedUsers);
-			}
-			
-//			controller.sendMessageToUsers(user, markedUsers, txtMessageField.getText());
-			controller.openChattWindows(user, markedUsers);
+			Calendar calendar = Calendar.getInstance();
+			Date date = calendar.getTime();
+
+			message = new Message(user, markedUsers, txtMessageField.getText());
+			message.setDateSent(date);
+			message.setDateReceived(date);
+
+			controller.sendMessageToUsers(message);
+			controller.openNewChattWindow();
+
+			controller.openChatTabs(message);
+			controller.addMessageSender(message);
+
 		}
 	}
 
@@ -221,14 +230,7 @@ public class ConnectedUI extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			for (UserListLayout ull : layoutListAll) {
-				if (ull.getCheckBoxMarked()) {
-					markedUsers.add(ull.getUser());
-				}
-				System.out.println(markedUsers);
-			}
-			
-			for (UserListLayout ull : layoutListContacts) {
+			for (UserListLayout ull : layoutList) {
 				if (ull.getCheckBoxMarked()) {
 					markedUsers.add(ull.getUser());
 				}

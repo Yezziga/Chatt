@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Fri Apr 19 17:46:08 CEST 2019 | Logger started
 Fri Apr 19 17:46:08 CEST 2019 | Logger started
 Fri Apr 19 17:46:19 CEST 2019 | jessica connected to the server
@@ -376,3 +377,1658 @@ Fri Apr 19 18:04:16 CEST 2019 | jessi disconnected from the server.
 Fri Apr 19 18:05:06 CEST 2019 | Server received Message-object from judy
 Fri Apr 19 18:05:06 CEST 2019 | jessi is not online. Storing message to send when online
 Fri Apr 19 18:05:16 CEST 2019 | judy disconnected from the server.
+=======
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:25:21 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:25:21 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:25:21 CEST 2019 | message sent to 1
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:25:21 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:25:21 CEST 2019 | message sent to 1
+Sat Apr 20 16:26:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:25:21 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:25:21 CEST 2019 | message sent to 1
+Sat Apr 20 16:26:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:26:07 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:25:21 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:25:21 CEST 2019 | message sent to 1
+Sat Apr 20 16:26:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:26:07 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:26:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:25:21 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:25:21 CEST 2019 | message sent to 1
+Sat Apr 20 16:26:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:26:07 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:26:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:26:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:25:21 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:25:21 CEST 2019 | message sent to 1
+Sat Apr 20 16:26:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:26:07 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:26:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:26:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:26:28 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:25:21 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:25:21 CEST 2019 | message sent to 1
+Sat Apr 20 16:26:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:26:07 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:26:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:26:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:26:28 CEST 2019 | Server received message from client
+Sat Apr 20 16:26:28 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:25:21 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:25:21 CEST 2019 | message sent to 1
+Sat Apr 20 16:26:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:26:07 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:26:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:26:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:26:28 CEST 2019 | Server received message from client
+Sat Apr 20 16:26:28 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:26:28 CEST 2019 | message sent to 1
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:25:21 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:25:21 CEST 2019 | message sent to 1
+Sat Apr 20 16:26:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:26:07 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:26:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:26:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:26:28 CEST 2019 | Server received message from client
+Sat Apr 20 16:26:28 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:26:28 CEST 2019 | message sent to 1
+Sat Apr 20 16:26:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:17:11 CEST 2019 | Logger started
+Sat Apr 20 16:17:30 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:17:38 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:17:44 CEST 2019 | Server received message from client
+Sat Apr 20 16:17:44 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:17:44 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:04 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:05 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:13 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:19:17 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:19:26 CEST 2019 | Server received message from client
+Sat Apr 20 16:19:26 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:19:26 CEST 2019 | message sent to 1
+Sat Apr 20 16:19:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:19:48 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:19:58 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:03 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:20:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:20:10 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:20:10 CEST 2019 | message sent to 1
+Sat Apr 20 16:20:44 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:20:46 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:20:53 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:20:58 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:21:06 CEST 2019 | Server received message from client
+Sat Apr 20 16:21:06 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:21:06 CEST 2019 | message sent to 1
+Sat Apr 20 16:21:28 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:21:30 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:21:44 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:22:01 CEST 2019 | Jessica connected to the server
+Sat Apr 20 16:22:10 CEST 2019 | Server received message from client
+Sat Apr 20 16:22:10 CEST 2019 | Jessica is online. Attempting to send message
+Sat Apr 20 16:22:10 CEST 2019 | message sent to Jessica
+Sat Apr 20 16:23:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:23:07 CEST 2019 | Jessica disconnected from the server.
+Sat Apr 20 16:23:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:23:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:23:29 CEST 2019 | Server received message from client
+Sat Apr 20 16:23:29 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:23:29 CEST 2019 | message sent to 1
+Sat Apr 20 16:24:58 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:24:59 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:25:08 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:25:13 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:25:21 CEST 2019 | Server received message from client
+Sat Apr 20 16:25:21 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:25:21 CEST 2019 | message sent to 1
+Sat Apr 20 16:26:06 CEST 2019 | Henrik disconnected from the server.
+Sat Apr 20 16:26:07 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:26:15 CEST 2019 | Henrik connected to the server
+Sat Apr 20 16:26:19 CEST 2019 | 1 connected to the server
+Sat Apr 20 16:26:28 CEST 2019 | Server received message from client
+Sat Apr 20 16:26:28 CEST 2019 | 1 is online. Attempting to send message
+Sat Apr 20 16:26:28 CEST 2019 | message sent to 1
+Sat Apr 20 16:26:47 CEST 2019 | 1 disconnected from the server.
+Sat Apr 20 16:26:48 CEST 2019 | Henrik disconnected from the server.
+>>>>>>> refs/heads/HenriksBranch

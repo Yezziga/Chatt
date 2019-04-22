@@ -17,17 +17,19 @@ public class Message implements Serializable {
 	private Date dateSent;
 	private Date dateReceived;
 
+	private User receiver;
+
 	public Message(User sender, ArrayList<User> receivers, String message) {
 		this.sender = sender;
 		this.receivers = receivers;
 		this.message = message;
 	}
 
-	public Message(User sender, ArrayList<User> receivers, String message, ImageIcon image) {
+	public Message(User sender, User receiver, String message) {
 		this.sender = sender;
-		this.receivers = receivers;
 		this.message = message;
-		this.image = image;
+		receivers = new ArrayList<>();
+		receivers.add(receiver);
 	}
 
 	public void setSender(User user) {
@@ -83,7 +85,9 @@ public class Message implements Serializable {
 		return "Message [sender=" + sender + ", receivers=" + receivers + ", message=" + message + ", image=" + image
 				+ ", dateSent=" + dateSent + ", dateReceived=" + dateReceived + "]";
 	}
-	
-	
 
+
+	public void addSingleReceiver(User receiver) {
+		receivers.add(receiver);
+	}
 }
