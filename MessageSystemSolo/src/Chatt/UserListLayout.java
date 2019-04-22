@@ -1,14 +1,12 @@
 package Chatt;
-//En panel som ska hålla en användares namn och en bild för att placera i listor.
 
 import java.awt.*;
-
 import javax.swing.*;
-
-import Server.Contact;
 import Server.User;
 
-
+/**
+ * This class is to represent every user in the lists of online users and contact users.
+ */
 public class UserListLayout extends JPanel {
 	private JLabel lblUserName;
 	private JLabel lblUserImage;
@@ -17,9 +15,15 @@ public class UserListLayout extends JPanel {
 	private JPanel pnlGrid;
 	private JCheckBox checkBox;
 	private User user;
-	
-	//test
-	private ImageIcon imgUser2 = new ImageIcon("files/elefant.png");
+
+/*	//test
+	private ImageIcon imgUser2 = new ImageIcon("files/elefant.png");*/
+
+	/**
+	 * Initializes the panel and adds all important information
+	 * about the user to view in this specific panel.
+	 * @param user
+	 */
 	
 	public UserListLayout(User user) {	
 		this.user = user;
