@@ -180,10 +180,10 @@ public class ChattWindow extends JFrame {
 	public void addMessage(Message msg) {
 		for(int i = 0; i < listOfChats.size(); i++) {
 			for (int j = 0; j < msg.getReceivers().size(); j++) {
-		/*		System.out.println("ChattPanels sender: " + ((ChattPanel) listOfChats.get(i)).getSender());
-				System.out.println("ChattPanels receiver: " + ((ChattPanel) listOfChats.get(i)).getReceiver());
-				System.out.println("Message sender: " + msg.getSender().getName());
-				System.out.println("Message receiver: " + msg.getReceivers().get(i).getName());*/
+//				System.out.println("ChattPanels sender: " + ((ChattPanel) listOfChats.get(i)).getSender());
+//				System.out.println("ChattPanels receiver: " + ((ChattPanel) listOfChats.get(i)).getReceiver());
+//				System.out.println("Message sender: " + msg.getSender().getName());
+//				System.out.println("Message receiver: " + msg.getReceivers().get(i).getName());
 				if (((ChattPanel) listOfChats.get(i)).getReceiver().equals(msg.getReceivers().get(j).getName())) {
 					((ChattPanel) listOfChats.get(i)).addMessageToChat(msg);
 				}

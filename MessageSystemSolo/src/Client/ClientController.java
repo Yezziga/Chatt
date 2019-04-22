@@ -3,7 +3,7 @@ package Client;
 import Chatt.ChattWindow;
 import Chatt.ConnectedUI;
 import Chatt.StartScreenUI;
-import Chatt.TestConnectedUI;
+import Chatt.ConnectedUI;
 import Server.Contact;
 import Server.User;
 
@@ -16,9 +16,8 @@ import javax.swing.JFrame;
 public class ClientController {
 	private Client client;
 	private StartScreenUI ssui = new StartScreenUI(this);
-	private ConnectedUI cui;
 	private JFrame frame;
-	private TestConnectedUI tcui = new TestConnectedUI(this);
+	private ConnectedUI cui = new ConnectedUI(this);
 	private ArrayList<User> allUsers;
 	private User user;
 	private ChattWindow chattWindow;
@@ -59,9 +58,13 @@ public class ClientController {
 	public void sendUser(String tfUsername, ImageIcon icon) {
 		user = new User(tfUsername, icon);
 		client.connectUser(user);
-		tcui.setUser(user);
+		cui.setUser(user);
+		// =======
+		// client.connectUser(tfUsername, icon);
+		// tcui.setLblUser(tfUsername);
+		// >>>>>>> refs/heads/master
 		frame.remove(ssui);
-		frame.add(tcui);
+		frame.add(cui);
 		frame.pack();
 	}
 
@@ -73,13 +76,13 @@ public class ClientController {
 	 */
 	public void updateOnlineUsers(ArrayList<User> arr) {
 		this.allUsers = arr;
-		tcui.clearList();
-		tcui.setAllUsers(arr);
+		cui.clearList();
+		cui.setAllUsers(arr);
 		System.out.println("USERS IN CLIENT CONTROLLER SET");
 	}
 
 	public void clear() {
-		tcui.clearLeftPanel();
+		cui.clearLeftPanel();
 	}
 
 	/**
@@ -97,7 +100,9 @@ public class ClientController {
 	}
 
 	public void openNewChattWindow(){
-		chattWindow = new ChattWindow(this, user.getName());
+		if(chattWindow == null) {
+			chattWindow = new ChattWindow(this, user.getName());
+		}
 	}
 
 	/**
@@ -107,7 +112,7 @@ public class ClientController {
 	 *            the list of contacts
 	 */
 	public void updateContactList(ArrayList<Contact> arr) {
-		tcui.updateContactList(arr);
+		cui.updateContactList(arr);
 
 	}
 

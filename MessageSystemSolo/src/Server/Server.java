@@ -23,9 +23,9 @@ public class Server {
 	 *            the port to connect to
 	 */
 	public Server(int serverPort) {
-		 logger = TrafficLogger.getInstance();
-		 logger.log("Logger started"); 
-		 System.out.println(logger.getLog());
+		logger = TrafficLogger.getInstance();
+		logger.log("Logger started");
+		System.out.println(logger.getLog());
 
 		try {
 			ServerSocket serverSocket = new ServerSocket(serverPort);
@@ -78,7 +78,7 @@ public class Server {
 					receiverFound = true;
 					logger.log(receiverOnList.getName() + " is online. Attempting to send message");
 					System.out.println(receiverOnList.getName() + " is online");
-					
+
 					sendMessageToOnlineUser(message, receiverOnList);
 					break;
 				}
@@ -160,14 +160,14 @@ public class Server {
 			logger.log(user.getName() + " connected to the server");
 			updateAllClients();
 			// send messages to user if there are any unsent messages. not tested!
-			// for (Message message : unsentMessages) {
-			// for (String receiver : message.getReceivers()) {
-			// if(receiver.equals(user.getName())) {
-			// clientHandler.sendMessage(message);
-			// break;
-			// }
-			// }
-			// }
+			for (Message message : unsentMessages) {
+				for (User receiver : message.getReceivers()) {
+					if (receiver.getName().equals(user.getName())) {
+						clientHandler.sendMessage(message);
+						break;
+					}
+				}
+			}
 
 		}
 
@@ -228,7 +228,7 @@ public class Server {
 		 * 
 		 * @return
 		 */
-		public ArrayList<User> getAllUsers() { // 	ANVÄNDS EJ?
+		public ArrayList<User> getAllUsers() { // ANVÄNDS EJ?
 			ArrayList<User> arr = new ArrayList<>();
 			for (User user : allUsers.keySet()) {
 				arr.add(user);
@@ -293,7 +293,6 @@ public class Server {
 			}
 		}
 
-
 		public void run() {
 
 			try {
@@ -323,9 +322,9 @@ public class Server {
 							Calendar calendar = Calendar.getInstance();
 							Date date = calendar.getTime();
 							msg.setDateSent(date);
-							logger.log("Server received message from client");
+							logger.log("Server received Message-object from " + user.getName());
 							checkReceiversAndOnliners(msg);
-						} else if(obj instanceof User) {
+						} else if (obj instanceof User) {
 							User contactToAdd = (User) obj;
 							ContactsReader.addContact(user, contactToAdd);
 							toClient.writeObject(ContactsReader.readContacts(user));
@@ -341,7 +340,6 @@ public class Server {
 
 				disconnectClient();
 				System.out.println("client-controller stoppad");
-
 
 			}
 
