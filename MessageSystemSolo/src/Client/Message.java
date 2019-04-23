@@ -9,6 +9,11 @@ import javax.swing.ImageIcon;
 
 import Server.User;
 
+/**
+ * This class represents a Message-object being sent between users. A message can contain a text and/or a picture.
+ * @author Henrik & Jessica
+ *
+ */
 public class Message implements Serializable {
 	private User sender;
 	private ArrayList<User> receivers;
@@ -16,7 +21,6 @@ public class Message implements Serializable {
 	private ImageIcon image;
 	private Date dateSent;
 	private Date dateReceived;
-
 	private User receiver;
 
 	public Message(User sender, ArrayList<User> receivers, String message) {
@@ -28,6 +32,7 @@ public class Message implements Serializable {
 	public Message(User sender, User receiver, String message) {
 		this.sender = sender;
 		this.message = message;
+		this.receiver = receiver;
 		receivers = new ArrayList<>();
 		receivers.add(receiver);
 	}

@@ -41,7 +41,7 @@ public class ClientController {
 	}
 
 	/**
-	 * Exits the application.
+	 * Exits the application, closing all connections between the server and the client.
 	 */
 	public void disconnectClient() {
 		client.disconnect();
@@ -72,7 +72,6 @@ public class ClientController {
 	public void updateOnlineUsers(ArrayList<User> arr) {
 		cui.clearList();
 		cui.setAllUsers(arr);
-		System.out.println("USERS IN CLIENT CONTROLLER SET");
 	}
 
 	public void clear() {
@@ -82,8 +81,9 @@ public class ClientController {
 	/**
 	 * Creates a Message-object from the user's input and calls for the client to
 	 * send it to the server.
+	 * 
 	 * @param message
-	 * 				The message to be sent to the receiver.
+	 *            The message to be sent to the receiver.
 	 */
 	public void sendMessageToUsers(Message message) {
 		client.sendMessage(message);
@@ -93,14 +93,14 @@ public class ClientController {
 		chattWindow = new ChattWindow(this, sender, receivers);
 	}
 
-	public void openNewChattWindow(){
-		if(chattWindow == null) {
+	public void openNewChattWindow() {
+		if (chattWindow == null) {
 			chattWindow = new ChattWindow(this, user.getName());
 		}
 	}
 
 	/**
-	 * Forwards an ArrayList of Contact-objects.
+	 * Forwards an ArrayList of Contact-objects to the client's UI.
 	 * 
 	 * @param arr
 	 *            the list of contacts
@@ -111,25 +111,17 @@ public class ClientController {
 	}
 
 	public void addMessage(Message msg) {
-		System.out.println("1");
 		if (chattWindow != null) {
-			System.out.println("2");
-			if(chattWindow.checkIfChatWindowOpen(msg.getSender())) {
-				System.out.println("3");
-				System.out.println("in add message: message sender " + msg.getSender());
-				chattWindow.handleMessage(msg);
+			if (chattWindow.checkIfChatWindowOpen(msg.getSender())) {
 			} else {
-				System.out.println("4");
 				chattWindow.openNewChatTab(msg);
-				chattWindow.handleMessage(msg);
 			}
-
 		} else {
 			openNewChattWindow();
 			chattWindow.openNewChatTab(msg);
-			chattWindow.handleMessage(msg);
 		}
-		if(msg.getImage() !=null) {
+		chattWindow.handleMessage(msg);
+		if (msg.getImage() != null) {
 			ImageIcon temp = msg.getImage();
 			chattWindow.showPictureMessage(temp);
 		}
@@ -139,13 +131,17 @@ public class ClientController {
 		chattWindow.addMessage(msg);
 	}
 
+	/**
+	 * Forwards the user to add as contact to the client.
+	 * @param user the user to add as contact
+	 */
 	public void addContact(User user) {
 		client.addContact(user);
 
 	}
 
 	public void openChatTabs(Message msg) {
-			chattWindow.openChatTabs(msg);
+		chattWindow.openChatTabs(msg);
 	}
 
 }
