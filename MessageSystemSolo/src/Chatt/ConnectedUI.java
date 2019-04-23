@@ -22,7 +22,6 @@ public class ConnectedUI extends JPanel {
 	private JPanel pnlScrollPaneAll, pnlScrollPaneContacts;
 	private JScrollPane scrollPaneAll, scrollPaneContacts;
 	private ArrayList<User> listOfAllUsers;
-	private ArrayList<Contact> listOfAllContacts;
 	private ArrayList<UserListLayout> layoutListAll, layoutListContacts;
 	private JTextField txtMessageField;
 	private JButton btnSendMessage, btnOpenChats, btnAddToContacts,btnClose;
@@ -60,8 +59,7 @@ public class ConnectedUI extends JPanel {
 		scrollPaneAll.updateUI();
 	}
 
-	public void updateContactList(ArrayList<Contact> arr) { // FIXA DENNA
-		listOfAllContacts = arr;
+	public void updateContactList(ArrayList<Contact> arr) { 
 		pnlScrollPaneContacts.removeAll();
 		UserListLayout userListLayout;
 		for (Contact u : arr) {
@@ -216,9 +214,6 @@ public class ConnectedUI extends JPanel {
 				}
 				System.out.println(markedUsers);
 			}
-//			for(int i = 0; i < markedUsers.size(); i++) {
-//				System.out.println("ANVÄNDARE i LIStAN " + markedUsers.get(i));
-//			}
 			
 			Calendar calendar = Calendar.getInstance();
 			Date date = calendar.getTime();
