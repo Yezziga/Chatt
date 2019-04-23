@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 import Client.ClientController;
 import Client.Message;
@@ -32,6 +33,7 @@ public class ChattPanel extends JPanel {
 	private JLabel lblYouAreChattingWith;
 	private JLabel lblReceiversUserName;
 	private JLabel lblReceiversUserImage;
+	private ImageIcon image = null;;
 
 	/**
 	 *
@@ -93,6 +95,7 @@ public class ChattPanel extends JPanel {
 	
 	private void registerListeners() {
 		btnSendMessage.addActionListener(new SendMessageListener());
+		btnChoosePicture.addActionListener(new PictureListener());
 	}
 	
 	public String getReceiver() {
@@ -134,11 +137,33 @@ public class ChattPanel extends JPanel {
 		public void actionPerformed(ActionEvent arg0) {
 			ArrayList<User> receivers = new ArrayList<User>();
 			receivers.add(receiver);
-			Message msg = new Message(sender, receivers, txtField.getText());
+			Message msg = null;
+			if(image == null) {
+			 msg = new Message(sender, receivers, txtField.getText());
+			} else {
+				msg = new Message(sender, receivers, txtField.getText(), image);
+			}
 			msg.setDateReceived(new Date());
 			addMessageToChat(msg);
 			controller.sendMessageToUsers(msg);
 			txtField.setText("");
+		}
+	}
+	
+	private class PictureListener implements ActionListener {
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			JFileChooser fileChooser = new JFileChooser();
+			if (fileChooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
+				fileChooser.addChoosableFileFilter(new FileNameExtensionFilter("jpg", "png", "bmp"));
+				if (fileChooser.getSelectedFile() != null) {
+					String path = fileChooser.getSelectedFile().getAbsolutePath();
+					Image tempImage = new ImageIcon(path).getImage().getScaledInstance(100, 100,
+							Image.SCALE_SMOOTH);
+					image = new ImageIcon(tempImage);
+				}
+			}
+			
 		}
 		
 	}

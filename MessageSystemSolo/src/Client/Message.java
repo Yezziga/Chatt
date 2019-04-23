@@ -31,6 +31,13 @@ public class Message implements Serializable {
 		receivers = new ArrayList<>();
 		receivers.add(receiver);
 	}
+	
+	public Message(User sender, ArrayList<User> receivers, String message, ImageIcon img) {
+		this.sender = sender;
+		this.receivers = receivers;
+		this.message = message;
+		this.image = img;
+	}
 
 	public void setSender(User user) {
 		this.sender = user;

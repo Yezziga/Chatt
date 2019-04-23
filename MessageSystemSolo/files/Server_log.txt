@@ -1,3 +1,66 @@
-Tue Apr 23 09:26:12 CEST 2019 | Logger started
-Tue Apr 23 09:26:12 CEST 2019 | Logger started
-Tue Apr 23 09:26:28 CEST 2019 | hej connected to the server
+Tue Apr 23 10:25:59 CEST 2019 | Logger started
+Tue Apr 23 10:25:59 CEST 2019 | Logger started
+Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
+Tue Apr 23 10:25:59 CEST 2019 | Logger started
+Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
+Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
+Tue Apr 23 10:25:59 CEST 2019 | Logger started
+Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
+Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
+Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
+Tue Apr 23 10:25:59 CEST 2019 | Logger started
+Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
+Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
+Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
+Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
+Tue Apr 23 10:25:59 CEST 2019 | Logger started
+Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
+Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
+Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
+Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
+Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 10:25:59 CEST 2019 | Logger started
+Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
+Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
+Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
+Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
+Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 10:26:30 CEST 2019 | message sent to jessi
+Tue Apr 23 10:25:59 CEST 2019 | Logger started
+Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
+Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
+Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
+Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
+Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 10:26:30 CEST 2019 | message sent to jessi
+Tue Apr 23 10:26:49 CEST 2019 | Server received Message-object from Lolo
+Tue Apr 23 10:25:59 CEST 2019 | Logger started
+Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
+Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
+Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
+Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
+Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 10:26:30 CEST 2019 | message sent to jessi
+Tue Apr 23 10:26:49 CEST 2019 | Server received Message-object from Lolo
+Tue Apr 23 10:26:49 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 10:25:59 CEST 2019 | Logger started
+Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
+Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
+Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
+Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
+Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 10:26:30 CEST 2019 | message sent to jessi
+Tue Apr 23 10:26:49 CEST 2019 | Server received Message-object from Lolo
+Tue Apr 23 10:26:49 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 10:26:49 CEST 2019 | message sent to jessi
+Tue Apr 23 10:25:59 CEST 2019 | Logger started
+Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
+Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
+Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
+Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
+Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 10:26:30 CEST 2019 | message sent to jessi
+Tue Apr 23 10:26:49 CEST 2019 | Server received Message-object from Lolo
+Tue Apr 23 10:26:49 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 10:26:49 CEST 2019 | message sent to jessi
+Tue Apr 23 10:27:46 CEST 2019 | Lolo disconnected from the server.

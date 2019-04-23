@@ -18,7 +18,6 @@ public class ClientController {
 	private StartScreenUI ssui = new StartScreenUI(this);
 	private JFrame frame;
 	private ConnectedUI cui = new ConnectedUI(this);
-	private ArrayList<User> allUsers;
 	private User user;
 	private ChattWindow chattWindow;
 
@@ -59,10 +58,6 @@ public class ClientController {
 		user = new User(tfUsername, icon);
 		client.connectUser(user);
 		cui.setUser(user);
-		// =======
-		// client.connectUser(tfUsername, icon);
-		// tcui.setLblUser(tfUsername);
-		// >>>>>>> refs/heads/master
 		frame.remove(ssui);
 		frame.add(cui);
 		frame.pack();
@@ -75,7 +70,6 @@ public class ClientController {
 	 *            the list of online users
 	 */
 	public void updateOnlineUsers(ArrayList<User> arr) {
-		this.allUsers = arr;
 		cui.clearList();
 		cui.setAllUsers(arr);
 		System.out.println("USERS IN CLIENT CONTROLLER SET");

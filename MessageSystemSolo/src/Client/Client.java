@@ -3,13 +3,9 @@ package Client;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.net.InetAddress;
 import java.net.Socket;
-import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Date;
-
-import javax.swing.ImageIcon;
 
 import Server.Contact;
 import Server.User;
@@ -20,7 +16,6 @@ public class Client {
 	private ObjectInputStream fromServer;
 	private ObjectOutputStream toServer;
 	private Socket socket;
-	private User user;
 
 	/**
 	 * Constructor which creates connections to the server
@@ -36,13 +31,10 @@ public class Client {
 			toServer = new ObjectOutputStream(socket.getOutputStream());
 			fromServer = new ObjectInputStream(socket.getInputStream());
 		} catch (IOException e) {
-			System.out.println("FETT FEL");
 			e.printStackTrace();
 		}
-
 		controller = new ClientController(this);
 		new Listener().start();
-
 	}
 
 	/**
@@ -75,7 +67,7 @@ public class Client {
 	}
 
 	/**
-	 * Sends a Message-object to the server.
+	 * Writes a Message-object to the server.
 	 * 
 	 * @param msg
 	 *            the message to send.
@@ -89,26 +81,36 @@ public class Client {
 		}
 	}
 
+	/**
+	 * Forwards the message from the server to the controller
+	 * 
+	 * @param msg
+	 *            the Message-object from the server
+	 */
 	public void readMessage(Message msg) {
-		System.out.println("Message is " + msg);
 		msg.setDateReceived(new Date());
 		controller.addMessage(msg);
+	}
+
+	/**
+	 * Writes the user to add as contact to the server
+	 * 
+	 * @param user
+	 *            the user to add as contact
+	 */
+	public void addContact(User user) {
+		try {
+			toServer.writeObject(user);
+			toServer.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private class Listener extends Thread {
 		@SuppressWarnings("unchecked")
 		public void run() {
-			ArrayList<String> messageReceivers = new ArrayList<>(); // test purpose
-			messageReceivers.add("Kalle");
-			messageReceivers.add("Balle");
-			messageReceivers.add("Nalle");
-			// Message msg1 = new Message(user, messageReceivers, "meddelandet");
-
-			/**
-			 * Listens for input from the server
-			 */
 			while (true) {
-				// sendMessage(msg1);
 				try {
 					Object obj = fromServer.readObject();
 
@@ -130,9 +132,10 @@ public class Client {
 						} else if (((ArrayList<?>) obj).isEmpty()) {
 							controller.clear();
 						}
-					} if(obj instanceof Message) {
+					}
+					if (obj instanceof Message) {
 						System.out.println("Object instance of message");
-						readMessage((Message)obj);
+						readMessage((Message) obj);
 					}
 
 				} catch (ClassNotFoundException e1) {
@@ -141,7 +144,6 @@ public class Client {
 					e1.printStackTrace();
 				}
 
-				
 			}
 		}
 
@@ -149,20 +151,6 @@ public class Client {
 
 	public static void main(String[] args) {
 		Client client1 = new Client("127.0.0.1", 4447);
-
-		// Client client2 = new Client("127.0.0.1",4447, new User("Nalle"));
-		// Client client3 = new Client("127.0.0.1",4447);
-	}
-
-	public void addContact(User user) {
-		try {
-			toServer.writeObject(user);
-			toServer.flush();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		
 	}
 
 }
