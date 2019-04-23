@@ -324,10 +324,7 @@ public class Server {
 				}
 
 			} catch (Exception e1) {
-
 				disconnectClient();
-				System.out.println("client-controller stoppad");
-
 			}
 
 		}

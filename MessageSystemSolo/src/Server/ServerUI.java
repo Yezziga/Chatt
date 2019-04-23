@@ -1,16 +1,17 @@
 package Server;
 
-import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Calendar;
-import java.util.Date;
 
 import javax.swing.*;
 
-//Ett UI för servern som ska kunna visa all trafik mellan två tidpunkter
-
+/**
+ * This class opens a frame for searching for events in the server log.
+ * 
+ * @author Jessica
+ *
+ */
 public class ServerUI {
 	private JFrame frame = new JFrame("Server log");
 	private JTextArea display = new JTextArea();
@@ -25,11 +26,9 @@ public class ServerUI {
 			23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
 			50, 51, 52, 53, 54, 55, 56, 57, 58, 59 };
 	private JComboBox<Integer> cbFromYY, cbFromMM, cbFromDD, cbFromHH, cbFrommm, cbToYY, cbToMM, cbToDD, cbToHH, cbTomm;
-	private JLabel lblFromYY, lblFromMM, lblFromDD, lblFromHH, lblFrommm, lblToYY, lblToMM, lblToDD, lblToHH, lblTomm;
 	private JButton btnSearch;
 
 	public ServerUI() {
-
 		display.setLineWrap(true);
 		display.setWrapStyleWord(true);
 		display.setEditable(false);
@@ -88,10 +87,6 @@ public class ServerUI {
 		start();
 	}
 
-	public void append(String str) {
-		display.append(str + "\n");
-	}
-
 	public void start() {
 
 		frame.setBounds(0, 0, 650, 450);
@@ -102,11 +97,36 @@ public class ServerUI {
 		frame.setLocationRelativeTo(null); // Start middle screen
 	}
 
+	/**
+	 * Appends text to the text-area
+	 * 
+	 * @param the
+	 *            text to append with
+	 */
+	public void append(String str) {
+		display.append(str + "\n");
+	}
+
+	/**
+	 * Fetches all logged event between two dates
+	 * 
+	 * @param to
+	 *            the date to stop fetching
+	 * @param from
+	 *            from what date to start fetching
+	 */
 	public void viewHistory(Calendar to, Calendar from) {
 		String str = TrafficLogger.getLog(to, from);
 		display.setText(str);
 	}
 
+	/**
+	 * Listens for when the "Search" button is pressed, and then fetches the logged
+	 * event according to the input.
+	 * 
+	 * @author Jessica
+	 *
+	 */
 	private class Listener implements ActionListener {
 
 		@Override
@@ -128,12 +148,5 @@ public class ServerUI {
 			viewHistory(to, from);
 		}
 
-	}
-
-	public static void main(String[] args) {
-		new ServerUI();
-		Calendar c = Calendar.getInstance();
-		Date date = c.getTime();
-		System.out.println(date);
 	}
 }
