@@ -27,7 +27,6 @@ public class Server {
 	public Server(int serverPort) {
 		logger = TrafficLogger.getInstance();
 		logger.log("Logger started");
-		System.out.println(logger.getLog());
 
 		try {
 			serverSocket = new ServerSocket(serverPort);

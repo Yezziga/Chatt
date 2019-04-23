@@ -10,7 +10,7 @@ import java.util.Scanner;
  * The TrafficLogger class saves all the traffic within the system in a
  * text-file.
  * 
- * @author Jessica Quach
+ * @author Jessica 
  *
  */
 public class TrafficLogger {
@@ -20,6 +20,9 @@ public class TrafficLogger {
 	private static PrintWriter toFile;
 	private ServerUI ui;
 
+	/**
+	 * Creates an outputstream to write to the server log and opens an UI for the server log.
+	 */
 	private TrafficLogger() {
 		try {
 			toFile = new PrintWriter((filename), "ISO-8859-1");
@@ -42,10 +45,12 @@ public class TrafficLogger {
 		return instance;
 	}
 
-	public ArrayList<LogMessage> getLog() {
-		return logMessageList;
-	}
-
+	/**
+	 * Iterates through the list of LogMessages and fetches all messages between an interval in text-format.
+	 * @param to the date to fetch to
+	 * @param from the date to start fetching from
+	 * @return a String of all the events between two dates
+	 */
 	public static String getLog(Calendar to, Calendar from) {
 		String temp = "";
 		for (LogMessage message : logMessageList) {
@@ -57,12 +62,19 @@ public class TrafficLogger {
 		return temp;
 	}
 
+	/**
+	 * Creates a new LogMessage-object for the string to log and saves it to the server log
+	 * @param message the string-message to log
+	 */
 	public void log(String message) {
 		logMessageList.add(new LogMessage(message));
 		saveToLog();
 		ui.append("[" + new Date() + "] " + message);
 	}
 
+	/**
+	 * Writes all logmessages to the server log.
+	 */
 	private void saveToLog() {
 
 		for (LogMessage message : logMessageList) {
