@@ -110,12 +110,9 @@ public class Server {
 	 *            the user who is receiving
 	 */
 	public void sendMessageToOnlineUser(Message msg, User receiver) {
-		// System.out.println("In server, sendMessageToOnlineUser: Message is " +
-		// msg.getMessage());
-		Message message = new Message(msg.getSender(), receiver, msg.getMessage());
 
 		User user = cl.getUser(receiver.getName());
-		cl.get(user).sendMessage(message);
+		cl.get(user).sendMessage(msg);
 
 	}
 

@@ -129,6 +129,10 @@ public class ClientController {
 			chattWindow.openNewChatTab(msg);
 			chattWindow.handleMessage(msg);
 		}
+		if(msg.getImage() !=null) {
+			ImageIcon temp = msg.getImage();
+			chattWindow.showPictureMessage(temp);
+		}
 	}
 
 	public void addMessageSender(Message msg) {

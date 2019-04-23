@@ -1,66 +1,190 @@
-Tue Apr 23 10:25:59 CEST 2019 | Logger started
-Tue Apr 23 10:25:59 CEST 2019 | Logger started
-Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
-Tue Apr 23 10:25:59 CEST 2019 | Logger started
-Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
-Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
-Tue Apr 23 10:25:59 CEST 2019 | Logger started
-Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
-Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
-Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
-Tue Apr 23 10:25:59 CEST 2019 | Logger started
-Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
-Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
-Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
-Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
-Tue Apr 23 10:25:59 CEST 2019 | Logger started
-Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
-Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
-Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
-Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
-Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
-Tue Apr 23 10:25:59 CEST 2019 | Logger started
-Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
-Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
-Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
-Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
-Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
-Tue Apr 23 10:26:30 CEST 2019 | message sent to jessi
-Tue Apr 23 10:25:59 CEST 2019 | Logger started
-Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
-Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
-Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
-Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
-Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
-Tue Apr 23 10:26:30 CEST 2019 | message sent to jessi
-Tue Apr 23 10:26:49 CEST 2019 | Server received Message-object from Lolo
-Tue Apr 23 10:25:59 CEST 2019 | Logger started
-Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
-Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
-Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
-Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
-Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
-Tue Apr 23 10:26:30 CEST 2019 | message sent to jessi
-Tue Apr 23 10:26:49 CEST 2019 | Server received Message-object from Lolo
-Tue Apr 23 10:26:49 CEST 2019 | jessi is online. Attempting to send message
-Tue Apr 23 10:25:59 CEST 2019 | Logger started
-Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
-Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
-Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
-Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
-Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
-Tue Apr 23 10:26:30 CEST 2019 | message sent to jessi
-Tue Apr 23 10:26:49 CEST 2019 | Server received Message-object from Lolo
-Tue Apr 23 10:26:49 CEST 2019 | jessi is online. Attempting to send message
-Tue Apr 23 10:26:49 CEST 2019 | message sent to jessi
-Tue Apr 23 10:25:59 CEST 2019 | Logger started
-Tue Apr 23 10:26:08 CEST 2019 | jessi connected to the server
-Tue Apr 23 10:26:17 CEST 2019 | Lolo connected to the server
-Tue Apr 23 10:26:23 CEST 2019 | Lolo added jessi to contact list
-Tue Apr 23 10:26:30 CEST 2019 | Server received Message-object from Lolo
-Tue Apr 23 10:26:30 CEST 2019 | jessi is online. Attempting to send message
-Tue Apr 23 10:26:30 CEST 2019 | message sent to jessi
-Tue Apr 23 10:26:49 CEST 2019 | Server received Message-object from Lolo
-Tue Apr 23 10:26:49 CEST 2019 | jessi is online. Attempting to send message
-Tue Apr 23 10:26:49 CEST 2019 | message sent to jessi
-Tue Apr 23 10:27:46 CEST 2019 | Lolo disconnected from the server.
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:16 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:16 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:25:16 CEST 2019 | message sent to persika
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:16 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:25:16 CEST 2019 | message sent to persika
+Tue Apr 23 14:25:39 CEST 2019 | jessi disconnected from the server.
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:16 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:25:16 CEST 2019 | message sent to persika
+Tue Apr 23 14:25:39 CEST 2019 | jessi disconnected from the server.
+Tue Apr 23 14:25:47 CEST 2019 | Server received Message-object from persika
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:16 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:25:16 CEST 2019 | message sent to persika
+Tue Apr 23 14:25:39 CEST 2019 | jessi disconnected from the server.
+Tue Apr 23 14:25:47 CEST 2019 | Server received Message-object from persika
+Tue Apr 23 14:25:47 CEST 2019 | hej is online. Attempting to send message
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:16 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:25:16 CEST 2019 | message sent to persika
+Tue Apr 23 14:25:39 CEST 2019 | jessi disconnected from the server.
+Tue Apr 23 14:25:47 CEST 2019 | Server received Message-object from persika
+Tue Apr 23 14:25:47 CEST 2019 | hej is online. Attempting to send message
+Tue Apr 23 14:25:47 CEST 2019 | message sent to hej
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:16 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:25:16 CEST 2019 | message sent to persika
+Tue Apr 23 14:25:39 CEST 2019 | jessi disconnected from the server.
+Tue Apr 23 14:25:47 CEST 2019 | Server received Message-object from persika
+Tue Apr 23 14:25:47 CEST 2019 | hej is online. Attempting to send message
+Tue Apr 23 14:25:47 CEST 2019 | message sent to hej
+Tue Apr 23 14:27:43 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:16 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:25:16 CEST 2019 | message sent to persika
+Tue Apr 23 14:25:39 CEST 2019 | jessi disconnected from the server.
+Tue Apr 23 14:25:47 CEST 2019 | Server received Message-object from persika
+Tue Apr 23 14:25:47 CEST 2019 | hej is online. Attempting to send message
+Tue Apr 23 14:25:47 CEST 2019 | message sent to hej
+Tue Apr 23 14:27:43 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:27:43 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:16 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:25:16 CEST 2019 | message sent to persika
+Tue Apr 23 14:25:39 CEST 2019 | jessi disconnected from the server.
+Tue Apr 23 14:25:47 CEST 2019 | Server received Message-object from persika
+Tue Apr 23 14:25:47 CEST 2019 | hej is online. Attempting to send message
+Tue Apr 23 14:25:47 CEST 2019 | message sent to hej
+Tue Apr 23 14:27:43 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:27:43 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:27:43 CEST 2019 | message sent to persika
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:16 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:25:16 CEST 2019 | message sent to persika
+Tue Apr 23 14:25:39 CEST 2019 | jessi disconnected from the server.
+Tue Apr 23 14:25:47 CEST 2019 | Server received Message-object from persika
+Tue Apr 23 14:25:47 CEST 2019 | hej is online. Attempting to send message
+Tue Apr 23 14:25:47 CEST 2019 | message sent to hej
+Tue Apr 23 14:27:43 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:27:43 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:27:43 CEST 2019 | message sent to persika
+Tue Apr 23 14:27:51 CEST 2019 | persika disconnected from the server.
+Tue Apr 23 14:24:29 CEST 2019 | Logger started
+Tue Apr 23 14:24:47 CEST 2019 | jessi connected to the server
+Tue Apr 23 14:24:53 CEST 2019 | persika connected to the server
+Tue Apr 23 14:24:58 CEST 2019 | hej connected to the server
+Tue Apr 23 14:25:06 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:06 CEST 2019 | jessi is online. Attempting to send message
+Tue Apr 23 14:25:06 CEST 2019 | message sent to jessi
+Tue Apr 23 14:25:16 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:25:16 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:25:16 CEST 2019 | message sent to persika
+Tue Apr 23 14:25:39 CEST 2019 | jessi disconnected from the server.
+Tue Apr 23 14:25:47 CEST 2019 | Server received Message-object from persika
+Tue Apr 23 14:25:47 CEST 2019 | hej is online. Attempting to send message
+Tue Apr 23 14:25:47 CEST 2019 | message sent to hej
+Tue Apr 23 14:27:43 CEST 2019 | Server received Message-object from hej
+Tue Apr 23 14:27:43 CEST 2019 | persika is online. Attempting to send message
+Tue Apr 23 14:27:43 CEST 2019 | message sent to persika
+Tue Apr 23 14:27:51 CEST 2019 | persika disconnected from the server.
+Tue Apr 23 14:27:52 CEST 2019 | hej disconnected from the server.

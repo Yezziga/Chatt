@@ -1,12 +1,15 @@
 package Chatt;
 
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
@@ -218,6 +221,11 @@ public class ChattWindow extends JFrame {
 		for(int i = 0; i < listOfChats.size(); i++) {
 			System.out.println(listOfChats.get(i));
 		}
+	}
+
+	public void showPictureMessage(ImageIcon temp) {
+		JOptionPane.showMessageDialog(null, temp);
+		
 	}
 
 }
