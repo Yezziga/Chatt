@@ -253,5 +253,4 @@ public class ConnectedUI extends JPanel {
 			controller.openChattWindows(user, markedUsers);
 		}
 	}
-
 }
