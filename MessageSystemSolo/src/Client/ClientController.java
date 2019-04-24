@@ -89,10 +89,18 @@ public class ClientController {
 		client.sendMessage(message);
 	}
 
+	/**
+	 * Opens a new window for chat tabs, with the clients user and a list of users to open tabs for.
+	 * @param sender
+	 * @param receivers
+	 */
 	public void openChattWindows(User sender, ArrayList<User> receivers) {
 		chattWindow = new ChattWindow(this, sender, receivers);
 	}
 
+	/**
+	 * If chattwindow is not already opened, it opens a new chat window.
+	 */
 	public void openNewChattWindow() {
 		if (chattWindow == null) {
 			chattWindow = new ChattWindow(this, user.getName());
@@ -109,6 +117,12 @@ public class ClientController {
 		cui.updateContactList(arr);
 
 	}
+
+	/**
+	 * Appends a text window in the chat panel with the message if the tab is open,
+	 * otherwise it opens the tab and appends the message.
+	 * @param msg
+	 */
 
 	public void addMessage(Message msg) {
 		if (chattWindow != null) {
@@ -140,6 +154,10 @@ public class ClientController {
 
 	}
 
+	/**
+	 * Opens chat tabs for every receiver in message.
+	 * @param msg
+	 */
 	public void openChatTabs(Message msg) {
 		chattWindow.openChatTabs(msg);
 	}
