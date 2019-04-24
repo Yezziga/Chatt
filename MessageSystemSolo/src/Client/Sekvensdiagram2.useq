@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="Client.Client.Listener" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Client/Client.java" binary="false" label="listener" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="86" y="0"/>    
+    <execution id="2">      
+      <position height="694" width="0" x="0" y="83"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="631" width="0" x="0" y="125"/>    
+    </execution>  
+  </object>  
+  <object id="13" language="java" name="java.io.ObjectInputStream" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="fromServer" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="187"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="java.io.PrintStream" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>  
+  </object>  
+  <object id="15" language="java" name="Client.ClientController" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Client/ClientController.java" binary="false" label="controller" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="384"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="105" width="0" x="0" y="497"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="21" width="0" x="0" y="714"/>    
+    </execution>  
+  </object>  
+  <object id="20" language="java" name="Chatt.ConnectedUI" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Chatt/ConnectedUI.java" binary="false" label="cui" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="518"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="560"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="java.util.ArrayList" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="layoutListAll" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>  
+  </object>  
+  <combined-fragment id="22" interaction-operator="LOOP">    
+    <interaction-operand id="23" constraint="while: true">      
+      <fragment refId="24"/>      
+      <fragment refId="25"/>      
+      <fragment refId="5"/>      
+      <fragment refId="26"/>    
+    </interaction-operand>    
+    <combined-fragment id="25" interaction-operator="OPT">      
+      <interaction-operand id="27" constraint="obj instanceof ArrayList&lt;?&gt;">        
+        <fragment refId="28"/>      
+      </interaction-operand>      
+      <combined-fragment id="28" interaction-operator="ALT">        
+        <interaction-operand id="29" constraint="!((ArrayList&lt;?&gt;) obj).isEmpty()">          
+          <fragment refId="30"/>        
+        </interaction-operand>        
+        <interaction-operand id="31" constraint="else">          
+          <fragment refId="32"/>        
+        </interaction-operand>        
+        <combined-fragment id="30" interaction-operator="ALT">          
+          <interaction-operand id="33" constraint="((ArrayList&lt;?&gt;) obj).get(0) instanceof Contact">            
+            <fragment refId="7"/>          
+          </interaction-operand>          
+          <interaction-operand id="34" constraint="else">            
+            <fragment refId="35"/>          
+          </interaction-operand>          
+          <combined-fragment id="35" interaction-operator="OPT">            
+            <interaction-operand id="36" constraint="((ArrayList&lt;?&gt;) obj).get(0) instanceof User">              
+              <fragment refId="9"/>              
+              <fragment refId="16"/>              
+              <fragment refId="18"/>              
+              <fragment refId="37"/>            
+            </interaction-operand>          
+          </combined-fragment>        
+        </combined-fragment>        
+        <combined-fragment id="32" interaction-operator="OPT">          
+          <interaction-operand id="38" constraint="((ArrayList&lt;?&gt;) obj).isEmpty()">            
+            <fragment refId="11"/>          
+          </interaction-operand>        
+        </combined-fragment>      
+      </combined-fragment>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <message id="3" operation="run():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="readObject():java.lang.Object" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="updateContactList(java.util.ArrayList&lt;Server.Contact&gt;):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="updateOnlineUsers(java.util.ArrayList&lt;Server.User&gt;):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="clear():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="16" operation="clearList():void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="setAllUsers(java.util.ArrayList&lt;Server.User&gt;):void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>
+</sequence-diagram>

@@ -148,19 +148,19 @@
   <combined-fragment id="60" interaction-operator="OPT">    
     <interaction-operand id="61" constraint="user.getPicture() == null">      
       <fragment refId="22"/>      
-      <fragment refId="14"/>      
-      <fragment refId="20"/>      
+      <fragment refId="18"/>      
       <fragment refId="16"/>      
-      <fragment refId="18"/>    
+      <fragment refId="20"/>      
+      <fragment refId="14"/>    
     </interaction-operand>  
   </combined-fragment>  
   <combined-fragment id="62" interaction-operator="CRITICAL">    
     <interaction-operand id="63">      
-      <fragment refId="37"/>      
-      <fragment refId="24"/>      
-      <fragment refId="32"/>      
       <fragment refId="34"/>      
+      <fragment refId="37"/>      
+      <fragment refId="32"/>      
       <fragment refId="36"/>      
+      <fragment refId="24"/>      
       <fragment refId="64"/>    
     </interaction-operand>    
     <combined-fragment id="64" interaction-operator="LOOP">      
@@ -207,7 +207,7 @@
     <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="17"/>  
   </message>  
-  <message id="18" operation="getScaledInstance(int,int,int):java.awt.Image" asynchronous="false">    
+  <message id="18" asynchronous="false">    
     <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="19"/>  
   </message>  
@@ -235,7 +235,7 @@
     <end type="SOURCE" refId="25"/>    
     <end type="TARGET" refId="29"/>  
   </message>  
-  <message id="37" operation="updateAllClients():void" asynchronous="false">    
+  <message id="37" asynchronous="false">    
     <end type="SOURCE" refId="25"/>    
     <end type="TARGET" refId="38"/>  
   </message>  
