@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="Chatt.ConnectedUI" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Chatt/ConnectedUI.java" binary="false" label="connectedUI" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="88" y="0"/>    
+    <execution id="2">      
+      <position height="727" width="0" x="0" y="78"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="664" width="0" x="0" y="120"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="449" width="0" x="0" y="314"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="376" width="0" x="0" y="366"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="java.awt.Container" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="pnlScrollPaneAll" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="14">      
+      <position height="21" width="0" x="0" y="397"/>    
+    </execution>    
+    <execution id="24">      
+      <position height="21" width="0" x="0" y="648"/>    
+    </execution>  
+  </object>  
+  <object id="28" language="java" name="Chatt.UserListLayout" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Chatt/UserListLayout.java" binary="false" label="userListLayout" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="16">      
+      <position height="21" width="0" x="0" y="480"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="21" width="0" x="0" y="522"/>    
+    </execution>  
+  </object>  
+  <object id="29" language="java" name="java.awt.Dimension" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="20">      
+      <position height="21" width="0" x="0" y="564"/>    
+    </execution>  
+  </object>  
+  <object id="30" language="java" name="javax.swing.JScrollPane" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="scrollPaneAll" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="700"/>    
+    </execution>  
+  </object>  
+  <object id="31" language="java" name="java.util.ArrayList" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="layoutListAll" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="151"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="21" width="0" x="0" y="606"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="java.util.ArrayList" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="listOfAllUsers" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="234"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="33" interaction-operator="OPT">    
+    <interaction-operand id="34" constraint="listOfAllUsers != null">      
+      <fragment refId="7"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="35" interaction-operator="LOOP">    
+    <interaction-operand id="36" constraint="for: listOfAllUsers">      
+      <fragment refId="17"/>      
+      <fragment refId="21"/>      
+      <fragment refId="23"/>      
+      <fragment refId="19"/>      
+      <fragment refId="15"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="clearList():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="clear():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="clear():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="setAllUsers(java.util.ArrayList&lt;Server.User&gt;):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="updateList():void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="removeAll():void" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="UserListLayout(Server.User)" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="setMaximumSize(java.awt.Dimension):void" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="Dimension(int,int)" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="add(E):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="add(java.awt.Component):java.awt.Component" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="updateUI():void" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>
+</sequence-diagram>

@@ -4,17 +4,17 @@ import java.io.*;
 import java.util.ArrayList;
 
 /**
- * En lista av kontakter för varje användare som skrivs ner av servern
+ * The class reads and writes ArrayList<Contact> to users' file. Each user gets
+ * a separate .txt file for storing their contacts.
  * 
- * @author henke
+ * @author Jessica
  *
  */
-
 public class ContactsReader {
 
 	/**
-	 * Creates and/or writes User-objects to a file. The file is the given user's
-	 * contact list.
+	 * Creates and/or writes a list of contacts to a file. The file is the given
+	 * user's contact list.
 	 * 
 	 * @param user
 	 *            the user who wishes to add another user to his/her contact list.
@@ -43,12 +43,12 @@ public class ContactsReader {
 	}
 
 	/**
-	 * Reads and extracts the User-objects from the given user's contacts file into
-	 * an Array-List.
+	 * Reads the given user's contact file if it exists and returns a list of
+	 * contacts.
 	 * 
 	 * @param user
-	 *            the user whose contact list is being read.
-	 * @return an ArrayList<User> with a user's contact list.
+	 *            the user whose contacts are to be extracted.
+	 * @return a list of contacts
 	 */
 	@SuppressWarnings("unchecked")
 	public static ArrayList<Contact> readContacts(User user) {
@@ -69,24 +69,6 @@ public class ContactsReader {
 		}
 
 		return list;
-	}
-
-	public static void main(String[] args) {
-		User u1 = new User("Kalle", null);
-		User u2 = new User("Sven", null);
-		User u3 = new User("Jessi", null);
-		User u6 = new User("OK", null);
-		User u4 = new User("Nes", null);
-		User u5 = new User("Wuh", null);
-		 addContact(u5, u1);
-		 addContact(u5, u2);
-		 addContact(u5, u3);
-		 addContact(u5, u6);
-		ArrayList<Contact> arr = readContacts(u5);
-		for (Contact c : arr) {
-			System.out.println(c.getName());
-		}
-
 	}
 
 }

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="Server.Server" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Server/Server.java" binary="false" label="server" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="1478" width="0" x="0" y="78"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="1415" width="0" x="0" y="120"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="Server.Server.ClientHandler" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Server/Server.java" binary="false" label="clientHandler" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="730" width="0" x="0" y="784"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="1451"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="javax.swing.ImageIcon" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="888"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="930"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="972"/>    
+    </execution>  
+  </object>  
+  <object id="28" language="java" name="Server.User" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Server/User.java" binary="false" label="user" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="1014"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="1254"/>    
+    </execution>  
+  </object>  
+  <object id="30" language="java" name="javax.swing.ImageIcon" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="1056"/>    
+    </execution>  
+  </object>  
+  <object id="31" language="java" name="Server.Server.Clients" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Server/Server.java" binary="false" label="cl" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="25">      
+      <position height="344" width="0" x="0" y="1149"/>    
+    </execution>    
+    <execution id="38">      
+      <position height="21" width="0" x="0" y="1317"/>    
+    </execution>  
+  </object>  
+  <object id="40" language="java" name="java.util.HashMap" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="onlineUsers" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="33">      
+      <position height="21" width="0" x="0" y="1170"/>    
+    </execution>  
+  </object>  
+  <object id="41" language="java" name="Server.ContactsReader" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Server/ContactsReader.java" binary="false" label="&lt;static&gt;" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>  
+  </object>  
+  <object id="42" language="java" name="Client.Message" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Client/Message.java" binary="false" label="msg" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>  
+  </object>  
+  <object id="43" language="java" name="java.io.PrintStream" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>  
+  </object>  
+  <object id="44" language="java" name="java.util.Calendar" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="&lt;static&gt;" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>  
+  </object>  
+  <object id="45" language="java" name="java.util.Calendar" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="calendar" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>  
+  </object>  
+  <object id="46" language="java" name="Server.TrafficLogger" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Server/TrafficLogger.java" binary="false" label="logger" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="35">      
+      <position height="21" width="0" x="0" y="1212"/>    
+    </execution>  
+  </object>  
+  <object id="47" language="java" name="Server.User" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Server/User.java" binary="false" label="contactToAdd" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>  
+  </object>  
+  <object id="48" language="java" name="java.net.Socket" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="clientSocket" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="485"/>    
+    </execution>    
+    <execution id="49">      
+      <position height="21" width="0" x="0" y="632"/>    
+    </execution>    
+    <execution id="50">      
+      <position height="21" width="0" x="0" y="716"/>    
+    </execution>  
+  </object>  
+  <object id="51" language="java" name="Server.Server.ClientHandler" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Server/Server.java" binary="false" label="ch" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="189" width="0" x="0" y="569"/>    
+    </execution>  
+  </object>  
+  <object id="58" language="java" name="java.io.ObjectInputStream" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="fromClient" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="53">      
+      <position height="21" width="0" x="0" y="590"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="805"/>    
+    </execution>  
+  </object>  
+  <object id="59" language="java" name="java.io.ObjectOutputStream" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="toClient" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="56">      
+      <position height="21" width="0" x="0" y="674"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="60" interaction-operator="OPT">    
+    <interaction-operand id="61" constraint="user.getPicture() == null">      
+      <fragment refId="22"/>      
+      <fragment refId="18"/>      
+      <fragment refId="16"/>      
+      <fragment refId="20"/>      
+      <fragment refId="14"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="62" interaction-operator="CRITICAL">    
+    <interaction-operand id="63">      
+      <fragment refId="34"/>      
+      <fragment refId="37"/>      
+      <fragment refId="32"/>      
+      <fragment refId="36"/>      
+      <fragment refId="24"/>      
+      <fragment refId="64"/>    
+    </interaction-operand>    
+    <combined-fragment id="64" interaction-operator="LOOP">      
+      <interaction-operand id="65" constraint="for: unsentMessages">        
+        <fragment refId="66"/>      
+      </interaction-operand>      
+      <combined-fragment id="66" interaction-operator="LOOP">        
+        <interaction-operand id="67" constraint="for: message.getReceivers()">          
+          <fragment refId="68"/>        
+        </interaction-operand>        
+        <combined-fragment id="68" interaction-operator="OPT">          
+          <interaction-operand id="69" constraint="receiver.getName().equals(user.getName())">            
+            <fragment refId="39"/>          
+          </interaction-operand>        
+        </combined-fragment>      
+      </combined-fragment>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <message id="3" operation="Server(int)" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="getRemoteSocketAddress():java.net.SocketAddress" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="ClientHandler(java.net.Socket)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="run():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" operation="readObject():java.lang.Object" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="ImageIcon(java.lang.String)" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="getImage():java.awt.Image" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="setPicture(javax.swing.ImageIcon):void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="ImageIcon(java.awt.Image)" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="put(Server.User,Server.Server.ClientHandler):void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="32" operation="put(K,V):V" asynchronous="false">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="34" operation="log(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="36" operation="getName():java.lang.String" asynchronous="false">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="37" asynchronous="false">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="38"/>  
+  </message>  
+  <message id="39" operation="sendMessage(Client.Message):void" asynchronous="false">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="52" operation="ObjectInputStream(java.io.InputStream)" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="53"/>  
+  </message>  
+  <message id="54" operation="getInputStream():java.io.InputStream" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="49"/>  
+  </message>  
+  <message id="55" operation="ObjectOutputStream(java.io.OutputStream)" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="56"/>  
+  </message>  
+  <message id="57" operation="getOutputStream():java.io.OutputStream" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="50"/>  
+  </message>
+</sequence-diagram>

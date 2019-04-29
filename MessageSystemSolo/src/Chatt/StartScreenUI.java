@@ -63,7 +63,6 @@ public class StartScreenUI extends JPanel implements ActionListener {
 
 		tfUsername = new JTextField();
 		tfUsername.setBounds(35, 163, 170, 22);
-//		tfUsername.setColumns(10);
 		add(tfUsername);
 
 		btnConnect = new JButton("Connect");
@@ -100,6 +99,12 @@ public class StartScreenUI extends JPanel implements ActionListener {
 	public void updateStatus(String str) {
 		lblStatus.setText("Status: " + str);
 	}
+
+	/**
+	 * The listener for JFileChooser:s button. Used to select a file
+	 * that the user wishes to use as a profile picture.
+	 * @param e
+	 */
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnFileButton) {

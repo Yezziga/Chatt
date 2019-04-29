@@ -1,27 +1,31 @@
 package Server;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
-
-import Client.Message;
+import java.util.Scanner;
 
 /**
  * The TrafficLogger class saves all the traffic within the system in a
  * text-file.
  * 
- * @author Jessica Quach
+ * @author Jessica 
  *
  */
 public class TrafficLogger {
 	private static TrafficLogger instance = null;
+	private static ArrayList<LogMessage> logMessageList = new ArrayList<LogMessage>();
 	private String filename = "files/Server_log.txt";
-	private static Writer toFile;
+	private static PrintWriter toFile;
 	private ServerUI ui;
 
+	/**
+	 * Creates an outputstream to write to the server log and opens an UI for the server log.
+	 */
 	private TrafficLogger() {
 		try {
-			toFile = new OutputStreamWriter(new FileOutputStream(filename, true), "ISO-8859-1");
+			toFile = new PrintWriter((filename), "ISO-8859-1");
 			ui = new ServerUI();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -42,61 +46,42 @@ public class TrafficLogger {
 	}
 
 	/**
-	 * Adds and saves the message-object in a text-file.
-	 * 
-	 * @param message
-	 *            a message-object
+	 * Iterates through the list of LogMessages and fetches all messages between an interval in text-format.
+	 * @param to the date to fetch to
+	 * @param from the date to start fetching from
+	 * @return a String of all the events between two dates
 	 */
-	public synchronized void saveMessageToLog(Message message) {
-		Calendar calendar = Calendar.getInstance();
-		Date date = calendar.getTime();
-		String temp = "[" + date + "]: " + "Date sent: " + message.getDateSend() + ", sender: "
-				+ message.getSender().getName() + ", date received: " + message.getDateReceived() + ", receivers: "
-				+ message.getReceivers() + ", message: " + message.getMessage();
-
-		try {
-			toFile.write(temp + "\n");
-			toFile.flush();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public synchronized void saveToLog(String s) {
-		Calendar calendar = Calendar.getInstance();
-		Date date = calendar.getTime();
-		String temp = "[" + date + "]: " + s;
-
-		try {
-			toFile.write(temp + "\n");
-			toFile.flush();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
-	 * 
-	 * @return
-	 */
-	public String getLog() {
+	public static String getLog(Calendar to, Calendar from) {
 		String temp = "";
-		try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
-			String str = br.readLine();
-			while (str != null) {
-				temp += "\n" + str;
-				str = br.readLine();
+		for (LogMessage message : logMessageList) {
+			Date messageDate = message.getDate();
+			if (messageDate.compareTo(from.getTime()) >= 0 && messageDate.compareTo(to.getTime()) <= 0) {
+				temp += "[" + messageDate + "] " + message.getMessage() + "\n";
 			}
-
-		} catch (FileNotFoundException e) {
-			System.out.println("File could not be found");
-			e.printStackTrace();
-		} catch (IOException e) {
-			System.out.println("Exception Occurred:");
-			e.printStackTrace();
 		}
 		return temp;
 	}
 
+	/**
+	 * Creates a new LogMessage-object for the string to log and saves it to the server log
+	 * @param message the string-message to log
+	 */
+	public void log(String message) {
+		logMessageList.add(new LogMessage(message));
+		saveToLog();
+		ui.append("[" + new Date() + "] " + message);
+	}
+
+	/**
+	 * Writes all logmessages to the server log.
+	 */
+	private void saveToLog() {
+
+		for (LogMessage message : logMessageList) {
+			toFile.write(message.toString() + "\n");
+		}
+		toFile.flush();
+
+	}
 
 }
