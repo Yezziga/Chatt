@@ -1,6 +1,7 @@
 package Server;
 
 import java.io.*;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -51,12 +52,13 @@ public class TrafficLogger {
 	 * @param from the date to start fetching from
 	 * @return a String of all the events between two dates
 	 */
-	public static String getLog(Calendar to, Calendar from) {
+	public static String getLog(LocalDateTime to, LocalDateTime from) {
 		String temp = "";
 		for (LogMessage message : logMessageList) {
-			Date messageDate = message.getDate();
-			if (messageDate.compareTo(from.getTime()) >= 0 && messageDate.compareTo(to.getTime()) <= 0) {
+			LocalDateTime messageDate = message.getDate();
+			if ((messageDate.isAfter(from) || messageDate.isEqual(from))  && (messageDate.isBefore(to) || messageDate.isEqual(to))) {
 				temp += "[" + messageDate + "] " + message.getMessage() + "\n";
+			
 			}
 		}
 		return temp;
@@ -67,9 +69,11 @@ public class TrafficLogger {
 	 * @param message the string-message to log
 	 */
 	public void log(String message) {
-		logMessageList.add(new LogMessage(message));
+		LogMessage m = new LogMessage(message);
+		logMessageList.add(m);
 		saveToLog();
-		ui.append("[" + new Date() + "] " + message);
+
+		ui.append("[" + m.getDate() + "] " + message);
 	}
 
 	/**

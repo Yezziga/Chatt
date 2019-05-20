@@ -1,0 +1,231 @@
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:50:20 | message sent to jessica
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:50:20 | message sent to jessica
+2019-05-20T14:50:26 | Server received Message-object from jessica
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:50:20 | message sent to jessica
+2019-05-20T14:50:26 | Server received Message-object from jessica
+2019-05-20T14:50:26 | erik is online. Attempting to send message
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:50:20 | message sent to jessica
+2019-05-20T14:50:26 | Server received Message-object from jessica
+2019-05-20T14:50:26 | erik is online. Attempting to send message
+2019-05-20T14:50:26 | message sent to erik
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:50:20 | message sent to jessica
+2019-05-20T14:50:26 | Server received Message-object from jessica
+2019-05-20T14:50:26 | erik is online. Attempting to send message
+2019-05-20T14:50:26 | message sent to erik
+2019-05-20T14:50:28 | jessica disconnected from the server.
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:50:20 | message sent to jessica
+2019-05-20T14:50:26 | Server received Message-object from jessica
+2019-05-20T14:50:26 | erik is online. Attempting to send message
+2019-05-20T14:50:26 | message sent to erik
+2019-05-20T14:50:28 | jessica disconnected from the server.
+2019-05-20T14:50:33 | Server received Message-object from erik
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:50:20 | message sent to jessica
+2019-05-20T14:50:26 | Server received Message-object from jessica
+2019-05-20T14:50:26 | erik is online. Attempting to send message
+2019-05-20T14:50:26 | message sent to erik
+2019-05-20T14:50:28 | jessica disconnected from the server.
+2019-05-20T14:50:33 | Server received Message-object from erik
+2019-05-20T14:50:33 | jessica is not online. Storing message to send when online
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:50:20 | message sent to jessica
+2019-05-20T14:50:26 | Server received Message-object from jessica
+2019-05-20T14:50:26 | erik is online. Attempting to send message
+2019-05-20T14:50:26 | message sent to erik
+2019-05-20T14:50:28 | jessica disconnected from the server.
+2019-05-20T14:50:33 | Server received Message-object from erik
+2019-05-20T14:50:33 | jessica is not online. Storing message to send when online
+2019-05-20T14:50:44 | erik disconnected from the server.
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:50:20 | message sent to jessica
+2019-05-20T14:50:26 | Server received Message-object from jessica
+2019-05-20T14:50:26 | erik is online. Attempting to send message
+2019-05-20T14:50:26 | message sent to erik
+2019-05-20T14:50:28 | jessica disconnected from the server.
+2019-05-20T14:50:33 | Server received Message-object from erik
+2019-05-20T14:50:33 | jessica is not online. Storing message to send when online
+2019-05-20T14:50:44 | erik disconnected from the server.
+2019-05-20T14:51:02 | jessica connected to the server
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:50:20 | message sent to jessica
+2019-05-20T14:50:26 | Server received Message-object from jessica
+2019-05-20T14:50:26 | erik is online. Attempting to send message
+2019-05-20T14:50:26 | message sent to erik
+2019-05-20T14:50:28 | jessica disconnected from the server.
+2019-05-20T14:50:33 | Server received Message-object from erik
+2019-05-20T14:50:33 | jessica is not online. Storing message to send when online
+2019-05-20T14:50:44 | erik disconnected from the server.
+2019-05-20T14:51:02 | jessica connected to the server
+2019-05-20T14:51:02 | message sent to jessica
+2019-05-20T14:49:24 | Logger started
+2019-05-20T14:49:33 | jessica connected to the server
+2019-05-20T14:49:52 | erik connected to the server
+2019-05-20T14:49:56 | jessica added erik to contact list
+2019-05-20T14:50:01 | jessica added erik to contact list
+2019-05-20T14:50:06 | Server received Message-object from jessica
+2019-05-20T14:50:06 | erik is online. Attempting to send message
+2019-05-20T14:50:06 | message sent to erik
+2019-05-20T14:50:20 | Server received Message-object from erik
+2019-05-20T14:50:20 | jessica is online. Attempting to send message
+2019-05-20T14:50:20 | message sent to jessica
+2019-05-20T14:50:26 | Server received Message-object from jessica
+2019-05-20T14:50:26 | erik is online. Attempting to send message
+2019-05-20T14:50:26 | message sent to erik
+2019-05-20T14:50:28 | jessica disconnected from the server.
+2019-05-20T14:50:33 | Server received Message-object from erik
+2019-05-20T14:50:33 | jessica is not online. Storing message to send when online
+2019-05-20T14:50:44 | erik disconnected from the server.
+2019-05-20T14:51:02 | jessica connected to the server
+2019-05-20T14:51:02 | message sent to jessica
+2019-05-20T14:51:06 | jessica disconnected from the server.

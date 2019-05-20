@@ -1,17 +1,20 @@
 package Server;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class LogMessage {
-	private Date date;
+	private LocalDateTime date;
 	private String message;
 	
 	public LogMessage(String message) {
-		this.date = new Date();
+		 
+		LocalDateTime nan = LocalDateTime.now();
+		this.date = nan.minusNanos(nan.getNano());
+		
 		this.message = message;
 	}
 	
-	public Date getDate() {
+	public LocalDateTime getDate() {
 		return date;
 	}
 	
