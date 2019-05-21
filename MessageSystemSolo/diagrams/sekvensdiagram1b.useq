@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="Server.Server.Clients" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Server/Server.java" binary="false" label="clients" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="90" y="0"/>    
+    <execution id="2">      
+      <position height="491" width="0" x="0" y="78"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="Server.Server" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Server/Server.java" binary="false" label="server" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="4">      
+      <position height="449" width="0" x="0" y="99"/>    
+    </execution>  
+  </object>  
+  <object id="22" language="java" name="java.util.HashMap" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="7">      
+      <position height="21" width="0" x="0" y="120"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="162"/>    
+    </execution>  
+  </object>  
+  <object id="23" language="java" name="java.util.Iterator" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" label="it" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="245"/>    
+    </execution>  
+  </object>  
+  <object id="24" language="java" name="java.util.Map.Entry" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" label="pair" 
+    type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="287"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="464"/>    
+    </execution>  
+  </object>  
+  <object id="25" language="java" name="Server.Server.Clients" project="MessageSystemSolo" 
+    file="/MessageSystemSolo/src/Server/Server.java" binary="false" label="cl" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="370"/>    
+    </execution>  
+  </object>  
+  <object id="26" language="java" name="java.util.ArrayList" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    label="tempList" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="422"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="java.io.ObjectOutputStream" project="MessageSystemSolo" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar" binary="true" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="506"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="28" interaction-operator="LOOP">    
+    <interaction-operand id="29" constraint="while: it.hasNext()">      
+      <fragment refId="18"/>      
+      <fragment refId="20"/>      
+      <fragment refId="30"/>      
+      <fragment refId="10"/>      
+      <fragment refId="16"/>      
+      <fragment refId="12"/>    
+    </interaction-operand>    
+    <combined-fragment id="30" interaction-operator="CRITICAL">      
+      <interaction-operand id="31">        
+        <fragment refId="14"/>      
+      </interaction-operand>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <message id="3" operation="updateAllClients():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="entrySet():java.util.Set&lt;java.util.Map.Entry&lt;K,V&gt;&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="iterator():java.util.Iterator&lt;E&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="next():E" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="getValue():V" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="getAllOnlineUsers():java.util.ArrayList&lt;User&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="remove(java.lang.Object):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="getKey():K" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="writeObject(java.lang.Object):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>
+</sequence-diagram>
