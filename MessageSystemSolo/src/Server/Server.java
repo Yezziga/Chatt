@@ -12,7 +12,7 @@ import Client.Message;
 
 public class Server {
 	private Clients cl = new Clients(); // inner class
-	private ArrayList<Message> unsentMessages = new ArrayList<>();
+	private UnsentMessages unsentMsgs = new UnsentMessages();
 	private TrafficLogger logger;
 	private ServerSocket serverSocket;
 
@@ -52,15 +52,7 @@ public class Server {
 		}
 	}
 
-	/**
-	 * Adds a Message-object to the list of unsent messages.
-	 * 
-	 * @param message
-	 *            the Message-object to add to the list
-	 */
-	public void addMessageToUnsentList(Message message) {
-		unsentMessages.add(message);
-	}
+
 
 	/**
 	 * Forwards the Message-object to receivers who are online, and updates the
@@ -73,7 +65,6 @@ public class Server {
 	public void checkReceiversAndOnliners(Message message) {
 		ArrayList<User> onlineUsers = cl.getAllOnlineUsers(); // list with online users
 		ArrayList<User> listOfReceivers = message.getReceivers();
-		ArrayList<User> tempList = new ArrayList<>(); // new list with offline receivers
 
 		for (User receiverOnList : listOfReceivers) {
 			boolean receiverFound = false;
@@ -82,23 +73,17 @@ public class Server {
 				if (receiverOnList.getName().equals(onlineUser.getName())) {
 					receiverFound = true;
 					logger.log(receiverOnList.getName() + " is online. Attempting to send message");
-					// System.out.println(receiverOnList.getName() + " is online");
-
 					sendMessageToOnlineUser(message, receiverOnList);
+					message.removeReceiver(onlineUser);
 					break;
 				}
 			}
 			if (receiverFound == false) {
-				tempList.add(receiverOnList);
 				logger.log(receiverOnList.getName() + " is not online. Storing message to send when online");
-				// System.out.println(receiverOnList.getName() + " is not online");
+				unsentMsgs.put(receiverOnList, message);
 			}
 		}
-		if (!tempList.isEmpty()) { // updates the list of receivers if there still are users who haven't come
-									// online.
-			message.setReceiver(tempList);
-			unsentMessages.add(message);
-		}
+		
 	}
 
 	/**
@@ -164,14 +149,14 @@ public class Server {
 			logger.log(user.getName() + " connected to the server");
 			updateAllClients();
 			// send messages to user if there are any unsent messages.
-			for (Message message : unsentMessages) {
-				for (User receiver : message.getReceivers()) {
-					if (receiver.getName().equals(user.getName())) {
-						clientHandler.sendMessage(message);
-						break;
-					}
+			ArrayList<Message> list = unsentMsgs.get(user);
+			if(list !=null) {
+				for (Message message : list) {
+					clientHandler.sendMessage(message);
+
 				}
 			}
+			
 
 		}
 
@@ -226,6 +211,27 @@ public class Server {
 			}
 
 			return listOnliners;
+		}
+	}
+
+	public class UnsentMessages {
+		private HashMap<String, ArrayList<Message>> map = new HashMap<String, ArrayList<Message>>();
+
+		public synchronized void put(User user, Message msg) {
+			  ArrayList<Message> list = map.get(user.getName());
+		        if( list == null ) {
+		            list = new ArrayList<Message>();
+		            map.put(user.getName(), list);
+		        }
+		        list.add(msg);
+		}
+
+		public synchronized ArrayList<Message> get(User user) {
+			return map.get(user.getName());
+		}
+		
+		public synchronized void remove(User u, Message m) {
+			map.remove(u, m); // funkar?
 		}
 	}
 
@@ -339,6 +345,18 @@ public class Server {
 				e.printStackTrace();
 			}
 		}
+	}
+
+	public static void main(String[] args) {
+		User u1 = new User("jessica");
+		User u2 = new User("kalle");
+		User u3 = new User("puh");
+		ArrayList<User> l = new ArrayList<>();
+		l.add(u2);
+		l.add(u3);
+		Message m = new Message(u1, l, "meddelandet");
+		
+
 	}
 
 }

@@ -147,4 +147,8 @@ public class Message implements Serializable {
 	public void addSingleReceiver(User receiver) {
 		receivers.add(receiver);
 	}
+	
+	public void removeReceiver(User receiver) {
+		receivers.remove(receiver);
+	}
 }

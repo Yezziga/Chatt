@@ -28,16 +28,25 @@ public class ContactsReader {
 		if (readContacts(user) != null) {
 			list = readContacts(user);
 		}
-		list.add(c);
+		boolean isContact = false;
+		for (Contact contact : list) {
+			if (contact.getName().equals(c.getName())) {
+				isContact = true;
+				break;
+			}
+		}
 
-		try (ObjectOutputStream toFile = new ObjectOutputStream(
-				new BufferedOutputStream(new FileOutputStream("files/" + user.getName() + "_contacts.txt")))) {
-			toFile.writeObject(list);
-			toFile.flush();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+		if (!isContact) {
+			list.add(c);
+			try (ObjectOutputStream toFile = new ObjectOutputStream(
+					new BufferedOutputStream(new FileOutputStream("files/" + user.getName() + "_contacts.txt")))) {
+				toFile.writeObject(list);
+				toFile.flush();
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 
 	}

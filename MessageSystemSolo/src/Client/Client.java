@@ -141,7 +141,6 @@ public class Client {
 				} catch (ClassNotFoundException e1) {
 					e1.printStackTrace();
 				} catch (IOException e1) {
-					e1.printStackTrace();
 					disconnect();
 				}
 
